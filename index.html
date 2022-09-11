@@ -182,22 +182,24 @@
         <article class="indexUbicacion__formulario">
           <h2>CONTACTANOS</h2>
           <form action="enviar.php" method="post">
-            <div class="nombreApellido">
+            <div>
               <label for="name">Nombre<span class="rojo">*</span></label>
-              <input type="text" id="name" required />
-              <label for="lastname">Apellido</label>
-              <input type="text" id="lastname" />
+              <input class="noBorder" type="text" id="name" required />
             </div>
-            <div class="form__mail">
+            <div>
+              <label for="lastname">Apellido</label>
+              <input class="noBorder" type="text" id="lastname" />
+            </div>
+            <div>
               <label for="mail">Email<span class="rojo">*</span></label>
-              <input
+              <input class="noBorder"
                 type="email"
                 id="mail"
                 placeholder="mountainbreed@hotmail.com"
                 required
               />
             </div>
-            <div class="comentarios">
+            <div>
               <label for="comentarios">Comentarios</label>
               <textarea name="" id="comentarios" cols="30" rows="5"></textarea>
             </div>
@@ -209,13 +211,12 @@
         <article class="indexUbicacion__newsletter">
           <h3>NUESTRO NEWSLETTER</h3>
           <p>
-            Si querés suscribirte a nuestro newsletter mensual de novedades
-            sobre nuestro servicio, dejanos tu mail y nos pondremos en contacto.
+            Si querés suscribirte a nuestro newsletter mensual de novedades, dejanos tu mail y nos pondremos en contacto.
           </p>
           <div class="newsletter__formulario">
             <form action="enviar.php" method="post">
               <label for="email"></label>
-              <input
+              <input class="noBorder"
                 type="email"
                 id="email"
                 placeholder="mountainbreed@gmail.com"
