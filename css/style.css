@@ -1,0 +1,1014 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rojo {
+  color: rgb(197, 27, 27);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.banner h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-weight: bold;
+  font-size: 5rem;
+  letter-spacing: 2rem;
+  opacity: 0.4;
+}
+
+.banner__next {
+  display: inline-block;
+  position: relative;
+  left: 85%;
+  margin-top: 11%;
+  transform: rotate(90deg);
+  width: 70px;
+}
+.banner__next a img {
+  width: 100%;
+  height: auto;
+}
+
+.banner__back {
+  display: inline-block;
+  position: relative;
+  left: 5%;
+  margin-top: 11%;
+  transform: rotate(-90deg);
+  width: 70px;
+}
+.banner__back a img {
+  width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+
+#header {
+  z-index: 901;
+}
+#header .header__barra {
+  width: 100%;
+  padding: 5px 0px;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 902;
+}
+#header .header__barra h1 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  text-align: center;
+  font-size: 1rem;
+  opacity: 1;
+  color: #2a62b2;
+  font-weight: bold;
+}
+#header .header__menu {
+  margin-top: 28px;
+  padding: 25px 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.119);
+}
+#header .header__menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  list-style: none;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+}
+#header .header__menu ul li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+#header .header__menu ul li a {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: transparent;
+  display: inline-block;
+  transition: all 0.3s;
+}
+#header .header__menu ul li a:hover {
+  color: #2a62b2;
+  font-weight: 500;
+}
+#header .header__menu ul .menu__containerLogo a #logo {
+  width: 200px;
+  height: auto;
+}
+#header .header__menu ul li ul {
+  display: none;
+  position: absolute;
+  border-top: 0.2rem solid #0076c18f;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.119);
+  left: -42px;
+}
+#header .header__menu ul li:hover > ul {
+  display: block;
+}
+#header .header__menu ul li ul li {
+  font-size: 0.8rem;
+  padding: 0;
+  width: 12.1rem;
+}
+
+/* INDEX */
+
+.vidPromo video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    ". principal principal principal principal ."
+    "paquetes paquetes paquetes paquetes paquetes paquetes"
+    "testimonios testimonios testimonios testimonios testimonios testimonios"
+    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
+}
+
+#principal {
+  margin-top: 60%;
+  font-family: "Poppins", sans-serif;
+  grid-area: principal;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+#principal h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  color: #2a62b2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+#principal .principal__texto {
+  width: 40%;
+}
+#principal .principal__texto p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 28px;
+}
+#principal .principal__boton {
+  width: 40%;
+  text-align: center;
+}
+#principal .principal__boton a {
+  border: 3px solid white;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+#principal .principal__boton a:hover {
+  background-color: #2a62b2;
+  color: black;
+  font-weight: 700;
+  border: 3px solid black;
+}
+
+#indexPaquetes,
+#paquetes {
+  grid-area: paquetes;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  gap: 50px;
+}
+.indexPaquetes__imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.indexPaquetes__imagenes .imagenes__img1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Img/Paquetes/travesia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.indexPaquetes__imagenes .imagenes__img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Img/Paquetes/cat-skiing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.indexPaquetes__imagenes .imagenes__img3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Img/Paquetes/heli.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.indexPaquetes__imagenes .imagenes__img4 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Img/Paquetes/aventura-completa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.indexPaquetes__imagenes a {
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  color: white;
+  opacity: 0.3;
+  display: block;
+  padding: 180px 0px;
+  transition: all 0.5s;
+  text-align: center;
+}
+.indexPaquetes__imagenes .imagenes__img1:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
+    url("../Img/Paquetes/travesia.jpg");
+}
+.indexPaquetes__imagenes .imagenes__img2:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
+    url("../Img/Paquetes/cat-skiing.jpg");
+}
+.indexPaquetes__imagenes .imagenes__img3:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
+    url("../Img/Paquetes/heli.jpg");
+}
+.indexPaquetes__imagenes .imagenes__img4:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
+    url("../Img/Paquetes/aventura-completa.jpg");
+}
+.indexPaquetes__imagenes .imagenes__img1:hover a,
+.indexPaquetes__imagenes .imagenes__img2:hover a,
+.indexPaquetes__imagenes .imagenes__img3:hover a,
+.indexPaquetes__imagenes .imagenes__img4:hover a {
+  transform: scale(1.3);
+  opacity: 1;
+  letter-spacing: 3px;
+}
+.indexPaquetes__imagenes .imagenes__container {
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+
+.paquetes__texto {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+.paquetes__texto .texto__paq {
+  width: 30%;
+  text-align: justify;
+  margin: 30px auto 0px auto;
+  line-height: 2rem;
+}
+.paquetes__texto h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  color: #2a62b2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.paquetes__texto a {
+  display: inline-block;
+  margin-top: 20px;
+  border: 3px solid white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.paquetes__texto a:hover {
+  background-color: #2a62b2;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
+}
+
+#testimonios {
+  grid-area: testimonios;
+  background: linear-gradient(black, #2a62b2, black);
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+#testimonios h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: black;
+}
+#testimonios .testimonios__container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#testimonios img {
+  width: 125px;
+  height: 125px;
+}
+#testimonios .testimonios__container p {
+  width: 300px;
+  margin-top: 25px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#indexUbicacion {
+  grid-area: ubicacion;
+  margin: 50px 25px 0px 25px;
+  position: relative;
+}
+#indexUbicacion .indexUbicacion__mapa {
+  margin-top: 25px;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+#indexUbicacion .indexUbicacion__formulario {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+#indexUbicacion .indexUbicacion__formulario h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  color: #2a62b2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+#indexUbicacion .indexUbicacion__formulario form {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  position: relative;
+  text-align: left;
+  line-height: 2rem;
+  padding-left: 50px;
+}
+.indexUbicacion__formulario form input,
+textarea {
+  width: 90%;
+  display: block;
+}
+.indexUbicacion__formulario form .form__button input {
+  width: 20%;
+  margin: 15px 0;
+  padding: 5px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+}
+.indexUbicacion__newsletter {
+  text-align: center;
+  margin: 80px 0px auto;
+}
+.indexUbicacion__newsletter h3 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2a62b2;
+}
+.indexUbicacion__newsletter p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin: 15px auto;
+  display: block;
+  width: 30%;
+}
+.indexUbicacion__newsletter .newsletter__formulario input {
+  width: 300px;
+  padding: 5px 0;
+}
+.indexUbicacion__newsletter .newsletter__formulario .button {
+  width: 150px;
+  margin: 0 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 0.8rem;
+}
+
+/* PAQUETES */
+
+.banner-paq {
+  background-image: url("../Img/Paquetes/paquetesbanner.jpg");
+  background-position: top;
+}
+
+.jornadaIdeal {
+  margin: 600px 0 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.jornadaIdeal h2 {
+  color: #2a62b2;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.jornadaIdeal p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  width: 50%;
+}
+
+/* TRAVESIA */
+
+.banner-tra {
+  background-image: url("../Img/Paquetes/travesiabanner.jpg");
+}
+
+#travesia {
+  margin-top: 400px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+#travesia h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#travesia .travesia__dia1 h4,
+.travesia__dia2 h4 {
+  margin-bottom: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#travesia .travesia__dia1,
+.travesia__dia2 {
+  margin: 100px 250px;
+  text-align: center;
+}
+#travesia .travesia__dia1 .dia1__imagen1,
+.travesia__dia2 .dia2__imagen2 {
+  text-align: left;
+}
+#travesia .travesia__dia1 p,
+.travesia__dia2 p {
+  text-align: justify;
+}
+
+.servicios {
+  background-color: #2a62b2;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+.servicios h5 {
+  margin-bottom: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+.servicios .servicios__noTraer,
+.servicios__traer {
+  margin: 100px 250px;
+}
+.servicios .servicios__noTraer {
+  text-align: right;
+}
+.servicios .servicios__Traer {
+  text-align: left;
+}
+.servicios ul {
+  display: inline-block;
+}
+
+.botones {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+.botones .botones__reservar,
+.botones__paquetes {
+  display: inline-block;
+  margin: 0px 13% 70px;
+  text-align: center;
+}
+.botones .botones__reservar a,
+.botones__paquetes a {
+  margin-top: 20px;
+  display: inline-block;
+  border: 3px solid white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.botones .botones__reservar a:hover,
+.botones__paquetes a:hover {
+  background-color: #2a62b2;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
+}
+
+/* CAT SKIING */
+
+.banner-cat {
+  background-image: url("../Img/Paquetes/cat-skiingbanner.jpg");
+}
+
+#catSkiing {
+  margin-top: 400px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+#catSkiing h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#catSkiing .catSkiing__dia1 h4,
+.catSkiing__dia2 h4 {
+  margin-bottom: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#catSkiing .catSkiing__dia1,
+.catSkiing__dia2 {
+  margin: 100px 250px;
+  text-align: center;
+}
+#catSkiing .catSkiing__dia1 .dia1__imagen1,
+.catSkiing__dia2 .dia2__imagen2 {
+  text-align: left;
+}
+#catSkiing .catSkiing__dia1 p,
+.catSkiing__dia2 p {
+  text-align: justify;
+}
+
+/* HELISKIING */
+
+.banner-heli {
+  background-image: url("../Img/Paquetes/heli.jpg");
+  background-position: top;
+}
+
+#heliSkiing {
+  margin-top: 400px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+#heliSkiing h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#heliSkiing .heliSkiing__dia1 h4,
+.heliSkiing__dia2 h4 {
+  margin-bottom: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#heliSkiing .heliSkiing__dia1,
+.heliSkiing__dia2 {
+  margin: 100px 250px;
+  text-align: center;
+}
+#heliSkiing .heliSkiing__dia1 .dia1__imagen1,
+.heliSkiing__dia2 .dia2__imagen2 {
+  text-align: left;
+}
+#heliSkiing .heliSkiing__dia1 p,
+.heliSkiing__dia2 p {
+  text-align: justify;
+}
+
+/* AVENTURA COMPLETA */
+
+.banner-comp {
+  background-image: url("../Img/Paquetes/aventura-completabanner.jpg");
+  background-position: top;
+}
+
+#aventura {
+  margin-top: 400px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+#aventura h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#aventura .aventura__dia1 h4,
+.aventura__dia2 h4,
+.aventura__dia3 h4,
+.aventura__dia4 h4,
+.aventura__dia5 h4,
+.aventura__dia6 h4 {
+  margin-bottom: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#aventura .aventura__dia1,
+.aventura__dia2,
+.aventura__dia3,
+.aventura__dia4,
+.aventura__dia5,
+.aventura__dia6 {
+  margin: 100px 250px;
+  text-align: center;
+}
+#aventura .aventura__dia1 .dia1__imagen1,
+.aventura__dia2 .dia2__imagen2,
+.aventura__dia3 .dia3__imagen3,
+.aventura__dia4 .dia4__imagen4,
+.aventura__dia5 .dia5__imagen5,
+.aventura__dia6 .dia6__imagen6 {
+  text-align: left;
+}
+#aventura .aventura__dia1 p,
+.aventura__dia2 p,
+.aventura__dia3 p,
+.aventura__dia4 p,
+.aventura__dia5 p,
+.aventura__dia6 p {
+  text-align: justify;
+}
+
+/* ALOJAMIENTO */
+
+.banner-alo {
+  background-image: url("../Img/Alojamiento/alojamientobanner.jpg");
+  background-position: top;
+}
+
+#alojamiento {
+  margin-top: 600px;
+}
+#alojamiento .alojamiento__section {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+#alojamiento .alojamiento__section h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#alojamiento .alojamiento__section .section__domo h3,
+.section__cabana h3 {
+  margin-bottom: 30px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a62b2;
+  position: relative;
+  left: 70%;
+  display: inline-block;
+}
+#alojamiento .alojamiento__section .section__domo .domo__lista,
+.section__cabana .cabana__lista {
+  text-align: justify;
+  margin-left: 68%;
+  margin-bottom: 50px;
+}
+#alojamiento .alojamiento__section .section__domo .domo__imagenes {
+  display: inline-block;
+  width: 200px;
+  height: 120px;
+}
+#alojamiento .alojamiento__section .section__domo .domo__imagenes img {
+  width: 100%;
+  height: 100%;
+}
+#alojamiento .alojamiento__section .section__cabana h3 {
+  left: 20%;
+  margin-top: 50px;
+}
+#alojamiento .alojamiento__section .section__cabana .cabana__lista {
+  margin-left: 15%;
+}
+#alojamiento .alojamiento__section .section__cabana .cabana__imagenes {
+  display: inline-block;
+  width: 200px;
+  height: 120px;
+}
+#alojamiento .alojamiento__section .section__cabana .cabana__imagenes img {
+  width: 100%;
+  height: 100%;
+}
+
+/* GALERIA */
+
+.banner-gale {
+  background-image: url("../Img/Galeria/galeriabanner.jpg");
+  background-position: center;
+}
+
+#galeria {
+  margin: 600px 1em 0 1em;
+}
+#galeria h2 {
+  text-align: center;
+  color: #2a62b2;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+#galeria .galeria__imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+#galeria .galeria__imagenes img {
+  width: 100%;
+  height: auto;
+}
+
+/* CONTACTO */
+
+.banner-cont {
+  background-image: url("../Img/Contacto/contactobanner.jpg");
+}
+
+#reservar {
+  margin-top: 600px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+#reservar h2 {
+  color: #2a62b2;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 35px 0;
+}
+#reservar .reservar__form {
+  width: 75%;
+  height: auto;
+}
+#reservar .reservar__form form {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  line-height: 3rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+.reservar__form .nombreApellido input {
+  display: inline-block;
+  width: 450px;
+}
+.reservar__form .form__button {
+  margin: 30px 0;
+  align-self: flex-end;
+}
+.reservar__form .form__button input {
+  margin-left: 20px;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 00.8rem;
+}
+
+#indicaciones {
+  background-color: #2a62b2;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+#indicaciones h2 {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  color: black;
+  padding: 40px 200px;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#indicaciones .indicaciones__texto {
+  width: 70%;
+}
+#indicaciones .indicaciones__texto p {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 1.3rem;
+}
+#indicaciones img {
+  width: 600px;
+  height: auto;
+}
+
+#mediosContacto .mediosContacto__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#mediosContacto h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a62b2;
+}
+#mediosContacto article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+#mediosContacto article .contacto__medios {
+  display: flex;
+  align-items: center;
+}
+#mediosContacto .contacto__medios img {
+  width: 80px;
+  margin: 0 40px;
+}
+#mediosContacto .contacto__medios p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 30% 40% 5% 15% 10%;
+  justify-items: space-around;
+  align-items: center;
+  background-image: url("../Img/footer-back.jpg");
+  background-size: contain;
+  text-align: center;
+}
+#footer .footer__logo img {
+  width: 250px;
+}
+#footer .footer__copyright p {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+#footer .footer__redes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-evenly;
+  justify-self: flex-start;
+}
+#footer .footer__qr img {
+  width: 150px;
+  height: auto;
+}
+#footer .footer__scrollup {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+}
+#footer .footer__scrollup img {
+  width: 100px;
+  height: auto;
+}
