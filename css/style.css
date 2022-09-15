@@ -27,7 +27,7 @@ a {
   background-color: black;
   border: 0;
   color: white;
-  border-bottom: 3px solid #2a62b2;
+  border-bottom: 2px solid #2a62b2;
   outline: none;
 }
 
@@ -175,16 +175,16 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
   grid-template-areas:
-    ". principal principal principal principal ."
-    "paquetes paquetes paquetes paquetes paquetes paquetes"
-    "testimonios testimonios testimonios testimonios testimonios testimonios"
-    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
+  ". principal principal principal principal principal principal principal principal principal  principal ."
+  "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
+  "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
+  "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
 }
 
 #principal {
-  margin-top: 60%;
+  margin-top: 52%;
   font-family: "Poppins", sans-serif;
   grid-area: principal;
   display: flex;
@@ -221,6 +221,7 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 700;
+  transition: all 0.3s;
 }
 #principal .principal__boton a:hover {
   background-color: #2a62b2;
@@ -244,6 +245,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .indexPaquetes__imagenes .imagenes__img1 {
   width: 100%;
@@ -252,6 +254,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .indexPaquetes__imagenes .imagenes__img2 {
   width: 100%;
@@ -260,6 +265,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .indexPaquetes__imagenes .imagenes__img3 {
   width: 100%;
@@ -268,6 +276,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .indexPaquetes__imagenes .imagenes__img4 {
   width: 100%;
@@ -276,8 +287,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .indexPaquetes__imagenes a {
+  width: 100%;
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 900;
   font-family: "lemon milk";
@@ -285,9 +301,8 @@ a {
   color: white;
   opacity: 0.3;
   display: block;
-  padding: 180px 0px;
+  padding: 200px 0px;
   transition: all 0.5s;
-  text-align: center;
 }
 .indexPaquetes__imagenes .imagenes__img1:hover {
   transform: scale(1.2);
@@ -319,8 +334,8 @@ a {
 }
 .indexPaquetes__imagenes .imagenes__container {
   overflow: hidden;
-  width: 600px;
-  height: 400px;
+  width: 50%;
+  height: auto;
 }
 
 .paquetes__texto {
@@ -352,6 +367,7 @@ a {
   color: white;
   font-weight: 700;
   font-size: 14px;
+  transition: all 0.3s;
 }
 .paquetes__texto a:hover {
   background-color: #2a62b2;
@@ -433,6 +449,9 @@ textarea {
   width: 100%;
   display: block;
 }
+.indexUbicacion__formulario form textarea {
+  border: 2px solid #2a62b2;
+}
 .indexUbicacion__formulario form .form__button {
   width: 100px;
   align-self: flex-end;
@@ -467,11 +486,23 @@ textarea {
 }
 .indexUbicacion__newsletter .newsletter__formulario .button {
   width: 150px;
-  margin: 0 20px;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 0.8rem;
+  background-color: black;
+  margin-left: 20px;
+  border: 3px solid white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
+.indexUbicacion__newsletter .newsletter__formulario .button:hover {
+    background-color: #2a62b2;
+    color: black;
+    font-weight: bold;
+    border: 3px solid black;
+  }
 
 /* PAQUETES */
 
