@@ -69,7 +69,7 @@
     <!-- TERMINA HEADER -->
     <div class="container">
       <div class="vidPromo">
-        <video autoplay loop muted src="./videos/intro.mp4"></video>
+        <video preload autoplay loop muted src="./videos/intro.mp4"></video>
       </div>
 
       <!-- EMPIEZA MAIN -->
@@ -183,15 +183,15 @@
           <h2>CONTACTANOS</h2>
           <form action="enviar.php" method="post">
             <div>
-              <label for="name">Nombre<span class="rojo">*</span></label>
+              <label for="name">Nombre <span class="rojo">*</span></label>
               <input class="noBorder" type="text" id="name" required />
             </div>
             <div>
-              <label for="lastname">Apellido</label>
+              <label for="lastname">Apellido </label>
               <input class="noBorder" type="text" id="lastname" />
             </div>
             <div>
-              <label for="mail">Email<span class="rojo">*</span></label>
+              <label for="mail">Email <span class="rojo">*</span></label>
               <input class="noBorder"
                 type="email"
                 id="mail"
@@ -200,7 +200,7 @@
               />
             </div>
             <div>
-              <label for="comentarios">Comentarios</label>
+              <label for="comentarios">Comentarios </label>
               <textarea class="noBorder" name="" id="comentarios" cols="30" rows="5"></textarea>
             </div>
             <div class="form__button">
