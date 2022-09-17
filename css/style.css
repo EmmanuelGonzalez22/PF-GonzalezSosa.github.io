@@ -1146,6 +1146,7 @@ textarea {
     margin-top: 38px;
   }
   #header .logo__mobile {
+    position: fixed;
     z-index: 400;
   }
   #header .logo__mobile img {
