@@ -23,6 +23,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('#menu_on').click(function(){ // Al hacer click...
+           $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+        })
+      });
+    </script>
   </head>
 
   <!-- TERMINA HEAD -->
@@ -37,6 +47,11 @@
           America
         </h1>
       </div>
+      <a href="#" id="menu_on">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
       <nav class="header__menu">
         <ul>
           <li>
@@ -64,6 +79,7 @@
           <li><a href="../Pages/contact.html">CONTACTO</a></li>
         </ul>
       </nav>
+      <div class="logo__mobile"><a href="../index.html"><img src="../Img/Logo/large_mountainbreed-recortado.png" alt="logoMedia"></a></div>
     </header>
 
     <!-- TERMINA HEADER -->
