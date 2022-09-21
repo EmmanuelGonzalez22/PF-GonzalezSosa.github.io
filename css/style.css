@@ -1005,18 +1005,20 @@ textarea {
 #footer {
   margin-top: 50px;
   padding: 20px 0;
-  display: grid;
-  grid-template-columns: 30% 40% 5% 15% 10%;
-  justify-items: space-around;
-  align-items: center;
   background-image: url("../Img/footer-back.jpg");
   background-size: contain;
-  text-align: center;
+}
+#footer .footer__logo {
+  width: 200px;
+  height: auto;
+  margin: auto;
 }
 #footer .footer__logo img {
-  width: 250px;
+  width: 100%;
+  height: auto;
 }
 #footer .footer__copyright p {
+  text-align: center;
   font-family: "lemon milk";
   src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1rem;
@@ -1027,11 +1029,14 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: space-evenly;
-  justify-self: flex-start;
+}
+
+#footer .footer__qr {
+  width: 150px;
+  height: auto;
 }
 #footer .footer__qr img {
-  width: 150px;
+  width: 100%;
   height: auto;
 }
 #footer .footer__scrollup {
@@ -1167,6 +1172,11 @@ textarea {
   #footer .footer__qr {
     display: none;
   }
+
+  #footer .footer__redes {
+    align-items: flex-end;
+    flex-direction: row;
+  }
 }
 
 /* MEDIA 786 */
@@ -1181,6 +1191,10 @@ textarea {
   }
   #alojamiento {
     margin-top: 450px;
+  }
+  #footer .footer__logo {
+    width: 150px;
+    height: auto;
   }
 }
 
@@ -1209,9 +1223,11 @@ textarea {
   }
   #header .logo__mobile {
     z-index: 400;
+    width: 150px;
   }
   #header .logo__mobile img {
-    width: 150px;
+    width: 100%;
+    height: auto;
   }
 
   .banner {
@@ -1223,5 +1239,18 @@ textarea {
 
   #alojamiento {
     margin-top: 280px;
+  }
+
+  #footer .footer__logo {
+    width: 100px;
+    height: auto;
+  }
+
+  #footer .footer__redes a img {
+    width: 20px;
+    height: 20px;
+  }
+  html {
+    font-size: 60%;
   }
 }
