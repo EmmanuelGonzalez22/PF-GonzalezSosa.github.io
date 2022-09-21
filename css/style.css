@@ -106,66 +106,66 @@ a {
   font-weight: bold;
 }
 @media (min-width: 993px) {
-#header .header__menu {
-  margin-top: 28px;
-  padding: 25px 20px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.119);
-}
-#header .header__menu ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1rem;
-  list-style: none;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-}
-#header .header__menu ul li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-#header .header__menu ul li a {
-  color: white;
-  letter-spacing: 1px;
-  font-weight: 500;
-  padding: 10px;
-  background-color: transparent;
-  display: inline-block;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-#header .header__menu ul li a:hover {
-  color: #2a62b2;
-  font-weight: 500;
-}
-#header .header__menu ul .menu__containerLogo a #logo {
-  width: 200px;
-  height: auto;
-}
-#header .header__menu ul li ul {
-  display: none;
-  position: absolute;
-  border-top: 0.2rem solid #0076c18f;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.119);
-  left: -42px;
-}
-#header .header__menu ul li:hover > ul {
-  display: block;
-}
-#header .header__menu ul li ul li {
-  font-size: 0.8rem;
-  padding: 0;
-  width: 12.1rem;
-}
-#header .logo__mobile {
-  display: none;
-}
+  #header .header__menu {
+    margin-top: 28px;
+    padding: 25px 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.119);
   }
+  #header .header__menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    list-style: none;
+    font-family: "lemon milk";
+    src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
+  }
+  #header .header__menu ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  #header .header__menu ul li a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  #header .header__menu ul li a:hover {
+    color: #2a62b2;
+    font-weight: 500;
+  }
+  #header .header__menu ul .menu__containerLogo a #logo {
+    width: 200px;
+    height: auto;
+  }
+  #header .header__menu ul li ul {
+    display: none;
+    position: absolute;
+    border-top: 0.2rem solid #0076c18f;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.119);
+    left: -42px;
+  }
+  #header .header__menu ul li:hover > ul {
+    display: block;
+  }
+  #header .header__menu ul li ul li {
+    font-size: 0.8rem;
+    padding: 0;
+    width: 12.1rem;
+  }
+  #header .logo__mobile {
+    display: none;
+  }
+}
 /* INDEX */
 
 .vidPromo video {
@@ -183,10 +183,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
   grid-template-areas:
-  ". principal principal principal principal principal principal principal principal principal  principal ."
-  "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
-  "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
-  "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
+    ". principal principal principal principal principal principal principal principal principal  principal ."
+    "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
+    "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
+    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
 }
 
 #principal {
@@ -505,11 +505,11 @@ textarea {
   cursor: pointer;
 }
 .indexUbicacion__newsletter .newsletter__formulario .button:hover {
-    background-color: #2a62b2;
-    color: black;
-    font-weight: bold;
-    border: 3px solid black;
-  }
+  background-color: #2a62b2;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
+}
 
 /* PAQUETES */
 
@@ -824,46 +824,35 @@ textarea {
 }
 #alojamiento .alojamiento__section .section__domo h3,
 .section__cabana h3 {
-  margin-bottom: 30px;
   font-family: "lemon milk";
   src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.5rem;
   font-weight: bold;
   color: #2096fd;
-  position: relative;
-  left: 70%;
-  display: inline-block;
 }
-#alojamiento .alojamiento__section .section__domo .domo__lista,
-.section__cabana .cabana__lista {
-  text-align: justify;
-  margin-left: 68%;
-  margin-bottom: 50px;
+#alojamiento .alojamiento__section .section__domo .domo__lista ul,
+.section__cabana .cabana__lista ul {
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+  padding: 0;
 }
 #alojamiento .alojamiento__section .section__domo .domo__imagenes {
   display: inline-block;
-  width: 200px;
-  height: 120px;
+  width: 19%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__domo .domo__imagenes img {
   width: 100%;
-  height: 100%;
-}
-#alojamiento .alojamiento__section .section__cabana h3 {
-  left: 20%;
-  margin-top: 50px;
-}
-#alojamiento .alojamiento__section .section__cabana .cabana__lista {
-  margin-left: 15%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__cabana .cabana__imagenes {
   display: inline-block;
-  width: 200px;
-  height: 120px;
+  width: 19%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__cabana .cabana__imagenes img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* GALERIA */
@@ -1049,6 +1038,7 @@ textarea {
   position: fixed;
   right: 35px;
   bottom: 35px;
+  z-index: 500;
 }
 #footer .footer__scrollup img {
   width: 70px;
@@ -1060,14 +1050,14 @@ textarea {
 @media (max-width: 992px) {
   #menu_on {
     display: inline-block;
-    width:30px;
+    width: 30px;
     height: 20px;
     position: fixed;
     z-index: 400;
     top: 40px;
     left: 30px;
   }
-  #menu_on span{
+  #menu_on span {
     width: 100%;
     height: 4px;
     border-radius: 4px;
@@ -1075,13 +1065,13 @@ textarea {
     position: absolute;
     background: #fff;
     transition: all 0.25s ease;
-    transform-origin : 0px 100%;
+    transform-origin: 0px 100%;
   }
-  #menu_on span:nth-child(2){
+  #menu_on span:nth-child(2) {
     top: calc(50% - 2px);
   }
-  #menu_on span:nth-child(3){
-  bottom: 0;
+  #menu_on span:nth-child(3) {
+    bottom: 0;
   }
   nav {
     font-family: "lemon milk";
@@ -1089,12 +1079,16 @@ textarea {
     position: fixed;
     top: 0;
     bottom: 0;
-    left:-35%;
+    left: -35%;
     width: 35%;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
     padding: 90px 20px 30px;
-    background: linear-gradient(rgba(0, 0, 0, 0.800), #2a62b2, rgba(0, 0, 0, 0.800));
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      #2a62b2,
+      rgba(0, 0, 0, 0.8)
+    );
     opacity: 0;
     transition: all 0.75s ease;
     font-size: 1em;
@@ -1121,27 +1115,27 @@ textarea {
     display: block;
   }
   nav a {
-    display:block;
+    display: block;
     text-decoration: none;
     padding: 10px;
-    color: rgba(255,255,255,0.75);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: all ease 0.25s;
   }
   nav a:hover {
-    color: rgba(255,255,255,1);
-    border-bottom-color:rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
   }
-  .visible_menu span:nth-child(1){
-    transform: rotate(45deg) translate(-2px,1px); 
+  .visible_menu span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 1px);
   }
-  .visible_menu span:nth-child(2){
+  .visible_menu span:nth-child(2) {
     opacity: 0;
   }
-  .visible_menu span:nth-child(3){
-    transform: rotate(-45deg) translate(-3px,3px); 
+  .visible_menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px, 3px);
   }
-  .visible_menu nav{
+  .visible_menu nav {
     left: 0;
     opacity: 1;
   }
@@ -1152,7 +1146,6 @@ textarea {
     margin-top: 38px;
   }
   #header .logo__mobile {
-    position: fixed;
     z-index: 400;
   }
   #header .logo__mobile img {
@@ -1165,6 +1158,10 @@ textarea {
   .banner h2 {
     font-size: 2rem;
     letter-spacing: 1.5rem;
+  }
+
+  #alojamiento {
+    margin-top: 550px;
   }
 
   #footer .footer__qr {
@@ -1182,6 +1179,21 @@ textarea {
   .banner {
     height: 500px;
   }
+  #alojamiento {
+    margin-top: 450px;
+  }
+}
+
+/* MEDIA 768 */
+
+@media (max-width: 768px) {
+  #alojamiento .alojamiento__section .img__container {
+    display: none;
+  }
+  #alojamiento .alojamiento__section .section__domo .domo__lista ul,
+  .section__cabana .cabana__lista ul {
+    margin-bottom: 50px;
+  }
 }
 
 /* MEDIA 576 */
@@ -1196,7 +1208,6 @@ textarea {
     margin: 30px 20px 0 0;
   }
   #header .logo__mobile {
-    position: fixed;
     z-index: 400;
   }
   #header .logo__mobile img {
@@ -1208,5 +1219,9 @@ textarea {
   }
   .banner h2 {
     letter-spacing: 0.5rem;
+  }
+
+  #alojamiento {
+    margin-top: 280px;
   }
 }

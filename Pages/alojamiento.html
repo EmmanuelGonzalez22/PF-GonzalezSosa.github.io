@@ -21,17 +21,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript">
-      $( document ).ready(function() {
-        $('#menu_on').click(function(){
-          $('body').toggleClass('visible_menu');
-        })
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
       });
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
   </head>
 
   <!-- TERMINA HEAD -->
@@ -78,7 +85,13 @@
           <li><a href="../Pages/contact.html">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="logo__mobile"><a href="../index.html"><img src="../Img/Logo/large_mountainbreed-recortado.png" alt="logoMedia"></a></div>
+      <div class="logo__mobile">
+        <a href="../index.html"
+          ><img
+            src="../Img/Logo/large_mountainbreed-recortado.png"
+            alt="logoMedia"
+        /></a>
+      </div>
     </header>
 
     <!-- TERMINA HEADER -->
@@ -90,72 +103,230 @@
     <!-- EMPIEZA MAIN -->
 
     <main id="alojamiento">
-      <div class="container">
-      <section class="alojamiento__section">
+      <section class="alojamiento__section container">
         <h2>DECIDI DONDE VA A SER TU PERNOCTE</h2>
         <article class="section__domo">
-          <h3>EL DOMO</h3>
-          <div class="domo__lista">
-            <ul>
-              <li>Capacidad para 15 personas</li>
-              <li>Baño seco</li>
-              <li>Ducha con agua caliente</li>
-              <li>Salamandra a leña</li>
-              <li>Living comedor</li>
-              <li>Cocina</li>
-              <li>5 camas de 2 plazas</li>
-              <li>5 camas de 1 plaza</li>
-              <li>Jacuzzi al aire libre</li>
-            </ul>
+          <div class="container">
+            <div class="row flex-row-reverse align-items-center">
+              <div class="col-12 text-center mb-5">
+                <h3 class="text-decoration-underline">EL DOMO</h3>
+              </div>
+              <div class="domo__lista col-md-5 text-center">
+                <ul>
+                  <li>Capacidad para 15 personas</li>
+                  <li>Baño seco</li>
+                  <li>Ducha con agua caliente</li>
+                  <li>Salamandra a leña</li>
+                  <li>Living comedor</li>
+                  <li>Cocina</li>
+                  <li>5 camas de 2 plazas</li>
+                  <li>5 camas de 1 plaza</li>
+                  <li>Jacuzzi al aire libre</li>
+                </ul>
+              </div>
+              <div class="col-md-7">
+                <div
+                  id="carouselExampleFade"
+                  class="mb-5 carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="../Img/Alojamiento/domo.jpg"
+                        class="d-block w-100"
+                        alt="domo"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/domo1.jpg"
+                        class="d-block w-100"
+                        alt="domo1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/domo2.jpg"
+                        class="d-block w-100"
+                        alt="domo2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/domo3.jpg"
+                        class="d-block w-100"
+                        alt="domo3"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/domo4.jpg"
+                        class="d-block w-100"
+                        alt="domo4"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="domo__imagenes">
-            <img src="../Img/Alojamiento/domo.jpg" alt="domo" />
-          </div>
-          <div class="domo__imagenes">
-            <img src="../Img/Alojamiento/domo1.jpg" alt="domo1" />
-          </div>
-          <div class="domo__imagenes">
-            <img src="../Img/Alojamiento/domo2.jpg" alt="domo2" />
-          </div>
-          <div class="domo__imagenes">
-            <img src="../Img/Alojamiento/domo3.jpg" alt="domo3" />
-          </div>
-          <div class="domo__imagenes">
-            <img src="../Img/Alojamiento/domo4.jpg" alt="domo4" />
+          <div class="container mt-md-3 img__container">
+            <div class="row">
+              <div class="col12">
+                <div class="domo__imagenes">
+                  <img src="../Img/Alojamiento/domo.jpg" alt="domo" />
+                </div>
+                <div class="domo__imagenes">
+                  <img src="../Img/Alojamiento/domo1.jpg" alt="domo1" />
+                </div>
+                <div class="domo__imagenes">
+                  <img src="../Img/Alojamiento/domo2.jpg" alt="domo2" />
+                </div>
+                <div class="domo__imagenes">
+                  <img src="../Img/Alojamiento/domo3.jpg" alt="domo3" />
+                </div>
+                <div class="domo__imagenes">
+                  <img src="../Img/Alojamiento/domo4.jpg" alt="domo4" />
+                </div>
+              </div>
+            </div>
           </div>
         </article>
         <article class="section__cabana">
-          <h3>LA CABAÑA</h3>
-          <div class="cabana__lista">
-            <ul>
-              <li>3 habitaciones con capacidad para 7/8 personas</li>
-              <li>Desayuno, almuerzo y cena incluidos</li>
-              <li>Living comedor amplio con hogar</li>
-              <li>Servicio Wi-Fi</li>
-              <li>Baño con jacuzzi</li>
-              <li>Cocina completa</li>
-              <li>Calefacción a leña</li>
-              <li>Traslado al "base camp" en 4x4 y motos de nieve</li>
-            </ul>
-          </div>
-          <div class="cabana__imagenes">
-            <img src="../Img/Alojamiento/cabana.jpg" alt="cabana" />
-          </div>
-          <div class="cabana__imagenes">
-            <img src="../Img/Alojamiento/cabana1.jpg" alt="cabana1" />
-          </div>
-          <div class="cabana__imagenes">
-            <img src="../Img/Alojamiento/cabana2.jpg" alt="cabana2" />
-          </div>
-          <div class="cabana__imagenes">
-            <img src="../Img/Alojamiento/cabana3.jpg" alt="cabana3" />
-          </div>
-          <div class="cabana__imagenes">
-            <img src="../Img/Alojamiento/cabana4.jpg" alt="cabana4" />
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 text-center mb-5 mt-lg-5">
+                <h3 class="text-decoration-underline">LA CABAÑA</h3>
+              </div>
+              <div class="cabana__lista col-md-5 text-center">
+                <ul>
+                  <li>3 habitaciones con capacidad para 7/8 personas</li>
+                  <li>Desayuno, almuerzo y cena incluidos</li>
+                  <li>Living comedor amplio con hogar</li>
+                  <li>Servicio Wi-Fi</li>
+                  <li>Baño con jacuzzi</li>
+                  <li>Cocina completa</li>
+                  <li>Calefacción a leña</li>
+                  <li>Traslado al "base camp" en 4x4 y motos de nieve</li>
+                </ul>
+              </div>
+              <div class="col-md-7">
+                <div
+                  id="carouselExampleFade2"
+                  class="mb-5 carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="../Img/Alojamiento/cabana.jpg"
+                        class="d-block w-100"
+                        alt="cabana"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/cabana1.jpg"
+                        class="d-block w-100"
+                        alt="cabana1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/cabana2.jpg"
+                        class="d-block w-100"
+                        alt="cabana2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/cabana3.jpg"
+                        class="d-block w-100"
+                        alt="cabana3"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../Img/Alojamiento/cabana4.jpg"
+                        class="d-block w-100"
+                        alt="cabana4"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleFade2"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleFade2"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="container mt-md-3 img__container">
+                <div class="row">
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana.jpg" alt="cabana" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana1.jpg" alt="cabana1" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana2.jpg" alt="cabana2" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana3.jpg" alt="cabana3" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana4.jpg" alt="cabana4" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>
-      </div>
     </main>
 
     <!-- TERMINA MAIN -->
@@ -194,6 +365,10 @@
 
     <!-- TERMINA FOOTER -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
