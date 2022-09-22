@@ -26,6 +26,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -39,6 +40,7 @@
         });
       });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <!-- TERMINA HEAD -->
@@ -107,10 +109,18 @@
         <h2>DECIDI DONDE VA A SER TU PERNOCTE</h2>
         <article class="section__domo">
           <div class="container">
-            <div class="row flex-row-reverse align-items-center">
+            <div class="row">
               <div class="col-12 text-center mb-4">
-                <h3 class="text-decoration-underline">EL DOMO</h3>
+                <h3
+                  class="text-decoration-underline"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  EL DOMO
+                </h3>
               </div>
+            </div>
+            <div class="row flex-row-reverse align-items-center">
               <div class="domo__lista col-md-5 text-center">
                 <ul>
                   <li>Capacidad para 15 personas</li>
@@ -219,10 +229,18 @@
         </article>
         <article class="section__cabana">
           <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
               <div class="col-12 text-center mb-4 mt-lg-5">
-                <h3 class="text-decoration-underline">LA CABAÑA</h3>
+                <h3
+                  class="text-decoration-underline"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  LA CABAÑA
+                </h3>
               </div>
+            </div>
+            <div class="row align-items-center">
               <div class="cabana__lista col-md-5 text-center">
                 <ul>
                   <li>3 habitaciones con capacidad para 7/8 personas</li>
@@ -304,24 +322,24 @@
                   </button>
                 </div>
               </div>
-              <div class="container mt-md-3 img__container">
-                <div class="row text-end">
-                  <div class="col12">
-                    <div class="cabana__imagenes">
-                      <img src="../Img/Alojamiento/cabana.jpg" alt="cabana" />
-                    </div>
-                    <div class="cabana__imagenes">
-                      <img src="../Img/Alojamiento/cabana1.jpg" alt="cabana1" />
-                    </div>
-                    <div class="cabana__imagenes">
-                      <img src="../Img/Alojamiento/cabana2.jpg" alt="cabana2" />
-                    </div>
-                    <div class="cabana__imagenes">
-                      <img src="../Img/Alojamiento/cabana3.jpg" alt="cabana3" />
-                    </div>
-                    <div class="cabana__imagenes">
-                      <img src="../Img/Alojamiento/cabana4.jpg" alt="cabana4" />
-                    </div>
+            </div>
+            <div class="container mt-md-3 pe-0 img__container">
+              <div class="row text-end">
+                <div class="col12">
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana.jpg" alt="cabana" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana1.jpg" alt="cabana1" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana2.jpg" alt="cabana2" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana3.jpg" alt="cabana3" />
+                  </div>
+                  <div class="cabana__imagenes">
+                    <img src="../Img/Alojamiento/cabana4.jpg" alt="cabana4" />
                   </div>
                 </div>
               </div>
@@ -352,7 +370,7 @@
               <p class="mb-0">&copy; Mountain Breed 2022</p>
             </div>
           </div>
-          <div class="col-lg-2 col-3">
+          <div class="col-lg-1 col-3">
             <div class="footer__redes">
               <a
                 href="https://www.instagram.com/breedmountain/"
@@ -368,7 +386,7 @@
               /></a>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <div class="footer__qr">
               <img src="../Img/Codigo QR/qr.png" alt="qr" />
             </div>
@@ -384,6 +402,9 @@
 
     <!-- TERMINA FOOTER -->
 
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
