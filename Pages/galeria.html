@@ -11,7 +11,6 @@
       href="../Img/Logo/large_mountainbreed_logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,22 +21,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript">
-      $( document ).ready(function() {
-        $('#menu_on').click(function(){
-          $('body').toggleClass('visible_menu');
-        })
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
       });
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
 
   <!-- TERMINA HEAD -->
 
-  <body class="bg-black">
+  <body>
     <!-- EMPIEZA HEADER -->
 
     <header id="header">
@@ -47,7 +54,7 @@
           America
         </h1>
       </div>
-      <a href="#" id="menu_on">
+      <a href="#!" id="menu_on">
         <span></span>
         <span></span>
         <span></span>
@@ -79,7 +86,13 @@
           <li><a href="../Pages/contact.html">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="logo__mobile"><a href="../index.html"><img src="../Img/Logo/large_mountainbreed-recortado.png" alt="logoMedia"></a></div>
+      <div class="logo__mobile">
+        <a href="../index.html"
+          ><img
+            src="../Img/Logo/large_mountainbreed-recortado.png"
+            alt="logoMedia"
+        /></a>
+      </div>
     </header>
 
     <!-- TERMINA HEADER -->
@@ -95,131 +108,299 @@
     <!-- EMPIEZA MAIN -->
 
     <main id="galeria">
-      <h2>Estos momentos pueden ser tuyos</h2>
       <div class="container">
-      <div class="galeria__imagenes">
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria1"
-          />
+        <h2>Estos momentos pueden ser tuyos</h2>
+        <div class="row m-5 mb-0">
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape1.png"
+                alt="landscape1"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape2.png"
+                alt="landscape2"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape3.png"
+                alt="landscape3"
+            /></a>
+          </div>
         </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria2"
-          />
+        <div class="row m-5 mb-0 mt-0">
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape4.png"
+                alt="landscape4"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/portrait1.png"
+                alt="portrait1"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/portrait2.png"
+                alt="portrait2"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape5.png"
+                alt="landscape5"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape6.png"
+                alt="landscape6"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/portrait3.png"
+                alt="portrait3"
+            /></a>
+          </div>
         </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria2"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria3"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria4"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria5"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria6"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria7"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria8"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria9"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria10"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria11"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria12"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria13"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria14"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria15"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria16"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria17"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria18"
-          />
-        </div>
-        <div class="imagenes__catalogo">
-          <img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
-            alt="galeria19"
-          />
+        <div class="row m-5 mt-0">
+          <div class="col-md-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape10.png"
+                alt="landscape10"
+            /></a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape11.png"
+                alt="landscape11"
+            /></a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage12"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../Img/Galeria/landscape12.png"
+                alt="landscape12"
+            /></a>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Modal gallery -->
+
+      <!-- Image 1 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage1"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage1"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape1.png" alt="landscape1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage2"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage2"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape2.png" alt="landscape2" />
+          </div>
+        </div>
+      </div>
+      <!-- Image 3 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage3"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage3"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape3.png" alt="landscape3" />
+          </div>
+        </div>
+      </div>
+      <!-- Image 4 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage4"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage4"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape4.png" alt="landscape4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 5 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage5"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage5"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/portrait1.png" alt="portrait1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 6 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage6"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage6"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/portrait2.png" alt="portrait2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 7 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage7"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage7"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape5.png" alt="landscape5" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 8 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage8"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage8"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape6.png" alt="landscape6" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 9 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage9"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage9"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/portrait3.png" alt="portrait3" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 10 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage10"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage10"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape10.png" alt="landscape10" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 11 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage11"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage11"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape11.png" alt="landscape11" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 12 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage12"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage12"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../Img/Galeria/landscape12.png" alt="landscape12" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gallery end -->
     </main>
 
     <!-- TERMINA MAIN -->
@@ -227,37 +408,58 @@
     <!-- EMPIEZA FOOTER -->
 
     <footer id="footer">
-      <div class="footer__logo">
-        <a href="../index.html"
-          ><img src="../Img/Logo/large_mountainbreed-recortado.png" alt="logo"
-        /></a>
-      </div>
-      <div class="footer__copyright">
-        <p>&copy; Mountain Breed 2022</p>
-      </div>
-      <div class="footer__redes">
-        <a href="https://www.instagram.com/breedmountain/" target="_blank">
-          <img src="../Img/Logo/instagram-logo.png" alt="ig-logo"
-        /></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100084511700801"
-          target="_blank"
-        >
-          <img src="../Img/Logo/facebook-logo.png" alt="fb-logo"
-        /></a>
-      </div>
-      <div class="footer__qr">
-        <img src="../Img/Codigo QR/qr.png" alt="qr" />
-      </div>
-      <div class="footer__scrollup">
-        <a href="#"
-          ><img src="../Img/Logo/flechaup-logo.png" alt="scrolling-top"
-        /></a>
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-lg-4 col-3">
+            <div class="footer__logo">
+              <a href="../index.html"
+                ><img
+                  src="../Img/Logo/large_mountainbreed-recortado.png"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6">
+            <div class="footer__copyright">
+              <p class="mb-0">&copy; Mountain Breed 2022</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="footer__redes">
+              <a
+                href="https://www.instagram.com/breedmountain/"
+                target="_blank"
+              >
+                <img src="../Img/Logo/instagram-logo.png" alt="ig-logo"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100084511700801"
+                target="_blank"
+              >
+                <img src="../Img/Logo/facebook-logo.png" alt="fb-logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer__qr">
+              <img src="../Img/Codigo QR/qr.png" alt="qr" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__scrollup">
+          <a href="#"
+            ><img src="../Img/Logo/flechaup-logo.png" alt="scrolling-top"
+          /></a>
+        </div>
       </div>
     </footer>
 
     <!-- TERMINA FOOTER -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

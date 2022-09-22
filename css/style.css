@@ -11,6 +11,18 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: "lemon milk";
+  src: url("../Fuentes/lemon_milk/LEMONMILK-Bold.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-Light.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-Medium.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf"),
+    url("../Fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+}
+
 a {
   text-decoration: none;
 }
@@ -50,7 +62,6 @@ a {
 
 .banner h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 5rem;
   letter-spacing: 2rem;
@@ -98,7 +109,6 @@ a {
 #header .header__barra h1 {
   margin: 0;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   text-align: center;
   font-size: 1rem;
   opacity: 1;
@@ -121,7 +131,6 @@ a {
     font-size: 1rem;
     list-style: none;
     font-family: "lemon milk";
-    src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   }
   #header .header__menu ul li {
     display: inline-block;
@@ -201,7 +210,6 @@ a {
 }
 #principal h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.5rem;
   font-weight: bold;
@@ -303,7 +311,6 @@ a {
   font-size: 1.6rem;
   font-weight: 900;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: white;
   opacity: 0.3;
   display: block;
@@ -357,7 +364,6 @@ a {
 }
 .paquetes__texto h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.2rem;
   font-weight: bold;
@@ -394,7 +400,6 @@ a {
 }
 #testimonios h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 3px;
@@ -433,7 +438,6 @@ a {
 }
 #indexUbicacion .indexUbicacion__formulario h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.5rem;
   font-weight: bold;
@@ -467,7 +471,6 @@ textarea {
 .indexUbicacion__formulario form .form__button input {
   padding: 5px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
 }
 .indexUbicacion__newsletter {
   margin-top: 50px;
@@ -475,7 +478,6 @@ textarea {
 }
 .indexUbicacion__newsletter h3 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 1.5rem;
   color: #2096fd;
@@ -519,7 +521,7 @@ textarea {
 }
 
 .jornadaIdeal {
-  margin: 600px 0 0 0;
+  margin: 650px 0 0 0;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -527,7 +529,6 @@ textarea {
 .jornadaIdeal h2 {
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 30px;
@@ -538,6 +539,15 @@ textarea {
   font-size: 1rem;
   text-align: justify;
   width: 50%;
+}
+
+#paquetes h2 {
+  font-family: "lemon milk";
+  color: #2096fd;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 /* TRAVESIA */
@@ -557,7 +567,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
@@ -566,7 +575,6 @@ textarea {
 .travesia__dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
@@ -594,7 +602,6 @@ textarea {
 .servicios h5 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.1rem;
   font-weight: bold;
   color: black;
@@ -661,7 +668,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
@@ -670,7 +676,6 @@ textarea {
 .catSkiing__dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
@@ -707,7 +712,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
@@ -716,7 +720,6 @@ textarea {
 .heliSkiing__dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
@@ -753,7 +756,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
@@ -766,7 +768,6 @@ textarea {
 .aventura__dia6 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
@@ -817,7 +818,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
@@ -825,7 +825,6 @@ textarea {
 #alojamiento .alojamiento__section .section__domo h3,
 .section__cabana h3 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.5rem;
   font-weight: bold;
   color: #2096fd;
@@ -863,13 +862,12 @@ textarea {
 }
 
 #galeria {
-  margin: 600px 1em 0 1em;
+  margin-top: 650px;
 }
 #galeria h2 {
   text-align: center;
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 50px;
@@ -891,7 +889,7 @@ textarea {
 }
 
 #reservar {
-  margin-top: 600px;
+  margin-top: 650px;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
@@ -900,7 +898,6 @@ textarea {
 #reservar h2 {
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin: 35px 0;
@@ -931,7 +928,6 @@ textarea {
 .reservar__form .form__button input {
   margin-left: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 00.8rem;
 }
 
@@ -946,7 +942,6 @@ textarea {
 }
 #indicaciones h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: black;
   padding: 40px 200px;
   font-size: 2rem;
@@ -976,7 +971,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.5rem;
   font-weight: bold;
   color: #2096fd;
@@ -1020,8 +1014,7 @@ textarea {
 #footer .footer__copyright p {
   text-align: center;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: black;
   font-weight: bold;
 }
@@ -1044,9 +1037,11 @@ textarea {
   right: 35px;
   bottom: 35px;
   z-index: 500;
+  width: 70px;
+  height: auto;
 }
 #footer .footer__scrollup img {
-  width: 70px;
+  width: 100%;
   height: auto;
 }
 
@@ -1080,7 +1075,6 @@ textarea {
   }
   nav {
     font-family: "lemon milk";
-    src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
     position: fixed;
     top: 0;
     bottom: 0;
@@ -1168,6 +1162,9 @@ textarea {
   #alojamiento {
     margin-top: 550px;
   }
+  #galeria {
+    margin-top: 550px;
+  }
 
   #footer .footer__qr {
     display: none;
@@ -1192,6 +1189,9 @@ textarea {
   #alojamiento {
     margin-top: 450px;
   }
+  #galeria {
+    margin-top: 450px;
+  }
   #footer .footer__logo {
     width: 150px;
     height: auto;
@@ -1208,6 +1208,16 @@ textarea {
   .section__cabana .cabana__lista ul {
     margin-bottom: 50px;
   }
+  #footer .footer__scrollup {
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    height: auto;
+  }
+  #footer .footer__redes a img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /* MEDIA 576 */
@@ -1223,7 +1233,7 @@ textarea {
   }
   #header .logo__mobile {
     z-index: 400;
-    width: 150px;
+    width: 120px;
   }
   #header .logo__mobile img {
     width: 100%;
@@ -1240,17 +1250,20 @@ textarea {
   #alojamiento {
     margin-top: 280px;
   }
+  #galeria {
+    margin-top: 280px;
+  }
 
   #footer .footer__logo {
-    width: 100px;
+    width: 75px;
     height: auto;
   }
-
   #footer .footer__redes a img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
+
   html {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
