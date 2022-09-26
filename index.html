@@ -115,8 +115,10 @@
     </header>
 
     <!-- TERMINA HEADER -->
-    <div class="vidPromo">
-      <video preload autoplay loop muted src="./videos/intro.mp4"></video>
+    <div class="container-fluid">
+      <div class="vidPromo">
+        <video preload autoplay loop muted src="./videos/intro.mp4"></video>
+      </div>
     </div>
 
     <!-- EMPIEZA MAIN -->
@@ -183,21 +185,21 @@
       <section id="testimonios">
         <h2>TESTIMONIOS</h2>
         <div class="testimonios__container">
-          <div class="testimonios__testimonio1">
+          <div class="testimonios__item">
             <img src="./Img/Testimonios/testimonio1.jpg" alt="testimonio1" />
             <p>
               "Gracias Mountain Breed por organizar éstas vacaciones, por pensar
               y cuidar cada detalle para que todo saliera perfecto!"
             </p>
           </div>
-          <div class="testimonios__testimonio2">
+          <div class="testimonios__item">
             <img src="./Img/Testimonios/testimonio2.jpg" alt="testimonio2" />
             <p>
               "Todavía estoy excitado por el fin de semana increíble que pase
               junto a mis amigos. Gracias por cumplir sueños!"
             </p>
           </div>
-          <div class="testimonios__testimonio3">
+          <div class="testimonios__item">
             <img src="./Img/Testimonios/testimonio3.jpg" alt="testimonio3" />
             <p>
               "El viaje fue soñado! Mi familia ama esquiar y lo disfrutamos
@@ -216,6 +218,7 @@
         <div class="indexUbicacion__mapa">
           <!--Iframe extraido de openstreetmap.org-->
           <iframe
+            class="mapa"
             width="425"
             height="350"
             frameborder="0"

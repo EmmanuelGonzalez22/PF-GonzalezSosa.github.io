@@ -210,7 +210,7 @@ a {
   flex-flow: row-reverse wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 #principal h2 {
   font-family: "lemon milk";
@@ -219,6 +219,7 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  text-align: center;
 }
 #principal .principal__texto {
   width: 40%;
@@ -321,38 +322,53 @@ a {
   padding: 200px 0px;
   transition: all 0.5s;
 }
-.indexPaquetes__imagenes .imagenes__img1:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/travesia.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img2:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/cat-skiing.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img3:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/heli.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img4:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/aventura-completa.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img1:hover a,
-.indexPaquetes__imagenes .imagenes__img2:hover a,
-.indexPaquetes__imagenes .imagenes__img3:hover a,
-.indexPaquetes__imagenes .imagenes__img4:hover a {
-  transform: scale(1.3);
-  opacity: 1;
-  letter-spacing: 3px;
+@media (min-width: 993px) {
+  .indexPaquetes__imagenes .imagenes__img1:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/travesia.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img2:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/cat-skiing.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img3:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/heli.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img4:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/aventura-completa.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img1:hover a,
+  .indexPaquetes__imagenes .imagenes__img2:hover a,
+  .indexPaquetes__imagenes .imagenes__img3:hover a,
+  .indexPaquetes__imagenes .imagenes__img4:hover a {
+    transform: scale(1.3);
+    opacity: 1;
+    letter-spacing: 3px;
+  }
 }
 .indexPaquetes__imagenes .imagenes__container {
   overflow: hidden;
   width: 50%;
   height: auto;
+  min-width: 384px;
 }
 
 .paquetes__texto {
@@ -382,7 +398,7 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
   transition: all 0.3s;
 }
 .paquetes__texto a:hover {
@@ -398,8 +414,8 @@ a {
   background: linear-gradient(black, #2a62b2, black);
   padding-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 #testimonios h2 {
@@ -408,6 +424,7 @@ a {
   font-weight: bold;
   letter-spacing: 3px;
   color: #2096fd;
+  margin-bottom: 20px;
 }
 #testimonios .testimonios__container {
   width: 100%;
@@ -492,6 +509,11 @@ textarea {
   font-size: 1rem;
   margin: 15px auto;
   width: 30%;
+}
+.indexUbicacion__newsletter .newsletter__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 .indexUbicacion__newsletter .newsletter__formulario input {
   width: 300px;
@@ -1175,6 +1197,34 @@ textarea {
     width: 200px;
   }
 
+  #principal {
+    flex-direction: column;
+  }
+  #principal .principal__texto,
+  #principal .principal__boton {
+    width: 80%;
+  }
+  .indexPaquetes__imagenes a {
+    opacity: 1;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: rgb(185 181 181 / 75%);
+  }
+
+  #testimonios .testimonios__container {
+    flex-direction: column;
+  }
+  #testimonios .testimonios__container .testimonios__item {
+    align-self: center;
+  }
+
+  #indexUbicacion {
+    flex-direction: column;
+  }
+  #indexUbicacion .indexUbicacion__formulario {
+    width: 80%;
+  }
+
   .banner {
     height: 600px;
   }
@@ -1225,6 +1275,16 @@ textarea {
 /* MEDIA 768 */
 
 @media (max-width: 768px) {
+  #indexUbicacion .indexUbicacion__mapa .mapa {
+    width: 320px;
+    height: 262px;
+  }
+  #indexPaquetes .indexPaquetes__imagenes .imagenes__container {
+    width: 100%;
+  }
+  .indexPaquetes__imagenes .imagenes__img2 {
+    background-position: center;
+  }
   #alojamiento .alojamiento__section .img__container {
     display: none;
   }
@@ -1270,7 +1330,28 @@ textarea {
   .banner h2 {
     letter-spacing: 0.5rem;
   }
-
+  .indexPaquetes__imagenes .imagenes__img1 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img2 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img3 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img4 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexUbicacion__newsletter p {
+    width: 80%;
+  }
+  .indexUbicacion__newsletter .newsletter__formulario .button {
+    margin-top: 20px;
+  }
   #alojamiento {
     margin-top: 280px;
   }
