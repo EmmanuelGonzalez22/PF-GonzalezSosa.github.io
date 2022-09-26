@@ -368,7 +368,6 @@ a {
   overflow: hidden;
   width: 50%;
   height: auto;
-  min-width: 384px;
 }
 
 .paquetes__texto {
@@ -1276,8 +1275,8 @@ textarea {
 
 @media (max-width: 768px) {
   #indexUbicacion .indexUbicacion__mapa .mapa {
-    width: 320px;
-    height: 262px;
+    width: 250px;
+    height: 250px;
   }
   #indexPaquetes .indexPaquetes__imagenes .imagenes__container {
     width: 100%;
@@ -1348,6 +1347,9 @@ textarea {
   }
   .indexUbicacion__newsletter p {
     width: 80%;
+  }
+  .indexUbicacion__newsletter .newsletter__formulario input {
+    width: 250px;
   }
   .indexUbicacion__newsletter .newsletter__formulario .button {
     margin-top: 20px;
