@@ -51,7 +51,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
-  height: 757px;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -69,29 +69,41 @@ a {
 }
 
 .banner__next {
-  display: inline-block;
-  position: relative;
-  left: 85%;
-  margin-top: 11%;
-  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  margin-right: 100px;
+}
+.banner__next a {
+  display: block;
   width: 70px;
 }
 .banner__next a img {
   width: 100%;
   height: auto;
+  transform: rotate(90deg);
 }
-
 .banner__back {
   display: inline-block;
   position: relative;
   left: 5%;
   margin-top: 11%;
-  transform: rotate(-90deg);
+}
+.banner__back a {
+  display: block;
   width: 70px;
 }
 .banner__back a img {
   width: 100%;
   height: auto;
+  transform: rotate(-90deg);
 }
 
 /* HEADER */
@@ -583,92 +595,138 @@ textarea {
   background-image: url("../Img/Paquetes/travesiabanner.jpg");
 }
 
-#travesia {
-  margin-top: 400px;
+#travesia,
+#catSkiing,
+#heliSkiing,
+#aventura {
+  margin-top: 650px;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
+  margin-bottom: 100px;
 }
-#travesia h2 {
-  margin-bottom: 50px;
+#travesia h2,
+#catSkiing h2,
+#heliSkiing h2,
+#aventura h2 {
   text-align: center;
-  width: 100%;
   font-family: "lemon milk";
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
 }
-#travesia .travesia__dia1 h4,
-.travesia__dia2 h4 {
-  margin-bottom: 20px;
+#travesia .dia1 h4,
+.dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
-}
-#travesia .travesia__dia1,
-.travesia__dia2 {
-  margin: 100px 250px;
   text-align: center;
 }
-#travesia .travesia__dia1 .dia1__imagen1,
-.travesia__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#travesia .travesia__dia1 p,
-.travesia__dia2 p {
+#travesia .dia1 p,
+.dia2 p {
   text-align: justify;
 }
 
+#travesia .dia1 .dia1__imagen1 img,
+#travesia .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
+}
+
 .servicios {
-  background-color: #2a62b2;
+  background: linear-gradient(black, #2a62b2, black);
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
 }
 .servicios h5 {
-  margin-bottom: 20px;
   font-family: "lemon milk";
   font-size: 1.1rem;
   font-weight: bold;
-  color: black;
+  color: #2096fd;
   text-align: center;
-}
-.servicios .servicios__noTraer,
-.servicios__traer {
-  margin: 100px 250px;
+  text-decoration: underline;
 }
 .servicios .servicios__noTraer {
-  text-align: right;
+  height: 350px;
 }
-.servicios .servicios__Traer {
-  text-align: left;
+.servicios .servicios__noTraer .noTraer__imagenes {
+  display: flex;
+  justify-content: space-around;
 }
-.servicios ul {
-  display: inline-block;
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img1 {
+  width: 35%;
+  height: auto;
+}
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img2 {
+  width: 35%;
+  height: auto;
+  align-self: flex-end;
+}
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img1 img,
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img2 img {
+  width: 100%;
+  height: auto;
+}
+.servicios .servicios__noTraer .noTraer__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.servicios .servicios__traer {
+  margin-top: 100px;
+  height: 350px;
+}
+.servicios .servicios__traer .traer__imagenes {
+  display: flex;
+  justify-content: space-around;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img1 {
+  width: 35%;
+  height: auto;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img2 {
+  width: 35%;
+  height: auto;
+  align-self: flex-end;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img1 img,
+.servicios .servicios__traer .traer__imagenes .traer__img2 img {
+  width: 100%;
+  height: auto;
+}
+.servicios .servicios__traer .traer__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .botones {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 .botones .botones__reservar,
 .botones__paquetes {
-  display: inline-block;
-  margin: 0px 13% 70px;
   text-align: center;
 }
 .botones .botones__reservar a,
 .botones__paquetes a {
-  margin-top: 20px;
   display: inline-block;
   border: 3px solid white;
   padding: 10px 30px;
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 .botones .botones__reservar a:hover,
 .botones__paquetes a:hover {
@@ -684,21 +742,6 @@ textarea {
   background-image: url("../Img/Paquetes/cat-skiingbanner.jpg");
 }
 
-#catSkiing {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#catSkiing h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-family: "lemon milk";
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
 #catSkiing .catSkiing__dia1 h4,
 .catSkiing__dia2 h4 {
   margin-bottom: 20px;
@@ -728,21 +771,6 @@ textarea {
   background-position: top;
 }
 
-#heliSkiing {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#heliSkiing h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-family: "lemon milk";
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
 #heliSkiing .heliSkiing__dia1 h4,
 .heliSkiing__dia2 h4 {
   margin-bottom: 20px;
@@ -772,21 +800,6 @@ textarea {
   background-position: top;
 }
 
-#aventura {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#aventura h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-family: "lemon milk";
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
 #aventura .aventura__dia1 h4,
 .aventura__dia2 h4,
 .aventura__dia3 h4,
@@ -1270,6 +1283,12 @@ form select {
     font-size: 2rem;
     letter-spacing: 1.5rem;
   }
+  .banner__next {
+    height: 600px;
+  }
+  .banner__next a {
+    width: 35px;
+  }
 
   .jornadaIdeal {
     margin-top: 550px;
@@ -1279,6 +1298,31 @@ form select {
   }
   .paquetes__texto .texto__paq {
     width: 50%;
+  }
+
+  #travesia {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  .dia2 .dia2__imagen2 {
+    order: -1;
+  }
+  .servicios .servicios__noTraer {
+    gap: 20px;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .servicios .servicios__traer {
+    gap: 20px;
+    height: auto;
+    margin-top: 30px;
+  }
+  .servicios .servicios__traer .traer__lista h5 {
+    color: black;
+  }
+  .botones {
+    flex-direction: column-reverse;
+    gap: 20px;
   }
   #alojamiento {
     margin-top: 550px;
@@ -1313,7 +1357,16 @@ form select {
   .banner {
     height: 500px;
   }
+  .banner__next {
+    height: 500px;
+  }
+  .banner__next a {
+    width: 30px;
+  }
   .jornadaIdeal {
+    margin-top: 450px;
+  }
+  #travesia {
     margin-top: 450px;
   }
   #alojamiento {
@@ -1330,7 +1383,6 @@ form select {
     height: auto;
   }
 }
-
 /* MEDIA 768 */
 
 @media (max-width: 768px) {
@@ -1368,6 +1420,9 @@ form select {
   }
   #indicaciones .indicaciones__img {
     width: 100%;
+  }
+  #mediosContacto .mediosContacto__container article {
+    gap: 20px;
   }
   #mediosContacto .mediosContacto__container {
     gap: 50px;
@@ -1411,6 +1466,13 @@ form select {
   .banner h2 {
     letter-spacing: 0.5rem;
   }
+  .banner__next {
+    height: 300px;
+    margin-right: 30px;
+  }
+  .banner__next a {
+    width: 20px;
+  }
   .indexPaquetes__imagenes .imagenes__img1 {
     height: 250px;
     background-position: center;
@@ -1442,6 +1504,9 @@ form select {
   .jornadaIdeal {
     margin-top: 280px;
   }
+  #travesia {
+    margin-top: 280px;
+  }
   #alojamiento {
     margin-top: 280px;
   }
@@ -1450,9 +1515,13 @@ form select {
   }
   #reservar {
     margin-top: 280px;
+    padding: 0 20px;
   }
   #reservar .reservar__form .form__button {
     align-self: center;
+  }
+  #mediosContacto h2 {
+    padding: 0 15px;
   }
   #mediosContacto article .contacto__medios .medios__img {
     width: 30px;
