@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- EMPIEZA HEAD -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo/large_mountainbreed_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <!-- TERMINA HEAD -->
+
+  <body>
+    <!-- EMPIEZA HEADER -->
+
+    <header id="header">
+      <div class="header__barra">
+        <h1>
+          Somos el centro de freeride, con el terreno esquiable mas grande de
+          America
+        </h1>
+      </div>
+      <a href="#!" id="menu_on">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <nav class="header__menu">
+        <ul class="menu__principal">
+          <li>
+            <div class="btn-group dropdown-center w-100">
+              <a href="../pages/paquetes.html">Paquetes</a>
+              <button
+                type="button"
+                class="dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu animate__animated animate__fadeIn">
+                <li>
+                  <a href="../pages/travesia.html">Travesía</a>
+                </li>
+                <li>
+                  <a href="../pages/cat-skiing.html">Cat Skiing</a>
+                </li>
+                <li>
+                  <a href="../pages/heliskiing.html">heliskiing</a>
+                </li>
+                <li>
+                  <a href="../pages/aventura-completa.html"
+                    >Aventura Completa</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../pages/alojamiento.html">ALOJAMIENTO</a></li>
+          <li class="menu__containerLogo">
+            <a href="../index.html"
+              ><img
+                id="logo"
+                src="../img/logo/large_mountainbreed-recortado.png"
+                alt="logo"
+              />
+            </a>
+          </li>
+          <li><a href="../pages/galeria.html">GALERIA</a></li>
+          <li><a href="../pages/contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="logo__mobile">
+        <a href="../index.html"
+          ><img
+            src="../img/logo/large_mountainbreed-recortado.png"
+            alt="logoMedia"
+        /></a>
+      </div>
+    </header>
+
+    <!-- TERMINA HEADER -->
+    <div class="container-fluid banner banner-gale">
+      <h2>GALERIA</h2>
+    </div>
+    <!-- EMPIEZA MAIN -->
+
+    <main id="galeria">
+      <div class="container">
+        <h2>Estos momentos pueden ser tuyos</h2>
+        <div class="row m-5 mb-0">
+          <div
+            class="col-md-4"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="2000"
+          >
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape1.jpg"
+                alt="landscape1"
+            /></a>
+          </div>
+          <div class="col-md-4" data-aos="fade-down" data-aos-duration="2000">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape2.jpg"
+                alt="landscape2"
+            /></a>
+          </div>
+          <div
+            class="col-md-4"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="2000"
+          >
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape3.jpg"
+                alt="landscape3"
+            /></a>
+          </div>
+        </div>
+        <div class="row m-5 mb-0 mt-0">
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape4.jpg"
+                alt="landscape4"
+                data-aos="fade-up-right"
+                data-aos-duration="2000"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/portrait1.jpg"
+                alt="portrait1"
+                data-aos="fade-up-right"
+                data-aos-duration="2000"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/portrait2.jpg"
+                alt="portrait2"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape5.jpg"
+                alt="landscape5"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape6.jpg"
+                alt="landscape6"
+                data-aos="fade-up-right"
+                data-aos-duration="2000"
+            /></a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/portrait3.jpg"
+                alt="portrait3"
+                data-aos="fade-up-right"
+                data-aos-duration="2000"
+            /></a>
+          </div>
+        </div>
+        <div class="row m-5 mt-0">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape10.jpg"
+                alt="landscape10"
+            /></a>
+          </div>
+          <div
+            class="col-md-4 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape11.jpg"
+                alt="landscape11"
+            /></a>
+          </div>
+          <div
+            class="col-md-4 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage12"
+              ><img
+                class="w-100 mb-4 rounded"
+                src="../img/galeria/landscape12.jpg"
+                alt="landscape12"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gallery -->
+
+      <!-- Image 1 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage1"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage1"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape1.jpg" alt="landscape1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage2"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage2"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape2.jpg" alt="landscape2" />
+          </div>
+        </div>
+      </div>
+      <!-- Image 3 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage3"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage3"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape3.jpg" alt="landscape3" />
+          </div>
+        </div>
+      </div>
+      <!-- Image 4 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage4"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage4"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape4.jpg" alt="landscape4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 5 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage5"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage5"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/portrait1.jpg" alt="portrait1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 6 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage6"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage6"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/portrait2.jpg" alt="portrait2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 7 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage7"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage7"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape5.jpg" alt="landscape5" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 8 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage8"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage8"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape6.jpg" alt="landscape6" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 9 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage9"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage9"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/portrait3.jpg" alt="portrait3" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 10 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage10"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage10"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape10.jpg" alt="landscape10" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 11 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage11"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage11"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape11.jpg" alt="landscape11" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 12 -->
+
+      <div
+        tabindex="-1"
+        aria_labelledby="modalImage12"
+        aria-hidden="true"
+        class="modal fade"
+        id="modalImage12"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <img src="../img/galeria/landscape12.jpg" alt="landscape12" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal gallery end -->
+    </main>
+
+    <!-- TERMINA MAIN -->
+
+    <!-- EMPIEZA FOOTER -->
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-lg-4 col-3">
+            <div class="footer__logo">
+              <a href="../index.html"
+                ><img
+                  src="../img/logo/large_mountainbreed-recortado.png"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6">
+            <div class="footer__copyright">
+              <p class="mb-0">&copy; Mountain Breed 2022</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-3">
+            <div class="footer__redes">
+              <a
+                href="https://www.instagram.com/breedmountain/"
+                target="_blank"
+              >
+                <img src="../img/logo/instagram-logo.png" alt="ig-logo"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100084511700801"
+                target="_blank"
+              >
+                <img src="../img/logo/facebook-logo.png" alt="fb-logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer__qr">
+              <img src="../img/codigo-qr/qr.png" alt="qr" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__scrollup">
+          <a href="#"
+            ><img src="../img/logo/flechaup-logo.png" alt="scrolling-top"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TERMINA FOOTER -->
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

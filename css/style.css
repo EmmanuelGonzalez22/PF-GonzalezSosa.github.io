@@ -11,6 +11,18 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: "lemon milk";
+  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Light.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Medium.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Regular.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+}
+
 a {
   text-decoration: none;
 }
@@ -39,8 +51,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
-  width: 100%;
-  height: auto;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,37 +62,48 @@ a {
 
 .banner h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 5rem;
   letter-spacing: 2rem;
   opacity: 0.4;
 }
 
-.banner__next {
-  display: inline-block;
-  position: relative;
-  left: 85%;
-  margin-top: 11%;
-  transform: rotate(90deg);
+.nextBack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 900px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.next__none a img {
+  display: none;
+}
+.back__none a img {
+  display: none;
+}
+.banner__next a {
+  display: block;
   width: 70px;
 }
 .banner__next a img {
   width: 100%;
   height: auto;
+  transform: rotate(90deg);
 }
-
-.banner__back {
-  display: inline-block;
-  position: relative;
-  left: 5%;
-  margin-top: 11%;
-  transform: rotate(-90deg);
+.banner__back a {
+  display: block;
   width: 70px;
 }
 .banner__back a img {
   width: 100%;
   height: auto;
+  transform: rotate(-90deg);
 }
 
 /* HEADER */
@@ -97,72 +119,80 @@ a {
   z-index: 902;
 }
 #header .header__barra h1 {
+  margin: 0;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   text-align: center;
   font-size: 1rem;
   opacity: 1;
   color: #2096fd;
   font-weight: bold;
 }
-@media (min-width: 992px) {
-#header .header__menu {
-  margin-top: 28px;
-  padding: 25px 20px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.119);
-}
-#header .header__menu ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1rem;
-  list-style: none;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-}
-#header .header__menu ul li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-#header .header__menu ul li a {
-  color: white;
-  letter-spacing: 1px;
-  font-weight: 500;
-  padding: 10px;
-  background-color: transparent;
-  display: inline-block;
-  transition: all 0.3s;
-}
-#header .header__menu ul li a:hover {
-  color: #2a62b2;
-  font-weight: 500;
-}
-#header .header__menu ul .menu__containerLogo a #logo {
-  width: 200px;
-  height: auto;
-}
-#header .header__menu ul li ul {
-  display: none;
-  position: absolute;
-  border-top: 0.2rem solid #0076c18f;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.119);
-  left: -42px;
-}
-#header .header__menu ul li:hover > ul {
-  display: block;
-}
-#header .header__menu ul li ul li {
-  font-size: 0.8rem;
-  padding: 0;
-  width: 12.1rem;
-}
-#header .logo__mobile {
-  display: none;
-}
+@media (min-width: 993px) {
+  #header .header__menu {
+    margin-top: 28px;
+    padding: 25px 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.119);
   }
+  #header .header__menu ul.menu__principal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    list-style: none;
+    font-family: "lemon milk";
+  }
+  #header .header__menu ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 6;
+  }
+  #header .header__menu ul li a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  #header .header__menu ul li a:hover {
+    color: #2a62b2;
+    font-weight: 500;
+  }
+  #header .header__menu ul li button:hover {
+    color: #2a62b2;
+  }
+  .header__menu button {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    transition: all 0.3s;
+    outline: none;
+  }
+  .header__menu .menu__principal li ul {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.119);
+    inset: 0px auto auto -68px !important;
+    text-align: center;
+    border-top: 0.2rem solid #0076c18f;
+  }
+  .header__menu .menu__principal li ul li a {
+    font-size: 00.8rem;
+  }
+  #header .header__menu ul .menu__containerLogo a #logo {
+    width: 200px;
+    height: auto;
+  }
+
+  #header .logo__mobile {
+    display: none;
+  }
+}
 /* INDEX */
 
 .vidPromo video {
@@ -180,10 +210,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
   grid-template-areas:
-  ". principal principal principal principal principal principal principal principal principal  principal ."
-  "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
-  "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
-  "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
+    ". principal principal principal principal principal principal principal principal principal  principal ."
+    "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
+    "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
+    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
 }
 
 #principal {
@@ -194,16 +224,16 @@ a {
   flex-flow: row-reverse wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 #principal h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  text-align: center;
 }
 #principal .principal__texto {
   width: 40%;
@@ -300,40 +330,53 @@ a {
   font-size: 1.6rem;
   font-weight: 900;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: white;
   opacity: 0.3;
   display: block;
   padding: 200px 0px;
   transition: all 0.5s;
 }
-.indexPaquetes__imagenes .imagenes__img1:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/travesia.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img2:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/cat-skiing.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img3:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/heli.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img4:hover {
-  transform: scale(1.2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.256)),
-    url("../Img/Paquetes/aventura-completa.jpg");
-}
-.indexPaquetes__imagenes .imagenes__img1:hover a,
-.indexPaquetes__imagenes .imagenes__img2:hover a,
-.indexPaquetes__imagenes .imagenes__img3:hover a,
-.indexPaquetes__imagenes .imagenes__img4:hover a {
-  transform: scale(1.3);
-  opacity: 1;
-  letter-spacing: 3px;
+@media (min-width: 993px) {
+  .indexPaquetes__imagenes .imagenes__img1:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/travesia.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img2:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/cat-skiing.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img3:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/heli.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img4:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.344),
+        rgba(0, 0, 0, 0.256)
+      ),
+      url("../Img/Paquetes/aventura-completa.jpg");
+  }
+  .indexPaquetes__imagenes .imagenes__img1:hover a,
+  .indexPaquetes__imagenes .imagenes__img2:hover a,
+  .indexPaquetes__imagenes .imagenes__img3:hover a,
+  .indexPaquetes__imagenes .imagenes__img4:hover a {
+    transform: scale(1.3);
+    opacity: 1;
+    letter-spacing: 3px;
+  }
 }
 .indexPaquetes__imagenes .imagenes__container {
   overflow: hidden;
@@ -354,7 +397,6 @@ a {
 }
 .paquetes__texto h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.2rem;
   font-weight: bold;
@@ -369,7 +411,7 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
   transition: all 0.3s;
 }
 .paquetes__texto a:hover {
@@ -385,17 +427,17 @@ a {
   background: linear-gradient(black, #2a62b2, black);
   padding-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 #testimonios h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 3px;
   color: #2096fd;
+  margin-bottom: 20px;
 }
 #testimonios .testimonios__container {
   width: 100%;
@@ -430,7 +472,6 @@ a {
 }
 #indexUbicacion .indexUbicacion__formulario h2 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   color: #2096fd;
   font-size: 1.5rem;
   font-weight: bold;
@@ -464,7 +505,6 @@ textarea {
 .indexUbicacion__formulario form .form__button input {
   padding: 5px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
 }
 .indexUbicacion__newsletter {
   margin-top: 50px;
@@ -472,7 +512,6 @@ textarea {
 }
 .indexUbicacion__newsletter h3 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 1.5rem;
   color: #2096fd;
@@ -483,6 +522,11 @@ textarea {
   font-size: 1rem;
   margin: 15px auto;
   width: 30%;
+}
+.indexUbicacion__newsletter .newsletter__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 .indexUbicacion__newsletter .newsletter__formulario input {
   width: 300px;
@@ -502,11 +546,11 @@ textarea {
   cursor: pointer;
 }
 .indexUbicacion__newsletter .newsletter__formulario .button:hover {
-    background-color: #2a62b2;
-    color: black;
-    font-weight: bold;
-    border: 3px solid black;
-  }
+  background-color: #2a62b2;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
+}
 
 /* PAQUETES */
 
@@ -516,25 +560,34 @@ textarea {
 }
 
 .jornadaIdeal {
-  margin: 600px 0 0 0;
+  margin-top: 650px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .jornadaIdeal h2 {
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 .jornadaIdeal p {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
   text-align: justify;
-  width: 50%;
+  width: 60%;
+}
+
+#paquetes h2 {
+  font-family: "lemon milk";
+  color: #2096fd;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* TRAVESIA */
@@ -543,95 +596,138 @@ textarea {
   background-image: url("../Img/Paquetes/travesiabanner.jpg");
 }
 
-#travesia {
-  margin-top: 400px;
+#travesia,
+#catSkiing,
+#heliSkiing,
+#aventura {
+  margin-top: 100vh;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
+  margin-bottom: 100px;
 }
-#travesia h2 {
-  margin-bottom: 50px;
+#travesia h2,
+#catSkiing h2,
+#heliSkiing h2,
+#aventura h2 {
   text-align: center;
-  width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
 }
-#travesia .travesia__dia1 h4,
-.travesia__dia2 h4 {
-  margin-bottom: 20px;
+#travesia .dia1 h4,
+.dia2 h4 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
-}
-#travesia .travesia__dia1,
-.travesia__dia2 {
-  margin: 100px 250px;
   text-align: center;
 }
-#travesia .travesia__dia1 .dia1__imagen1,
-.travesia__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#travesia .travesia__dia1 p,
-.travesia__dia2 p {
+#travesia .dia1 p,
+.dia2 p {
   text-align: justify;
 }
 
+#travesia .dia1 .dia1__imagen1 img,
+#travesia .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
+}
+
 .servicios {
-  background-color: #2a62b2;
+  background: linear-gradient(black, #2a62b2, black);
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
 }
 .servicios h5 {
-  margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.1rem;
   font-weight: bold;
-  color: black;
+  color: #2096fd;
   text-align: center;
-}
-.servicios .servicios__noTraer,
-.servicios__traer {
-  margin: 100px 250px;
+  text-decoration: underline;
 }
 .servicios .servicios__noTraer {
-  text-align: right;
+  height: 350px;
 }
-.servicios .servicios__Traer {
-  text-align: left;
+.servicios .servicios__noTraer .noTraer__imagenes {
+  display: flex;
+  justify-content: space-around;
 }
-.servicios ul {
-  display: inline-block;
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img1 {
+  width: 35%;
+  height: auto;
+}
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img2 {
+  width: 35%;
+  height: auto;
+  align-self: flex-end;
+}
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img1 img,
+.servicios .servicios__noTraer .noTraer__imagenes .noTraer__img2 img {
+  width: 100%;
+  height: auto;
+}
+.servicios .servicios__noTraer .noTraer__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.servicios .servicios__traer {
+  margin-top: 100px;
+  height: 350px;
+}
+.servicios .servicios__traer .traer__imagenes {
+  display: flex;
+  justify-content: space-around;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img1 {
+  width: 35%;
+  height: auto;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img2 {
+  width: 35%;
+  height: auto;
+  align-self: flex-end;
+}
+.servicios .servicios__traer .traer__imagenes .traer__img1 img,
+.servicios .servicios__traer .traer__imagenes .traer__img2 img {
+  width: 100%;
+  height: auto;
+}
+.servicios .servicios__traer .traer__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .botones {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 .botones .botones__reservar,
 .botones__paquetes {
-  display: inline-block;
-  margin: 0px 13% 70px;
   text-align: center;
 }
 .botones .botones__reservar a,
 .botones__paquetes a {
-  margin-top: 20px;
   display: inline-block;
   border: 3px solid white;
   padding: 10px 30px;
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 .botones .botones__reservar a:hover,
 .botones__paquetes a:hover {
@@ -647,43 +743,23 @@ textarea {
   background-image: url("../Img/Paquetes/cat-skiingbanner.jpg");
 }
 
-#catSkiing {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#catSkiing h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
+#catSkiing .dia1 h4,
+.dia2 h4 {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
-#catSkiing .catSkiing__dia1 h4,
-.catSkiing__dia2 h4 {
-  margin-bottom: 20px;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
-}
-#catSkiing .catSkiing__dia1,
-.catSkiing__dia2 {
-  margin: 100px 250px;
   text-align: center;
 }
-#catSkiing .catSkiing__dia1 .dia1__imagen1,
-.catSkiing__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#catSkiing .catSkiing__dia1 p,
-.catSkiing__dia2 p {
+#catSkiing .dia1 p,
+.dia2 p {
   text-align: justify;
+}
+
+#catSkiing .dia1 .dia1__imagen1 img,
+#catSkiing .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
 }
 
 /* HELISKIING */
@@ -693,43 +769,23 @@ textarea {
   background-position: top;
 }
 
-#heliSkiing {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#heliSkiing h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
-#heliSkiing .heliSkiing__dia1 h4,
-.heliSkiing__dia2 h4 {
+#heliSkiing .dia1 h4,
+.dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
 }
-#heliSkiing .heliSkiing__dia1,
-.heliSkiing__dia2 {
-  margin: 100px 250px;
-  text-align: center;
-}
-#heliSkiing .heliSkiing__dia1 .dia1__imagen1,
-.heliSkiing__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#heliSkiing .heliSkiing__dia1 p,
-.heliSkiing__dia2 p {
+#heliSkiing .dia1 p,
+.dia2 p {
   text-align: justify;
+}
+
+#heliSkiing .dia1 .dia1__imagen1 img,
+#heliSkiing .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
 }
 
 /* AVENTURA COMPLETA */
@@ -739,58 +795,33 @@ textarea {
   background-position: top;
 }
 
-#aventura {
-  margin-top: 400px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1rem;
-}
-#aventura h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2096fd;
-}
-#aventura .aventura__dia1 h4,
-.aventura__dia2 h4,
-.aventura__dia3 h4,
-.aventura__dia4 h4,
-.aventura__dia5 h4,
-.aventura__dia6 h4 {
+#aventura .dia1 h4,
+.dia2 h4,
+.dia3 h4,
+.dia4 h4,
+.dia5 h4,
+.dia6 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
 }
-#aventura .aventura__dia1,
-.aventura__dia2,
-.aventura__dia3,
-.aventura__dia4,
-.aventura__dia5,
-.aventura__dia6 {
-  margin: 100px 250px;
-  text-align: center;
+#aventura .dia1 .dia1__imagen1 img,
+#aventura .dia2 .dia2__imagen2 img,
+#aventura .dia3 .dia3__imagen3 img,
+#aventura .dia4 .dia4__imagen4 img,
+#aventura .dia5 .dia5__imagen5 img,
+#aventura .dia6 .dia6__imagen6 img {
+  width: 100%;
+  height: auto;
 }
-#aventura .aventura__dia1 .dia1__imagen1,
-.aventura__dia2 .dia2__imagen2,
-.aventura__dia3 .dia3__imagen3,
-.aventura__dia4 .dia4__imagen4,
-.aventura__dia5 .dia5__imagen5,
-.aventura__dia6 .dia6__imagen6 {
-  text-align: left;
-}
-#aventura .aventura__dia1 p,
-.aventura__dia2 p,
-.aventura__dia3 p,
-.aventura__dia4 p,
-.aventura__dia5 p,
-.aventura__dia6 p {
+#aventura .dia1 p,
+.dia2 p,
+.dia3 p,
+.dia4 p,
+.dia5 p,
+.dia6 p {
   text-align: justify;
 }
 
@@ -802,7 +833,7 @@ textarea {
 }
 
 #alojamiento {
-  margin-top: 600px;
+  margin-top: 650px;
 }
 #alojamiento .alojamiento__section {
   font-family: "Poppins", sans-serif;
@@ -814,53 +845,40 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
 }
 #alojamiento .alojamiento__section .section__domo h3,
 .section__cabana h3 {
-  margin-bottom: 30px;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.5rem;
   font-weight: bold;
   color: #2096fd;
-  position: relative;
-  left: 70%;
-  display: inline-block;
 }
-#alojamiento .alojamiento__section .section__domo .domo__lista,
-.section__cabana .cabana__lista {
-  text-align: justify;
-  margin-left: 68%;
-  margin-bottom: 50px;
+#alojamiento .alojamiento__section .section__domo .domo__lista ul,
+.section__cabana .cabana__lista ul {
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+  padding: 0;
 }
 #alojamiento .alojamiento__section .section__domo .domo__imagenes {
   display: inline-block;
-  width: 200px;
-  height: 120px;
+  width: 19%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__domo .domo__imagenes img {
   width: 100%;
-  height: 100%;
-}
-#alojamiento .alojamiento__section .section__cabana h3 {
-  left: 20%;
-  margin-top: 50px;
-}
-#alojamiento .alojamiento__section .section__cabana .cabana__lista {
-  margin-left: 15%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__cabana .cabana__imagenes {
   display: inline-block;
-  width: 200px;
-  height: 120px;
+  width: 19%;
+  height: auto;
 }
 #alojamiento .alojamiento__section .section__cabana .cabana__imagenes img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* GALERIA */
@@ -871,13 +889,12 @@ textarea {
 }
 
 #galeria {
-  margin: 600px 1em 0 1em;
+  margin-top: 650px;
 }
 #galeria h2 {
   text-align: center;
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 50px;
@@ -899,7 +916,7 @@ textarea {
 }
 
 #reservar {
-  margin-top: 600px;
+  margin-top: 650px;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
@@ -908,69 +925,97 @@ textarea {
 #reservar h2 {
   color: #2096fd;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-weight: bold;
   font-size: 2rem;
   margin: 35px 0;
 }
-#reservar .reservar__form {
-  width: 75%;
-  height: auto;
-}
+
 #reservar .reservar__form form {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: flex-start;
-  line-height: 3rem;
-  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
+  color: white;
+  text-align: left;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#reservar .reservar__form form label {
+  font-weight: bolder;
+  color: #999;
 }
 
-.reservar__form .nombreApellido input {
-  display: inline-block;
-  width: 450px;
+#reservar .reservar__form form input,
+form select {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
 }
-.reservar__form .form__button {
-  margin: 30px 0;
+#reservar .reservar__form .form__nivel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#reservar .reservar__form .form__nivel input {
+  width: auto;
+  margin: 0 10px 0 30px;
+}
+#reservar .reservar__form form textarea {
+  border: 2px solid #2096fd;
+  margin-top: 3px;
+}
+#reservar .reservar__form .form__button {
+  margin: 20px 0;
   align-self: flex-end;
 }
-.reservar__form .form__button input {
-  margin-left: 20px;
-  font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 00.8rem;
+#reservar .reservar__form .form__button input {
+  display: inline-block;
+  border: 3px solid #2096fd;
+  padding: 10px 30px;
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  background-color: black;
+}
+#reservar .reservar__form .form__button input:hover {
+  background-color: #2a62b2;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
 }
 
 #indicaciones {
-  background-color: #2a62b2;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  background: linear-gradient(black, #2a62b2, black);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
   margin-bottom: 30px;
+  padding: 0;
 }
 #indicaciones h2 {
+  width: 50%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  color: black;
-  padding: 40px 200px;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
+  text-align: center;
 }
 #indicaciones .indicaciones__texto {
-  width: 70%;
+  width: 50%;
 }
 #indicaciones .indicaciones__texto p {
+  padding: 0 100px;
   font-family: "Poppins", sans-serif;
-  color: black;
-  font-size: 1.3rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+#indicaciones .indicaciones__img {
+  width: 50%;
 }
 #indicaciones img {
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 
@@ -984,7 +1029,6 @@ textarea {
   text-align: center;
   width: 100%;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
   font-size: 1.5rem;
   font-weight: bold;
   color: #2096fd;
@@ -997,15 +1041,21 @@ textarea {
 #mediosContacto article .contacto__medios {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+#mediosContacto article .contacto__medios .medios__img {
+  width: 70px;
+  height: auto;
 }
 #mediosContacto .contacto__medios img {
-  width: 80px;
-  margin: 0 40px;
+  width: 100%;
+  height: auto;
 }
 #mediosContacto .contacto__medios p {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
+  margin: 0;
 }
 
 /* FOOTER */
@@ -1013,21 +1063,22 @@ textarea {
 #footer {
   margin-top: 50px;
   padding: 20px 0;
-  display: grid;
-  grid-template-columns: 30% 40% 5% 15% 10%;
-  justify-items: space-around;
-  align-items: center;
   background-image: url("../Img/footer-back.jpg");
   background-size: contain;
-  text-align: center;
+}
+#footer .footer__logo {
+  width: 200px;
+  height: auto;
+  margin: auto;
 }
 #footer .footer__logo img {
-  width: 250px;
+  width: 100%;
+  height: auto;
 }
 #footer .footer__copyright p {
+  text-align: center;
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: black;
   font-weight: bold;
 }
@@ -1035,20 +1086,26 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: space-evenly;
-  justify-self: flex-start;
+}
+
+#footer .footer__qr {
+  width: 150px;
+  height: auto;
 }
 #footer .footer__qr img {
-  width: 150px;
+  width: 100%;
   height: auto;
 }
 #footer .footer__scrollup {
   position: fixed;
   right: 35px;
   bottom: 35px;
+  z-index: 500;
+  width: 70px;
+  height: auto;
 }
 #footer .footer__scrollup img {
-  width: 100px;
+  width: 100%;
   height: auto;
 }
 
@@ -1057,14 +1114,14 @@ textarea {
 @media (max-width: 992px) {
   #menu_on {
     display: inline-block;
-    width:30px;
+    width: 30px;
     height: 20px;
     position: fixed;
     z-index: 400;
     top: 40px;
     left: 30px;
   }
-  #menu_on span{
+  #menu_on span {
     width: 100%;
     height: 4px;
     border-radius: 4px;
@@ -1072,32 +1129,37 @@ textarea {
     position: absolute;
     background: #fff;
     transition: all 0.25s ease;
-    transform-origin : 0px 100%;
+    transform-origin: 0px 100%;
   }
-  #menu_on span:nth-child(2){
+  #menu_on span:nth-child(2) {
     top: calc(50% - 2px);
   }
-  #menu_on span:nth-child(3){
-  bottom: 0;
+  #menu_on span:nth-child(3) {
+    bottom: 0;
   }
   nav {
     font-family: "lemon milk";
-    src: url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf");
     position: fixed;
     top: 0;
     bottom: 0;
-    left:-35%;
+    left: -50%;
     width: 35%;
-    height: 500px;
-    z-index: 1;
+    height: 100vh;
+    z-index: 100;
     padding: 90px 20px 30px;
-    background: linear-gradient(rgba(0, 0, 0, 0.800), #2a62b2, rgba(0, 0, 0, 0.800));
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      #2a62b2,
+      rgba(0, 0, 0, 0.8)
+    );
     opacity: 0;
     transition: all 0.75s ease;
     font-size: 1em;
     overflow-y: auto;
   }
-  #header .header__menu ul {
+  #header .header__menu ul.menu__principal {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -1108,38 +1170,59 @@ textarea {
   #header .header__menu ul li {
     width: 100%;
   }
-  #header .header__menu ul li ul {
-    display: none;
-    font-size: 0.7rem;
+  nav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  #header .header__menu ul li:hover > ul {
-    display: block;
+  nav ul li:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.4);
   }
   nav a {
-    display:block;
+    display: block;
     text-decoration: none;
     padding: 10px;
-    color: rgba(255,255,255,0.75);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.75);
     transition: all ease 0.25s;
   }
   nav a:hover {
-    color: rgba(255,255,255,1);
-    border-bottom-color:rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 1);
   }
-  .visible_menu span:nth-child(1){
-    transform: rotate(45deg) translate(-2px,1px); 
+  nav button:hover {
+    color: rgba(255, 255, 255, 1);
   }
-  .visible_menu span:nth-child(2){
+  .header__menu button {
+    background-color: transparent;
+    border: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    outline: none;
+    transition: all 0.3s;
+  }
+  .header__menu .menu__principal li ul {
+    background: linear-gradient(rgb(0, 0, 0), #2a63b2, rgb(0, 0, 0));
+    inset: 0px auto auto -15px !important;
+  }
+  .header__menu .menu__principal li ul li a {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all ease 0.25s;
+    font-size: 0.8rem;
+  }
+  .header__menu .menu__principal li ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  .visible_menu span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+  .visible_menu span:nth-child(2) {
     opacity: 0;
   }
-  .visible_menu span:nth-child(3){
-    transform: rotate(-45deg) translate(-3px,3px); 
+  .visible_menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px, 3px);
   }
-  .visible_menu nav{
+  .visible_menu nav {
     left: 0;
     opacity: 1;
   }
+
   #header {
     display: flex;
     justify-content: center;
@@ -1152,13 +1235,211 @@ textarea {
   #header .logo__mobile img {
     width: 200px;
   }
+
+  #principal {
+    flex-direction: column;
+  }
+  #principal .principal__texto,
+  #principal .principal__boton {
+    width: 80%;
+  }
+  .indexPaquetes__imagenes a {
+    opacity: 1;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: rgb(185 181 181 / 75%);
+  }
+
+  #testimonios .testimonios__container {
+    flex-direction: column;
+  }
+  #testimonios .testimonios__container .testimonios__item {
+    align-self: center;
+  }
+
+  #indexUbicacion {
+    flex-direction: column;
+  }
+  #indexUbicacion .indexUbicacion__formulario {
+    width: 80%;
+  }
+
+  .banner {
+    height: 600px;
+  }
+  .banner h2 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+
+  .nextBack {
+    display: none;
+  }
+
+  .jornadaIdeal {
+    margin-top: 550px;
+  }
+  .jornadaIdeal p {
+    width: 80%;
+  }
+  .paquetes__texto .texto__paq {
+    width: 50%;
+  }
+
+  #travesia {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  #catSkiing {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  #heliSkiing {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  #aventura {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  .dia2 .dia2__imagen2,
+  .dia4 .dia4__imagen4,
+  .dia6 .dia6__imagen6 {
+    order: -1;
+  }
+  .servicios .servicios__noTraer {
+    gap: 20px;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .servicios .servicios__traer {
+    gap: 20px;
+    height: auto;
+    margin-top: 30px;
+  }
+  .servicios .servicios__traer .traer__lista h5 {
+    color: black;
+  }
+  .botones {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  #alojamiento {
+    margin-top: 550px;
+  }
+  #galeria {
+    margin-top: 550px;
+  }
+  #reservar {
+    margin-top: 550px;
+  }
+  #indicaciones .indicaciones__texto p {
+    padding: 0 10px;
+  }
+
+  #footer .footer__qr {
+    display: none;
+  }
+
+  #footer .footer__redes {
+    align-items: flex-end;
+    flex-direction: row;
+  }
 }
 
+/* MEDIA 786 */
+
+@media (max-width: 786px) {
+  #header .header__barra {
+    display: none;
+  }
+
+  .banner {
+    height: 500px;
+  }
+  .jornadaIdeal {
+    margin-top: 450px;
+  }
+  #travesia {
+    margin-top: 450px;
+  }
+  #catSkiing {
+    margin-top: 450px;
+  }
+  #heliSkiing {
+    margin-top: 450px;
+  }
+  #aventura {
+    margin-top: 450px;
+  }
+  #alojamiento {
+    margin-top: 450px;
+  }
+  #galeria {
+    margin-top: 450px;
+  }
+  #reservar {
+    margin-top: 450px;
+  }
+  #footer .footer__logo {
+    width: 150px;
+    height: auto;
+  }
+}
 /* MEDIA 768 */
 
 @media (max-width: 768px) {
-  #header .header__barra {
+  #indexUbicacion .indexUbicacion__mapa .mapa {
+    width: 250px;
+    height: 250px;
+  }
+  .indexPaquetes__imagenes .imagenes__container {
+    width: 100%;
+  }
+  .indexPaquetes__imagenes .imagenes__img2 {
+    background-position: center;
+  }
+  #alojamiento .alojamiento__section .img__container {
     display: none;
+  }
+  #alojamiento .alojamiento__section .section__domo .domo__lista ul,
+  .section__cabana .cabana__lista ul {
+    margin-bottom: 50px;
+  }
+  #indicaciones {
+    flex-direction: column;
+  }
+  #indicaciones h2 {
+    width: 100%;
+    order: -2;
+    color: #2096fd;
+    margin-bottom: 30px;
+  }
+  #indicaciones .indicaciones__texto {
+    width: 100%;
+    order: -1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #indicaciones .indicaciones__img {
+    width: 100%;
+  }
+  #mediosContacto .mediosContacto__container article {
+    gap: 20px;
+  }
+  #mediosContacto .mediosContacto__container {
+    gap: 50px;
+    background: linear-gradient(black, #2a62b2, black);
+  }
+  #footer .footer__scrollup {
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: auto;
+  }
+  #footer .footer__redes a img {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -1175,8 +1456,97 @@ textarea {
   }
   #header .logo__mobile {
     z-index: 400;
+    width: 120px;
   }
   #header .logo__mobile img {
-    width: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner {
+    height: 300px;
+  }
+  .banner h2 {
+    letter-spacing: 0.5rem;
+  }
+  .indexPaquetes__imagenes .imagenes__img1 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img2 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img3 {
+    height: 250px;
+    background-position: center;
+  }
+  .indexPaquetes__imagenes .imagenes__img4 {
+    height: 250px;
+    background-position: center;
+  }
+  .paquetes__texto .texto__paq {
+    width: 70%;
+  }
+  .indexUbicacion__newsletter p {
+    width: 80%;
+  }
+  .indexUbicacion__newsletter .newsletter__formulario input {
+    width: 250px;
+  }
+  .indexUbicacion__newsletter .newsletter__formulario .button {
+    margin-top: 20px;
+  }
+  .jornadaIdeal {
+    margin-top: 280px;
+  }
+  #travesia {
+    margin-top: 280px;
+  }
+  #catSkiing {
+    margin-top: 280px;
+  }
+  #heliSkiing {
+    margin-top: 280px;
+  }
+  #aventura {
+    margin-top: 280px;
+  }
+  #alojamiento {
+    margin-top: 280px;
+  }
+  #galeria {
+    margin-top: 280px;
+  }
+  #reservar {
+    margin-top: 280px;
+    padding: 0 20px;
+  }
+  #reservar .reservar__form .form__button {
+    align-self: center;
+  }
+  #mediosContacto h2 {
+    padding: 0 15px;
+  }
+  #mediosContacto article .contacto__medios .medios__img {
+    width: 30px;
+    height: auto;
+  }
+  #mediosContacto .mediosContacto__mapa iframe {
+    width: 270px;
+    height: 270px;
+  }
+
+  #footer .footer__logo {
+    width: 75px;
+    height: auto;
+  }
+  #footer .footer__redes a img {
+    width: 15px;
+    height: 15px;
+  }
+
+  html {
+    font-size: 70%;
   }
 }

@@ -9,10 +9,9 @@
     <title>Home - Mountain Breed</title>
     <link
       rel="shortcut icon"
-      href="./Img/Logo/large_mountainbreed_logo.png"
+      href="./img/logo/large_mountainbreed_logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,16 +22,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript">
-      $( document ).ready(function() {
-        $('#menu_on').click(function(){ 
-          $('body').toggleClass('visible_menu'); 
-        })
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
       });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <!-- TERMINA HEAD -->
@@ -47,48 +57,72 @@
           America
         </h1>
       </div>
-      <a href="#" id="menu_on">
+      <a href="#!" id="menu_on">
         <span></span>
         <span></span>
         <span></span>
       </a>
       <nav class="header__menu">
-        <ul>
+        <ul class="menu__principal">
           <li>
-            <a href="./Pages/paquetes.html">PAQUETES</a>
-            <ul class="animate__animated animate__fadeIn">
-              <li><a href="./Pages/travesia.html">TRAVESIA</a></li>
-              <li><a href="./Pages/cat-skiing.html">CAT SKIING</a></li>
-              <li><a href="./Pages/heliskiing.html">HELISKIING</a></li>
-              <li>
-                <a href="./Pages/aventura-completa.html">AVENTURA COMPLETA</a>
-              </li>
-            </ul>
+            <div class="btn-group dropdown-center w-100">
+              <a href="./pages/paquetes.html">Paquetes</a>
+              <button
+                type="button"
+                class="dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu animate__animated animate__fadeIn">
+                <li>
+                  <a href="./pages/travesia.html">Travesía</a>
+                </li>
+                <li>
+                  <a href="./pages/cat-skiing.html">Cat Skiing</a>
+                </li>
+                <li>
+                  <a href="./pages/heliskiing.html">heliskiing</a>
+                </li>
+                <li>
+                  <a href="./pages/aventura-completa.html">Aventura Completa</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li><a href="./Pages/alojamiento.html">ALOJAMIENTO</a></li>
+          <li><a href="./pages/alojamiento.html">ALOJAMIENTO</a></li>
           <li class="menu__containerLogo">
             <a href="./index.html"
               ><img
                 id="logo"
-                src="./Img/Logo/large_mountainbreed-recortado.png"
+                src="./img/logo/large_mountainbreed-recortado.png"
                 alt="logo"
               />
             </a>
           </li>
-          <li><a href="./Pages/galeria.html">GALERIA</a></li>
-          <li><a href="./Pages/contact.html">CONTACTO</a></li>
+          <li><a href="./pages/galeria.html">GALERIA</a></li>
+          <li><a href="./pages/contact.html">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="logo__mobile"><a href="./index.html"><img src="./Img/Logo/large_mountainbreed-recortado.png" alt="logoMedia"></a></div>
+      <div class="logo__mobile">
+        <a href="./index.html"
+          ><img
+            src="./img/logo/large_mountainbreed-recortado.png"
+            alt="logoMedia"
+        /></a>
+      </div>
     </header>
 
     <!-- TERMINA HEADER -->
-    <div class="vidPromo">
-      <video preload autoplay loop muted src="./videos/intro.mp4"></video>
+    <div class="container-fluid">
+      <div class="vidPromo">
+        <video preload autoplay loop muted src="./videos/intro.mp4"></video>
+      </div>
     </div>
-    
+
     <!-- EMPIEZA MAIN -->
-    
+
     <div class="contenedor">
       <main id="principal">
         <h2>INYECTA LA DOSIS DE AVENTURA QUE PIDE TU CUERPO</h2>
@@ -106,7 +140,7 @@
           </p>
         </article>
         <div class="principal__boton">
-          <a href="./Pages/paquetes.html">VIVI TU SUEÑO</a>
+          <a href="./pages/paquetes.html">VIVI TU SUEÑO</a>
         </div>
       </main>
 
@@ -118,29 +152,29 @@
         <div class="indexPaquetes__imagenes">
           <div class="imagenes__container">
             <div class="imagenes__img1">
-              <a href="./Pages/travesia.html">TRAVESIA</a>
+              <a href="./pages/travesia.html">TRAVESIA</a>
             </div>
           </div>
           <div class="imagenes__container">
             <div class="imagenes__img2">
-              <a href="./Pages/cat-skiing.html">CAT SKIING</a>
+              <a href="./pages/cat-skiing.html">CAT SKIING</a>
             </div>
           </div>
           <div class="imagenes__container">
             <div class="imagenes__img3">
-              <a href="./Pages/heliskiing.html">HELISKIING</a>
+              <a href="./pages/heliskiing.html">HELISKIING</a>
             </div>
           </div>
           <div class="imagenes__container">
             <div class="imagenes__img4">
-              <a href="./Pages/aventura-completa.html">AVENTURA COMPLETA</a>
+              <a href="./pages/aventura-completa.html">AVENTURA COMPLETA</a>
             </div>
           </div>
         </div>
         <div class="paquetes__texto">
           <h2>TU AVENTURA EN MOUNTAIN BREED</h2>
           <p>Contactanos para un mejor asesoramiento</p>
-          <a href="./Pages/contact.html">RESERVA TU LUGAR</a>
+          <a href="./pages/contact.html">RESERVA TU LUGAR</a>
         </div>
       </section>
 
@@ -151,22 +185,22 @@
       <section id="testimonios">
         <h2>TESTIMONIOS</h2>
         <div class="testimonios__container">
-          <div class="testimonios__testimonio1">
-            <img src="./Img/Testimonios/testimonio1.jpg" alt="testimonio1" />
+          <div class="testimonios__item">
+            <img src="./img/testimonios/testimonio1.jpg" alt="testimonio1" />
             <p>
               "Gracias Mountain Breed por organizar éstas vacaciones, por pensar
               y cuidar cada detalle para que todo saliera perfecto!"
             </p>
           </div>
-          <div class="testimonios__testimonio2">
-            <img src="./Img/Testimonios/testimonio2.jpg" alt="testimonio2" />
+          <div class="testimonios__item">
+            <img src="./img/testimonios/testimonio2.jpg" alt="testimonio2" />
             <p>
               "Todavía estoy excitado por el fin de semana increíble que pase
               junto a mis amigos. Gracias por cumplir sueños!"
             </p>
           </div>
-          <div class="testimonios__testimonio3">
-            <img src="./Img/Testimonios/testimonio3.jpg" alt="testimonio3" />
+          <div class="testimonios__item">
+            <img src="./img/testimonios/testimonio3.jpg" alt="testimonio3" />
             <p>
               "El viaje fue soñado! Mi familia ama esquiar y lo disfrutamos
               muchísimo. Toda la logística nos pareció perfecta. Llegamos y
@@ -184,6 +218,7 @@
         <div class="indexUbicacion__mapa">
           <!--Iframe extraido de openstreetmap.org-->
           <iframe
+            class="mapa"
             width="425"
             height="350"
             frameborder="0"
@@ -208,7 +243,8 @@
             </div>
             <div>
               <label for="mail">Email <span class="rojo">*</span></label>
-              <input class="noBorder"
+              <input
+                class="noBorder"
                 type="email"
                 id="mail"
                 placeholder="mountainbreed@hotmail.com"
@@ -217,7 +253,13 @@
             </div>
             <div>
               <label for="comentarios">Comentarios </label>
-              <textarea class="noBorder" name="" id="comentarios" cols="30" rows="5"></textarea>
+              <textarea
+                class="noBorder"
+                name="comentarios"
+                id="comentarios"
+                cols="30"
+                rows="5"
+              ></textarea>
             </div>
             <div class="form__button">
               <input type="submit" value="ENVIAR" />
@@ -227,12 +269,14 @@
         <article class="indexUbicacion__newsletter">
           <h3>NUESTRO NEWSLETTER</h3>
           <p>
-            Si querés suscribirte a nuestro newsletter mensual de novedades, dejanos tu mail y nos pondremos en contacto.
+            Si querés suscribirte a nuestro newsletter mensual de novedades,
+            dejanos tu mail y nos pondremos en contacto.
           </p>
           <div class="newsletter__formulario">
             <form action="enviar.php" method="post">
               <label for="email"></label>
-              <input class="noBorder"
+              <input
+                class="noBorder"
                 type="email"
                 id="email"
                 placeholder="mountainbreed@gmail.com"
@@ -249,35 +293,61 @@
     <!-- EMPIEZA FOOTER -->
 
     <footer id="footer">
-      <div class="footer__logo">
-        <a href="./index.html"
-          ><img src="./Img/Logo/large_mountainbreed-recortado.png" alt="logo"
-        /></a>
-      </div>
-      <div class="footer__copyright">
-        <p>&copy; Mountain Breed 2022</p>
-      </div>
-      <div class="footer__redes">
-        <a href="https://www.instagram.com/breedmountain/" target="_blank">
-          <img src="./Img/Logo/instagram-logo.png" alt="ig-logo"
-        /></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100084511700801"
-          target="_blank"
-        >
-          <img src="./Img/Logo/facebook-logo.png" alt="fb-logo"
-        /></a>
-      </div>
-      <div class="footer__qr">
-        <img src="./Img/Codigo QR/qr.png" alt="qr" />
-      </div>
-      <div class="footer__scrollup">
-        <a href="#"
-          ><img src="./Img/Logo/flechaup-logo.png" alt="scrolling-top"
-        /></a>
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-evenly">
+          <div class="col-lg-4 col-3">
+            <div class="footer__logo">
+              <a href="./index.html"
+                ><img
+                  src="./img/logo/large_mountainbreed-recortado.png"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6">
+            <div class="footer__copyright">
+              <p class="mb-0">&copy; Mountain Breed 2022</p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-3">
+            <div class="footer__redes">
+              <a
+                href="https://www.instagram.com/breedmountain/"
+                target="_blank"
+              >
+                <img src="./img/logo/instagram-logo.png" alt="ig-logo"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100084511700801"
+                target="_blank"
+              >
+                <img src="./img/logo/facebook-logo.png" alt="fb-logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer__qr">
+              <img src="./img/codigo-qr/qr.png" alt="qr" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__scrollup">
+          <a href="#"
+            ><img src="./img/logo/flechaup-logo.png" alt="scrolling-top"
+          /></a>
+        </div>
       </div>
     </footer>
 
     <!-- TERMINA FOOTER -->
+
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
