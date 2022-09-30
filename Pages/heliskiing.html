@@ -7,7 +7,7 @@
     <title>Heliskiing</title>
     <link
       rel="shortcut icon"
-      href="../Img/Logo/large_mountainbreed_logo.png"
+      href="../img/logo/large_mountainbreed_logo.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +64,7 @@
         <ul class="menu__principal">
           <li>
             <div class="btn-group dropdown-center w-100">
-              <a href="../Pages/paquetes.html">Paquetes</a>
+              <a href="../pages/paquetes.html">Paquetes</a>
               <button
                 type="button"
                 class="dropdown-toggle dropdown-toggle-split"
@@ -75,40 +75,40 @@
               </button>
               <ul class="dropdown-menu animate__animated animate__fadeIn">
                 <li>
-                  <a href="../Pages/travesia.html">Travesía</a>
+                  <a href="../pages/travesia.html">Travesía</a>
                 </li>
                 <li>
-                  <a href="../Pages/cat-skiing.html">Cat Skiing</a>
+                  <a href="../pages/cat-skiing.html">Cat Skiing</a>
                 </li>
                 <li>
-                  <a href="../Pages/heliskiing.html">heliskiing</a>
+                  <a href="../pages/heliskiing.html">heliskiing</a>
                 </li>
                 <li>
-                  <a href="../Pages/aventura-completa.html"
+                  <a href="../pages/aventura-completa.html"
                     >Aventura Completa</a
                   >
                 </li>
               </ul>
             </div>
           </li>
-          <li><a href="../Pages/alojamiento.html">ALOJAMIENTO</a></li>
+          <li><a href="../pages/alojamiento.html">ALOJAMIENTO</a></li>
           <li class="menu__containerLogo">
             <a href="../index.html"
               ><img
                 id="logo"
-                src="../Img/Logo/large_mountainbreed-recortado.png"
+                src="../img/logo/large_mountainbreed-recortado.png"
                 alt="logo"
               />
             </a>
           </li>
-          <li><a href="../Pages/galeria.html">GALERIA</a></li>
-          <li><a href="../Pages/contact.html">CONTACTO</a></li>
+          <li><a href="../pages/galeria.html">GALERIA</a></li>
+          <li><a href="../pages/contact.html">CONTACTO</a></li>
         </ul>
       </nav>
       <div class="logo__mobile">
         <a href="../index.html"
           ><img
-            src="../Img/Logo/large_mountainbreed-recortado.png"
+            src="../img/logo/large_mountainbreed-recortado.png"
             alt="logoMedia"
         /></a>
       </div>
@@ -119,15 +119,17 @@
     <div class="container-fluid banner banner-heli">
       <h2>Heliskiing</h2>
     </div>
-    <div class="banner__next">
-      <a href="../Pages/aventura-completa.html">
-        <img src="../Img/Logo/par-de-montanas.png" alt="flechaNext" />
-      </a>
-    </div>
-    <div class="banner__back">
-      <a href="../Pages/cat-skiing.html">
-        <img src="../Img/Logo/par-de-montanas.png" alt="flechaBack" />
-      </a>
+    <div class="nextBack">
+      <div class="banner__back">
+        <a href="../pages/cat-skiing.html">
+          <img src="../img/logo/par-de-montanas.png" alt="flechaBack" />
+        </a>
+      </div>
+      <div class="banner__next">
+        <a href="../pages/aventura-completa.html">
+          <img src="../img/logo/par-de-montanas.png" alt="flechaNext" />
+        </a>
+      </div>
     </div>
 
     <!-- EMPIEZA MAIN -->
@@ -207,37 +209,47 @@
 
     <!-- EMPIEZA SECTION -->
 
-    <section class="servicios">
-      <article class="servicios__noTraer">
-        <h5>Servicios inncluidos</h5>
-        <div class="noTraer__img1">
-          <img src="" alt="notraer1" />
+    <section class="servicios container-fluid">
+      <article class="servicios__noTraer row mb-5">
+        <div class="col-lg-6 noTraer__imagenes">
+          <div class="noTraer__img1">
+            <img src="../img/paquetes/notraer1.png" alt="notraer1" />
+          </div>
+          <div class="noTraer__img2">
+            <img src="../img/paquetes/notraer2.png" alt="notraer2" />
+          </div>
         </div>
-        <div class="noTraer__img2">
-          <img src="" alt="notraer2" />
+        <div class="col-lg-6 noTraer__lista">
+          <h5 class="text-center mb-3">Servicios incluidos</h5>
+          <ul>
+            <li>Kit de seguridad (DVA, pala y sonda)</li>
+            <li>Mochila</li>
+            <li>Airbag</li>
+            <li>Seguro personal</li>
+            <li>Servicio de guías de montaña</li>
+          </ul>
         </div>
-        <ul>
-          <li>Kit de seguridad (DVA, pala y sonda)</li>
-          <li>Mochila</li>
-          <li>Airbag</li>
-          <li>Seguro personal</li>
-          <li>Servicio de guías de montaña</li>
-        </ul>
       </article>
-      <article class="servicios__traer">
-        <h5>Servicios no incluidos y que deben traer</h5>
-        <div class="traer__img1">
-          <img src="" alt="traer1" />
+      <article class="servicios__traer row mb-5">
+        <div class="col-lg-6 traer__lista">
+          <h5 class="text-center mb-3">
+            Servicios no incluidos y que deben traer
+          </h5>
+          <ul>
+            <li>Botas de esqui/snowboard</li>
+            <li>Casco, antiparras y guantes</li>
+            <li>Equipo de freeride</li>
+            <li><span class="bold">Recomendado:</span> snacks de comida</li>
+          </ul>
         </div>
-        <div class="traer__img2">
-          <img src="" alt="traer2" />
+        <div class="col-lg-6 traer__imagenes">
+          <div class="traer__img1">
+            <img src="../img/paquetes/traer1.png" alt="traer1" />
+          </div>
+          <div class="traer__img2">
+            <img src="../img/paquetes/traer2.png" alt="traer2" />
+          </div>
         </div>
-        <ul>
-          <li>Botas de esqui/snowboard</li>
-          <li>Casco, antiparras y guantes</li>
-          <li>Equipo de freeride</li>
-          <li><span class="bold">Recomendado:</span> snacks de comida</li>
-        </ul>
       </article>
     </section>
 
@@ -248,11 +260,11 @@
         <p class="bold">
           Si te quedaste con dudas, analizá nuestros otros paquetes
         </p>
-        <a href="../Pages/paquetes.html#paquetes__tittle">OTRAS OPCIONES</a>
+        <a href="../pages/paquetes.html#paquetes__tittle">OTRAS OPCIONES</a>
       </div>
       <div class="botones__reservar">
         <p class="bold">Reservá tu lugar y empezá a preparar tu equipo</p>
-        <a href="../Pages/contact.html#reservar">INICIAR AVENTURA</a>
+        <a href="../pages/contact.html#reservar">INICIAR AVENTURA</a>
       </div>
     </div>
 
@@ -265,7 +277,7 @@
             <div class="footer__logo">
               <a href="../index.html"
                 ><img
-                  src="../Img/Logo/large_mountainbreed-recortado.png"
+                  src="../img/logo/large_mountainbreed-recortado.png"
                   alt="logo"
               /></a>
             </div>
@@ -281,25 +293,25 @@
                 href="https://www.instagram.com/breedmountain/"
                 target="_blank"
               >
-                <img src="../Img/Logo/instagram-logo.png" alt="ig-logo"
+                <img src="../img/logo/instagram-logo.png" alt="ig-logo"
               /></a>
               <a
                 href="https://www.facebook.com/profile.php?id=100084511700801"
                 target="_blank"
               >
-                <img src="../Img/Logo/facebook-logo.png" alt="fb-logo"
+                <img src="../img/logo/facebook-logo.png" alt="fb-logo"
               /></a>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="footer__qr">
-              <img src="../Img/Codigo QR/qr.png" alt="qr" />
+              <img src="../img/codigo-qr/qr.png" alt="qr" />
             </div>
           </div>
         </div>
         <div class="footer__scrollup">
           <a href="#"
-            ><img src="../Img/Logo/flechaup-logo.png" alt="scrolling-top"
+            ><img src="../img/logo/flechaup-logo.png" alt="scrolling-top"
           /></a>
         </div>
       </div>

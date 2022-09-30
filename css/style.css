@@ -13,14 +13,14 @@ body {
 
 @font-face {
   font-family: "lemon milk";
-  src: url("../Fuentes/lemon_milk/LEMONMILK-Bold.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-Light.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-Medium.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-Regular.otf"),
-    url("../Fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Light.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Medium.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Regular.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
 }
 
 a {
@@ -68,10 +68,11 @@ a {
   opacity: 0.4;
 }
 
-.banner__next {
+.nextBack {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
+  gap: 900px;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -79,7 +80,12 @@ a {
   right: 0;
   bottom: 0;
   z-index: 5;
-  margin-right: 100px;
+}
+.next__none a img {
+  display: none;
+}
+.back__none a img {
+  display: none;
 }
 .banner__next a {
   display: block;
@@ -89,12 +95,6 @@ a {
   width: 100%;
   height: auto;
   transform: rotate(90deg);
-}
-.banner__back {
-  display: inline-block;
-  position: relative;
-  left: 5%;
-  margin-top: 11%;
 }
 .banner__back a {
   display: block;
@@ -148,6 +148,7 @@ a {
     display: inline-block;
     position: relative;
     text-align: center;
+    z-index: 6;
   }
   #header .header__menu ul li a {
     color: white;
@@ -599,7 +600,7 @@ textarea {
 #catSkiing,
 #heliSkiing,
 #aventura {
-  margin-top: 650px;
+  margin-top: 100vh;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
@@ -742,26 +743,23 @@ textarea {
   background-image: url("../Img/Paquetes/cat-skiingbanner.jpg");
 }
 
-#catSkiing .catSkiing__dia1 h4,
-.catSkiing__dia2 h4 {
-  margin-bottom: 20px;
+#catSkiing .dia1 h4,
+.dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
-}
-#catSkiing .catSkiing__dia1,
-.catSkiing__dia2 {
-  margin: 100px 250px;
   text-align: center;
 }
-#catSkiing .catSkiing__dia1 .dia1__imagen1,
-.catSkiing__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#catSkiing .catSkiing__dia1 p,
-.catSkiing__dia2 p {
+#catSkiing .dia1 p,
+.dia2 p {
   text-align: justify;
+}
+
+#catSkiing .dia1 .dia1__imagen1 img,
+#catSkiing .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
 }
 
 /* HELISKIING */
@@ -1155,7 +1153,7 @@ form select {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -35%;
+    left: -50%;
     width: 35%;
     height: 100vh;
     z-index: 100;
@@ -1283,11 +1281,9 @@ form select {
     font-size: 2rem;
     letter-spacing: 1.5rem;
   }
-  .banner__next {
-    height: 600px;
-  }
-  .banner__next a {
-    width: 35px;
+
+  .nextBack {
+    display: none;
   }
 
   .jornadaIdeal {
@@ -1301,6 +1297,10 @@ form select {
   }
 
   #travesia {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  #catSkiing {
     margin-top: 550px;
     margin-bottom: auto;
   }
@@ -1357,16 +1357,13 @@ form select {
   .banner {
     height: 500px;
   }
-  .banner__next {
-    height: 500px;
-  }
-  .banner__next a {
-    width: 30px;
-  }
   .jornadaIdeal {
     margin-top: 450px;
   }
   #travesia {
+    margin-top: 450px;
+  }
+  #catSkiing {
     margin-top: 450px;
   }
   #alojamiento {
@@ -1466,13 +1463,6 @@ form select {
   .banner h2 {
     letter-spacing: 0.5rem;
   }
-  .banner__next {
-    height: 300px;
-    margin-right: 30px;
-  }
-  .banner__next a {
-    width: 20px;
-  }
   .indexPaquetes__imagenes .imagenes__img1 {
     height: 250px;
     background-position: center;
@@ -1505,6 +1495,9 @@ form select {
     margin-top: 280px;
   }
   #travesia {
+    margin-top: 280px;
+  }
+  #catSkiing {
     margin-top: 280px;
   }
   #alojamiento {
