@@ -769,26 +769,23 @@ textarea {
   background-position: top;
 }
 
-#heliSkiing .heliSkiing__dia1 h4,
-.heliSkiing__dia2 h4 {
+#heliSkiing .dia1 h4,
+.dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
 }
-#heliSkiing .heliSkiing__dia1,
-.heliSkiing__dia2 {
-  margin: 100px 250px;
-  text-align: center;
-}
-#heliSkiing .heliSkiing__dia1 .dia1__imagen1,
-.heliSkiing__dia2 .dia2__imagen2 {
-  text-align: left;
-}
-#heliSkiing .heliSkiing__dia1 p,
-.heliSkiing__dia2 p {
+#heliSkiing .dia1 p,
+.dia2 p {
   text-align: justify;
+}
+
+#heliSkiing .dia1 .dia1__imagen1 img,
+#heliSkiing .dia2 .dia2__imagen2 img {
+  width: 100%;
+  height: auto;
 }
 
 /* AVENTURA COMPLETA */
@@ -798,41 +795,33 @@ textarea {
   background-position: top;
 }
 
-#aventura .aventura__dia1 h4,
-.aventura__dia2 h4,
-.aventura__dia3 h4,
-.aventura__dia4 h4,
-.aventura__dia5 h4,
-.aventura__dia6 h4 {
+#aventura .dia1 h4,
+.dia2 h4,
+.dia3 h4,
+.dia4 h4,
+.dia5 h4,
+.dia6 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
 }
-#aventura .aventura__dia1,
-.aventura__dia2,
-.aventura__dia3,
-.aventura__dia4,
-.aventura__dia5,
-.aventura__dia6 {
-  margin: 100px 250px;
-  text-align: center;
+#aventura .dia1 .dia1__imagen1 img,
+#aventura .dia2 .dia2__imagen2 img,
+#aventura .dia3 .dia3__imagen3 img,
+#aventura .dia4 .dia4__imagen4 img,
+#aventura .dia5 .dia5__imagen5 img,
+#aventura .dia6 .dia6__imagen6 img {
+  width: 100%;
+  height: auto;
 }
-#aventura .aventura__dia1 .dia1__imagen1,
-.aventura__dia2 .dia2__imagen2,
-.aventura__dia3 .dia3__imagen3,
-.aventura__dia4 .dia4__imagen4,
-.aventura__dia5 .dia5__imagen5,
-.aventura__dia6 .dia6__imagen6 {
-  text-align: left;
-}
-#aventura .aventura__dia1 p,
-.aventura__dia2 p,
-.aventura__dia3 p,
-.aventura__dia4 p,
-.aventura__dia5 p,
-.aventura__dia6 p {
+#aventura .dia1 p,
+.dia2 p,
+.dia3 p,
+.dia4 p,
+.dia5 p,
+.dia6 p {
   text-align: justify;
 }
 
@@ -1304,7 +1293,17 @@ form select {
     margin-top: 550px;
     margin-bottom: auto;
   }
-  .dia2 .dia2__imagen2 {
+  #heliSkiing {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  #aventura {
+    margin-top: 550px;
+    margin-bottom: auto;
+  }
+  .dia2 .dia2__imagen2,
+  .dia4 .dia4__imagen4,
+  .dia6 .dia6__imagen6 {
     order: -1;
   }
   .servicios .servicios__noTraer {
@@ -1364,6 +1363,12 @@ form select {
     margin-top: 450px;
   }
   #catSkiing {
+    margin-top: 450px;
+  }
+  #heliSkiing {
+    margin-top: 450px;
+  }
+  #aventura {
     margin-top: 450px;
   }
   #alojamiento {
@@ -1498,6 +1503,12 @@ form select {
     margin-top: 280px;
   }
   #catSkiing {
+    margin-top: 280px;
+  }
+  #heliSkiing {
+    margin-top: 280px;
+  }
+  #aventura {
     margin-top: 280px;
   }
   #alojamiento {
