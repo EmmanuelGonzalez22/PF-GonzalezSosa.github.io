@@ -249,18 +249,48 @@ a {
   text-align: center;
 }
 #principal .principal__boton a {
-  border: 3px solid white;
-  padding: 15px 40px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
+  position: relative;
+  color: rgb(110, 237, 237);
+  padding: 1em 4em;
+  font-family: "lemon milk";
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em rgb(32, 150, 253);
+  background-color: rgb(42, 98, 178);
+  border: 0.25em solid rgb(32, 150, 253);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 1em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+  outline: none;
+  cursor: pointer;
   transition: all 0.3s;
 }
+#principal .principal__boton a::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 98, 178, 0.781);
+  filter: blur(2em);
+  opacity: 0.7;
+  pointer-events: none;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
 #principal .principal__boton a:hover {
-  background-color: #2a62b2;
-  color: black;
-  font-weight: 700;
-  border: 3px solid black;
+  color: rgb(42, 98, 178);
+  background-color: rgb(32, 150, 253);
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+}
+#principal .principal__boton a:active {
+  box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253),
+    0 0 2.5em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.5em 0.25em rgb(32, 150, 253);
 }
 
 #indexPaquetes,
@@ -394,6 +424,7 @@ a {
   text-align: justify;
   margin: 30px auto 0px auto;
   line-height: 2rem;
+  margin-bottom: 2rem;
 }
 .paquetes__texto h2 {
   font-family: "lemon milk";
@@ -403,22 +434,52 @@ a {
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
+.paquetes__texto p {
+  margin-bottom: 2rem;
+}
 .paquetes__texto a {
-  display: inline-block;
-  margin-top: 20px;
-  border: 3px solid white;
-  padding: 10px 30px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 0.9rem;
+  position: relative;
+  color: rgb(110, 237, 237);
+  padding: 0.5em 2em;
+  font-family: "lemon milk";
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em rgb(32, 150, 253);
+  background-color: rgb(42, 98, 178);
+  border: 0.25em solid rgb(32, 150, 253);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 1em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+  outline: none;
+  cursor: pointer;
   transition: all 0.3s;
 }
+.paquetes__texto a::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 98, 178, 0.781);
+  filter: blur(2em);
+  opacity: 0.7;
+  pointer-events: none;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
 .paquetes__texto a:hover {
-  background-color: #2a62b2;
-  color: black;
-  font-weight: bold;
-  border: 3px solid black;
+  color: rgb(42, 98, 178);
+  background-color: rgb(32, 150, 253);
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+}
+.paquetes__texto a:active {
+  box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253),
+    0 0 2.5em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.5em 0.25em rgb(32, 150, 253);
 }
 
 #testimonios {
@@ -503,8 +564,47 @@ textarea {
   margin-top: 15px;
 }
 .indexUbicacion__formulario form .form__button input {
-  padding: 5px;
+  position: relative;
+  color: rgb(110, 237, 237);
   font-family: "lemon milk";
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em rgb(32, 150, 253);
+  background-color: rgb(42, 98, 178);
+  border: 0.25em solid rgb(32, 150, 253);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 1em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.indexUbicacion__formulario form .form__button input::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 98, 178, 0.781);
+  filter: blur(2em);
+  opacity: 0.7;
+  pointer-events: none;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+.indexUbicacion__formulario form .form__button input:hover {
+  color: rgb(42, 98, 178);
+  background-color: rgb(32, 150, 253);
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+}
+.indexUbicacion__formulario form .form__button input:active {
+  box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253),
+    0 0 2.5em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.5em 0.25em rgb(32, 150, 253);
 }
 .indexUbicacion__newsletter {
   margin-top: 50px;
@@ -529,27 +629,52 @@ textarea {
   align-items: baseline;
 }
 .indexUbicacion__newsletter .newsletter__formulario input {
-  width: 300px;
-  padding: 5px 0;
+  width: 250px;
 }
 .indexUbicacion__newsletter .newsletter__formulario .button {
-  width: 150px;
-  background-color: black;
-  margin-left: 20px;
-  border: 3px solid white;
-  padding: 10px 30px;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  transition: all 0.3s;
+  position: relative;
+  padding: 0.5em 2em;
+  color: rgb(110, 237, 237);
+  font-family: "lemon milk";
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em rgb(32, 150, 253);
+  background-color: rgb(42, 98, 178);
+  border: 0.25em solid rgb(32, 150, 253);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 1em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+  outline: none;
   cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 30px;
+}
+.indexUbicacion__newsletter .newsletter__formulario .button::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 98, 178, 0.781);
+  filter: blur(2em);
+  opacity: 0.7;
+  pointer-events: none;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 .indexUbicacion__newsletter .newsletter__formulario .button:hover {
-  background-color: #2a62b2;
-  color: black;
-  font-weight: bold;
-  border: 3px solid black;
+  color: rgb(42, 98, 178);
+  background-color: rgb(32, 150, 253);
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+}
+.indexUbicacion__newsletter .newsletter__formulario .button:active {
+  box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253),
+    0 0 2.5em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.5em 0.25em rgb(32, 150, 253);
 }
 
 /* PAQUETES */
@@ -617,7 +742,7 @@ textarea {
   color: #2096fd;
 }
 #travesia .dia1 h4,
-.dia2 h4 {
+#travesia .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
@@ -625,7 +750,7 @@ textarea {
   text-align: center;
 }
 #travesia .dia1 p,
-.dia2 p {
+#travesia .dia2 p {
   text-align: justify;
 }
 
@@ -744,7 +869,7 @@ textarea {
 }
 
 #catSkiing .dia1 h4,
-.dia2 h4 {
+#catSkiing .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
@@ -752,7 +877,7 @@ textarea {
   text-align: center;
 }
 #catSkiing .dia1 p,
-.dia2 p {
+#catSkiing .dia2 p {
   text-align: justify;
 }
 
@@ -770,7 +895,7 @@ textarea {
 }
 
 #heliSkiing .dia1 h4,
-.dia2 h4 {
+#heliSkiing .dia2 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
   font-size: 1.3rem;
@@ -778,7 +903,7 @@ textarea {
   color: #2096fd;
 }
 #heliSkiing .dia1 p,
-.dia2 p {
+#heliSkiing .dia2 p {
   text-align: justify;
 }
 
@@ -796,16 +921,17 @@ textarea {
 }
 
 #aventura .dia1 h4,
-.dia2 h4,
-.dia3 h4,
-.dia4 h4,
-.dia5 h4,
-.dia6 h4 {
+#aventura .dia2 h4,
+#aventura .dia3 h4,
+#aventura .dia4 h4,
+#aventura .dia5 h4,
+#aventura .dia6 h4 {
   margin-bottom: 20px;
   font-family: "lemon milk";
   font-size: 1.3rem;
   font-weight: bold;
   color: #2096fd;
+  text-align: center;
 }
 #aventura .dia1 .dia1__imagen1 img,
 #aventura .dia2 .dia2__imagen2 img,
@@ -817,11 +943,11 @@ textarea {
   height: auto;
 }
 #aventura .dia1 p,
-.dia2 p,
-.dia3 p,
-.dia4 p,
-.dia5 p,
-.dia6 p {
+#aventura .dia2 p,
+#aventura .dia3 p,
+#aventura .dia4 p,
+#aventura .dia5 p,
+#aventura .dia6 p {
   text-align: justify;
 }
 
@@ -1469,6 +1595,11 @@ form select {
   .banner h2 {
     letter-spacing: 0.5rem;
   }
+
+  .indexUbicacion__newsletter .newsletter__formulario .button {
+    margin-left: auto;
+  }
+
   .indexPaquetes__imagenes .imagenes__img1 {
     height: 250px;
     background-position: center;
