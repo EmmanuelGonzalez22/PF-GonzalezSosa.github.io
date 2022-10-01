@@ -283,7 +283,7 @@ a {
 .indexPaquetes__imagenes .imagenes__img1 {
   width: 100%;
   height: 100%;
-  background-image: url("../Img/Paquetes/travesia.jpg");
+  background-image: url("../img/paquetes/travesia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
@@ -294,7 +294,7 @@ a {
 .indexPaquetes__imagenes .imagenes__img2 {
   width: 100%;
   height: 100%;
-  background-image: url("../Img/Paquetes/cat-skiing.jpg");
+  background-image: url("../img/paquetes/cat-skiing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
@@ -305,7 +305,7 @@ a {
 .indexPaquetes__imagenes .imagenes__img3 {
   width: 100%;
   height: 100%;
-  background-image: url("../Img/Paquetes/heli.jpg");
+  background-image: url("../img/paquetes/heli.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
@@ -316,7 +316,7 @@ a {
 .indexPaquetes__imagenes .imagenes__img4 {
   width: 100%;
   height: 100%;
-  background-image: url("../Img/Paquetes/aventura-completa.jpg");
+  background-image: url("../img/paquetes/aventura-completa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.5s;
@@ -343,7 +343,7 @@ a {
         rgba(0, 0, 0, 0.344),
         rgba(0, 0, 0, 0.256)
       ),
-      url("../Img/Paquetes/travesia.jpg");
+      url("../img/paquetes/travesia.jpg");
   }
   .indexPaquetes__imagenes .imagenes__img2:hover {
     transform: scale(1.2);
@@ -351,7 +351,7 @@ a {
         rgba(0, 0, 0, 0.344),
         rgba(0, 0, 0, 0.256)
       ),
-      url("../Img/Paquetes/cat-skiing.jpg");
+      url("../img/paquetes/cat-skiing.jpg");
   }
   .indexPaquetes__imagenes .imagenes__img3:hover {
     transform: scale(1.2);
@@ -359,7 +359,7 @@ a {
         rgba(0, 0, 0, 0.344),
         rgba(0, 0, 0, 0.256)
       ),
-      url("../Img/Paquetes/heli.jpg");
+      url("../img/paquetes/heli.jpg");
   }
   .indexPaquetes__imagenes .imagenes__img4:hover {
     transform: scale(1.2);
@@ -367,7 +367,7 @@ a {
         rgba(0, 0, 0, 0.344),
         rgba(0, 0, 0, 0.256)
       ),
-      url("../Img/Paquetes/aventura-completa.jpg");
+      url("../img/paquetes/aventura-completa.jpg");
   }
   .indexPaquetes__imagenes .imagenes__img1:hover a,
   .indexPaquetes__imagenes .imagenes__img2:hover a,
@@ -555,7 +555,7 @@ textarea {
 /* PAQUETES */
 
 .banner-paq {
-  background-image: url("../Img/Paquetes/paquetesbanner.jpg");
+  background-image: url("../img/paquetes/paquetesbanner.jpg");
   background-position: top;
 }
 
@@ -593,7 +593,7 @@ textarea {
 /* TRAVESIA */
 
 .banner-tra {
-  background-image: url("../Img/Paquetes/travesiabanner.jpg");
+  background-image: url("../img/paquetes/travesiabanner.jpg");
 }
 
 #travesia,
@@ -740,7 +740,7 @@ textarea {
 /* CAT SKIING */
 
 .banner-cat {
-  background-image: url("../Img/Paquetes/cat-skiingbanner.jpg");
+  background-image: url("../img/paquetes/cat-skiingbanner.jpg");
 }
 
 #catSkiing .dia1 h4,
@@ -765,7 +765,7 @@ textarea {
 /* HELISKIING */
 
 .banner-heli {
-  background-image: url("../Img/Paquetes/heli.jpg");
+  background-image: url("../img/paquetes/heli.jpg");
   background-position: top;
 }
 
@@ -791,7 +791,7 @@ textarea {
 /* AVENTURA COMPLETA */
 
 .banner-comp {
-  background-image: url("../Img/Paquetes/aventura-completabanner.jpg");
+  background-image: url("../img/paquetes/aventura-completabanner.jpg");
   background-position: top;
 }
 
@@ -828,7 +828,7 @@ textarea {
 /* ALOJAMIENTO */
 
 .banner-alo {
-  background-image: url("../Img/Alojamiento/alojamientobanner.jpg");
+  background-image: url("../img/alojamiento/alojamientobanner.jpg");
   background-position: top;
 }
 
@@ -884,7 +884,7 @@ textarea {
 /* GALERIA */
 
 .banner-gale {
-  background-image: url("../Img/Galeria/galeriabanner.jpg");
+  background-image: url("../img/galeria/galeriabanner.jpg");
   background-position: center;
 }
 
@@ -912,7 +912,7 @@ textarea {
 /* CONTACTO */
 
 .banner-cont {
-  background-image: url("../Img/Contacto/contactobanner.jpg");
+  background-image: url("../img/contacto/contactobanner.jpg");
 }
 
 #reservar {
@@ -1063,7 +1063,7 @@ form select {
 #footer {
   margin-top: 50px;
   padding: 20px 0;
-  background-image: url("../Img/footer-back.jpg");
+  background-image: url("../img/footer-back.jpg");
   background-size: contain;
 }
 #footer .footer__logo {
