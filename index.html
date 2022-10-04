@@ -70,7 +70,7 @@
         <span></span>
         <span></span>
       </a>
-      <nav class="header__menu">
+      <nav id="menu" class="header__menu">
         <ul class="menu__principal">
           <li>
             <div class="btn-group dropdown-center w-100">
@@ -83,7 +83,10 @@
               >
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
-              <ul class="dropdown-menu animate__animated animate__fadeIn">
+              <ul
+                id="desplegable"
+                class="dropdown-menu animate__animated animate__fadeIn"
+              >
                 <li>
                   <a href="./pages/travesia.html">Travesía</a>
                 </li>
@@ -123,7 +126,7 @@
     </header>
 
     <!-- TERMINA HEADER -->
-    <div class="container-fluid">
+    <div class="container__vidPromo">
       <div class="vidPromo">
         <video preload autoplay loop muted src="./videos/intro.mp4"></video>
       </div>
@@ -357,5 +360,23 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(window).scroll(function name() {
+        if ($("#menu").offset().top > 250) {
+          $("#menu").addClass("menuBlack");
+        } else {
+          $("#menu").removeClass("menuBlack");
+        }
+      });
+    </script>
+    <script>
+      $(window).scroll(function name() {
+        if ($("#desplegable").offset().top > 250) {
+          $("#desplegable").addClass("menuBlack");
+        } else {
+          $("#desplegable").removeClass("menuBlack");
+        }
+      });
+    </script>
   </body>
 </html>

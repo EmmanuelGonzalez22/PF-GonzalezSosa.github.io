@@ -43,6 +43,9 @@ a {
   outline: none;
 }
 
+.banner__container {
+  height: 100vh;
+}
 .banner {
   display: flex;
   align-items: center;
@@ -51,7 +54,6 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
-  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -129,10 +131,20 @@ a {
 }
 @media (min-width: 993px) {
   #header .header__menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     margin-top: 28px;
     padding: 25px 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.119);
+    transition: all 0.8s;
+    z-index: 9999;
+  }
+  #header .header__menu.menuBlack {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
   }
   #header .header__menu ul.menu__principal {
     margin: 0;
@@ -180,6 +192,11 @@ a {
     inset: 0px auto auto -68px !important;
     text-align: center;
     border-top: 0.2rem solid #0076c18f;
+    transition: all 0.8s;
+  }
+  .header__menu .menu__principal li ul.menuBlack {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
   }
   .header__menu .menu__principal li ul li a {
     font-size: 00.8rem;
@@ -194,16 +211,22 @@ a {
   }
 }
 /* INDEX */
-
-.vidPromo video {
-  width: 100%;
-  height: auto;
+.container__vidPromo {
+  height: 100vh;
+}
+.vidPromo {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+  height: 100vh;
+}
+
+.vidPromo video {
+  height: 100%;
 }
 
 .contenedor {
@@ -217,7 +240,7 @@ a {
 }
 
 #principal {
-  margin-top: 52%;
+  margin-top: 40px;
   font-family: "Poppins", sans-serif;
   grid-area: principal;
   display: flex;
@@ -236,7 +259,7 @@ a {
   text-align: center;
 }
 #principal .principal__texto {
-  width: 40%;
+  width: 60%;
 }
 #principal .principal__texto p {
   color: white;
@@ -296,7 +319,7 @@ a {
 #indexPaquetes,
 #paquetes {
   grid-area: paquetes;
-  margin-top: 50px;
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -312,7 +335,7 @@ a {
 }
 .indexPaquetes__imagenes .imagenes__img1 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url("../img/paquetes/travesia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,7 +346,7 @@ a {
 }
 .indexPaquetes__imagenes .imagenes__img2 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url("../img/paquetes/cat-skiing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,7 +357,7 @@ a {
 }
 .indexPaquetes__imagenes .imagenes__img3 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url("../img/paquetes/heli.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -345,7 +368,7 @@ a {
 }
 .indexPaquetes__imagenes .imagenes__img4 {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url("../img/paquetes/aventura-completa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,7 +386,7 @@ a {
   color: white;
   opacity: 0.3;
   display: block;
-  padding: 200px 0px;
+  padding: 250px 0px;
   transition: all 0.5s;
 }
 @media (min-width: 993px) {
@@ -685,7 +708,7 @@ textarea {
 }
 
 .jornadaIdeal {
-  margin-top: 650px;
+  margin-top: 50px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -725,7 +748,7 @@ textarea {
 #catSkiing,
 #heliSkiing,
 #aventura {
-  margin-top: 100vh;
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
@@ -959,7 +982,7 @@ textarea {
 }
 
 #alojamiento {
-  margin-top: 650px;
+  margin-top: 50px;
 }
 #alojamiento .alojamiento__section {
   font-family: "Poppins", sans-serif;
@@ -1015,7 +1038,7 @@ textarea {
 }
 
 #galeria {
-  margin-top: 650px;
+  margin-top: 50px;
 }
 #galeria h2 {
   text-align: center;
@@ -1042,7 +1065,7 @@ textarea {
 }
 
 #reservar {
-  margin-top: 650px;
+  margin-top: 50px;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
@@ -1235,6 +1258,15 @@ form select {
   height: auto;
 }
 
+/* MEDIA QUERY 1280 */
+
+@media (min-width: 1280px) {
+  .vidPromo video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* MEDIA QUERY 992 */
 
 @media (max-width: 992px) {
@@ -1354,12 +1386,27 @@ form select {
     justify-content: center;
     margin-top: 38px;
   }
-  #header .logo__mobile {
-    position: fixed;
-    z-index: 400;
-  }
+
   #header .logo__mobile img {
     width: 200px;
+  }
+
+  .vidPromo {
+    left: -200px;
+  }
+  .container__vidPromo {
+    height: 90vh;
+  }
+
+  .banner__container {
+    height: 75vh;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .banner h2 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
   }
 
   #principal {
@@ -1390,9 +1437,6 @@ form select {
     width: 80%;
   }
 
-  .banner {
-    height: 600px;
-  }
   .banner h2 {
     font-size: 2rem;
     letter-spacing: 1.5rem;
@@ -1402,9 +1446,6 @@ form select {
     display: none;
   }
 
-  .jornadaIdeal {
-    margin-top: 550px;
-  }
   .jornadaIdeal p {
     width: 80%;
   }
@@ -1412,22 +1453,6 @@ form select {
     width: 50%;
   }
 
-  #travesia {
-    margin-top: 550px;
-    margin-bottom: auto;
-  }
-  #catSkiing {
-    margin-top: 550px;
-    margin-bottom: auto;
-  }
-  #heliSkiing {
-    margin-top: 550px;
-    margin-bottom: auto;
-  }
-  #aventura {
-    margin-top: 550px;
-    margin-bottom: auto;
-  }
   .dia2 .dia2__imagen2,
   .dia4 .dia4__imagen4,
   .dia6 .dia6__imagen6 {
@@ -1450,15 +1475,6 @@ form select {
     flex-direction: column-reverse;
     gap: 20px;
   }
-  #alojamiento {
-    margin-top: 550px;
-  }
-  #galeria {
-    margin-top: 550px;
-  }
-  #reservar {
-    margin-top: 550px;
-  }
   #indicaciones .indicaciones__texto p {
     padding: 0 10px;
   }
@@ -1480,33 +1496,6 @@ form select {
     display: none;
   }
 
-  .banner {
-    height: 500px;
-  }
-  .jornadaIdeal {
-    margin-top: 450px;
-  }
-  #travesia {
-    margin-top: 450px;
-  }
-  #catSkiing {
-    margin-top: 450px;
-  }
-  #heliSkiing {
-    margin-top: 450px;
-  }
-  #aventura {
-    margin-top: 450px;
-  }
-  #alojamiento {
-    margin-top: 450px;
-  }
-  #galeria {
-    margin-top: 450px;
-  }
-  #reservar {
-    margin-top: 450px;
-  }
   #footer .footer__logo {
     width: 150px;
     height: auto;
@@ -1515,6 +1504,25 @@ form select {
 /* MEDIA 768 */
 
 @media (max-width: 768px) {
+  .container__vidPromo {
+    height: 10vh;
+  }
+
+  .banner__container {
+    height: 35vh;
+  }
+  .banner {
+    height: 40vh;
+  }
+
+  #principal h2 {
+    font-weight: bolder;
+  }
+  #principal .principal__texto p {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
   #indexUbicacion .indexUbicacion__mapa .mapa {
     width: 250px;
     height: 250px;
@@ -1589,9 +1597,10 @@ form select {
     height: auto;
   }
 
-  .banner {
-    height: 300px;
+  .vidPromo {
+    left: -590px;
   }
+
   .banner h2 {
     letter-spacing: 0.5rem;
   }
@@ -1628,29 +1637,7 @@ form select {
   .indexUbicacion__newsletter .newsletter__formulario .button {
     margin-top: 20px;
   }
-  .jornadaIdeal {
-    margin-top: 280px;
-  }
-  #travesia {
-    margin-top: 280px;
-  }
-  #catSkiing {
-    margin-top: 280px;
-  }
-  #heliSkiing {
-    margin-top: 280px;
-  }
-  #aventura {
-    margin-top: 280px;
-  }
-  #alojamiento {
-    margin-top: 280px;
-  }
-  #galeria {
-    margin-top: 280px;
-  }
   #reservar {
-    margin-top: 280px;
     padding: 0 20px;
   }
   #reservar .reservar__form .form__button {

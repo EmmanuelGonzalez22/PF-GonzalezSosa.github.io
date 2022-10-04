@@ -68,7 +68,7 @@
         <span></span>
         <span></span>
       </a>
-      <nav class="header__menu">
+      <nav id="menu" class="header__menu">
         <ul class="menu__principal">
           <li>
             <div class="btn-group dropdown-center w-100">
@@ -81,7 +81,10 @@
               >
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
-              <ul class="dropdown-menu animate__animated animate__fadeIn">
+              <ul
+                id="desplegable"
+                class="dropdown-menu animate__animated animate__fadeIn"
+              >
                 <li>
                   <a href="../pages/travesia.html">Travesía</a>
                 </li>
@@ -124,8 +127,10 @@
 
     <!-- TERMINA HEADER -->
 
-    <div class="container-fluid banner banner-alo">
-      <h2>ALOJAMIENTO</h2>
+    <div class="banner__container">
+      <div class="banner banner-alo">
+        <h2>ALOJAMIENTO</h2>
+      </div>
     </div>
 
     <!-- EMPIEZA MAIN -->
@@ -436,5 +441,23 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(window).scroll(function name() {
+        if ($("#menu").offset().top > 250) {
+          $("#menu").addClass("menuBlack");
+        } else {
+          $("#menu").removeClass("menuBlack");
+        }
+      });
+    </script>
+    <script>
+      $(window).scroll(function name() {
+        if ($("#desplegable").offset().top > 250) {
+          $("#desplegable").addClass("menuBlack");
+        } else {
+          $("#desplegable").removeClass("menuBlack");
+        }
+      });
+    </script>
   </body>
 </html>
