@@ -159,7 +159,6 @@ a {
   #header .header__menu ul li {
     display: inline-block;
     position: relative;
-    text-align: center;
     z-index: 6;
   }
   #header .header__menu ul li a {
@@ -170,23 +169,21 @@ a {
     background-color: transparent;
     display: inline-block;
     transition: all 0.3s;
-    text-decoration: none;
   }
   #header .header__menu ul li a:hover {
     color: #2a62b2;
-    font-weight: 500;
   }
   #header .header__menu ul li button:hover {
     color: #2a62b2;
   }
-  .header__menu button {
+  .header__menu ul li button {
     background-color: transparent;
     border: transparent;
     color: white;
     transition: all 0.3s;
     outline: none;
   }
-  .header__menu .menu__principal li ul {
+  .header__menu ul.menu__principal li ul {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.119);
     inset: 0px auto auto -68px !important;
@@ -194,14 +191,14 @@ a {
     border-top: 0.2rem solid #0076c18f;
     transition: all 0.8s;
   }
-  .header__menu .menu__principal li ul.menuBlack {
+  .header__menu ul.menu__principal li ul.menuBlack {
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
   }
-  .header__menu .menu__principal li ul li a {
+  .header__menu ul.menu__principal li ul li a {
     font-size: 00.8rem;
   }
-  #header .header__menu ul .menu__containerLogo a #logo {
+  #header .header__menu ul.menu__principal .menu__containerLogo a #logo {
     width: 200px;
     height: auto;
   }
@@ -241,7 +238,6 @@ a {
 
 #principal {
   margin-top: 40px;
-  font-family: "Poppins", sans-serif;
   grid-area: principal;
   display: flex;
   flex-flow: row-reverse wrap;
@@ -262,6 +258,7 @@ a {
   width: 60%;
 }
 #principal .principal__texto p {
+  font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1rem;
   text-align: center;
@@ -438,8 +435,6 @@ a {
 }
 
 .paquetes__texto {
-  font-family: "Poppins", sans-serif;
-  color: white;
   text-align: center;
 }
 .paquetes__texto .texto__paq {
@@ -449,7 +444,7 @@ a {
   line-height: 2rem;
   margin-bottom: 2rem;
 }
-.paquetes__texto h2 {
+.paquetes__texto h3 {
   font-family: "lemon milk";
   color: #2096fd;
   font-size: 1.2rem;
@@ -458,6 +453,8 @@ a {
   margin-bottom: 10px;
 }
 .paquetes__texto p {
+  font-family: "Poppins", sans-serif;
+  color: white;
   margin-bottom: 2rem;
 }
 .paquetes__texto a {
@@ -730,7 +727,7 @@ textarea {
   width: 60%;
 }
 
-#paquetes h2 {
+#paquetes h3 {
   font-family: "lemon milk";
   color: #2096fd;
   font-size: 1.5rem;
@@ -1047,15 +1044,6 @@ textarea {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 50px;
-}
-#galeria .galeria__imagenes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-}
-#galeria .galeria__imagenes img {
-  width: 100%;
-  height: auto;
 }
 
 /* CONTACTO */
@@ -1414,7 +1402,7 @@ form select {
   }
   #principal .principal__texto,
   #principal .principal__boton {
-    width: 80%;
+    width: 100%;
   }
   .indexPaquetes__imagenes a {
     opacity: 1;
@@ -1517,6 +1505,7 @@ form select {
 
   #principal h2 {
     font-weight: bolder;
+    margin-bottom: 0;
   }
   #principal .principal__texto p {
     font-weight: bolder;
@@ -1603,6 +1592,10 @@ form select {
 
   .banner h2 {
     letter-spacing: 0.5rem;
+  }
+
+  #principal {
+    margin-top: 30px;
   }
 
   .indexUbicacion__newsletter .newsletter__formulario .button {

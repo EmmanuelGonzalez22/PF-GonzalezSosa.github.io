@@ -19,11 +19,51 @@
   font-weight: bold;
 }
 @media (min-width: 993px) {
+  #header .logo__mobile {
+    display: none;
+  }
   #header .header__menu {
     margin-top: 28px;
     padding: 25px 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.119);
+    transition: all 0.8s;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #header .header__menu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 6;
+  }
+  #header .header__menu ul li button {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    transition: all 0.3s;
+    outline: none;
+  }
+  #header .header__menu ul li button:hover {
+    color: #2a62b2;
+  }
+  #header .header__menu ul li a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: transparent;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  #header .header__menu ul li a:hover {
+    color: #2a62b2;
+  }
+  #header .header__menu.menuBlack {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 15px rgb(32, 150, 253);
   }
   #header .header__menu ul.menu__principal {
     margin: 0;
@@ -35,4 +75,38 @@
     list-style: none;
     font-family: "lemon milk";
   }
+  #header .header__menu ul.menu__principal .menu__containerLogo a #logo {
+    width: 200px;
+    height: auto;
+  }
+  #header .header__menu ul.menu__principal li ul {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.119);
+    inset: 0px auto auto -68px !important;
+    text-align: center;
+    border-top: 0.2rem solid rgba(0, 118, 193, 0.5607843137);
+    transition: all 0.8s;
+  }
+  #header .header__menu ul.menu__principal li ul li a {
+    font-size: 0.8rem;
+  }
+  #header .header__menu ul.menu__principal li ul.menuBlack {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 15px rgb(32, 150, 253);
+  }
+}
+
+.banner-gale {
+  background-image: url("../img/galeria/galeriabanner.jpg");
+  background-position: center;
+}
+
+#galeria {
+  margin-top: 50px;
+}
+#galeria h2 {
+  font: bold 2rem "lemon milk";
+  text-align: center;
+  color: #2096fd;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
