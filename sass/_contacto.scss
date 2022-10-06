@@ -1,0 +1,136 @@
+#reservar {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: center;
+  h2 {
+    font: $tittleh2;
+    margin: 35px 0;
+    color: #2096fd;
+  }
+  .reservar__form {
+    form {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.8rem;
+      color: white;
+      text-align: left;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      label {
+        font-weight: bolder;
+        color: #999;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin-top: 3px;
+      }
+      select {
+        display: block;
+        width: 100%;
+        margin-top: 3px;
+      }
+      .form__nivel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        input {
+          width: auto;
+          margin: 0 10px 0 30px;
+        }
+      }
+      textarea {
+        border: 2px solid #2096fd;
+        margin-top: 3px;
+        width: 100%;
+      }
+      .form__button {
+        margin: 20px 0;
+        align-self: flex-end;
+        input {
+          @include btn;
+          padding: 0.5em 1em;
+          &::after {
+            @include btnAfter;
+          }
+          &:hover {
+            @include btnHover;
+          }
+          &:active {
+            @include btnActive;
+          }
+        }
+      }
+    }
+  }
+}
+#indicaciones {
+  background: $bgGradient;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0;
+  h2 {
+    font: $tittleh2;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    width: 50%;
+  }
+  .indicaciones__texto {
+    width: 50%;
+    p {
+      font: $fontParrafo;
+      color: white;
+      padding: 0 100px;
+      line-height: 1.7rem;
+    }
+  }
+  .indicaciones__img {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+#mediosContacto {
+  h2 {
+    font: $tittleh2;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    color: #2096fd;
+  }
+  .mediosContacto__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    article {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      .contacto__medios {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .medios__img {
+          width: 70px;
+          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        p {
+          font: $fontParrafo;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#alojamiento {
+  margin-top: 50px;
+  .alojamiento__section {
+    font: $fontParrafo;
+    color: white;
+    h2 {
+      font: $tittleh2;
+      color: #2096fd;
+      margin-bottom: 50px;
+      text-align: center;
+      width: 100%;
+    }
+    .section__domo {
+      h3 {
+        font-family: "lemon milk";
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2096fd;
+      }
+      .domo__lista ul {
+        list-style-type: disclosure-closed;
+        list-style-position: inside;
+        padding: 0;
+      }
+      .img__container {
+        .domo__imagenes {
+          display: inline-block;
+          width: 19%;
+          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .section__cabana {
+      h3 {
+        font-family: "lemon milk";
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2096fd;
+      }
+      .cabana__lista ul {
+        list-style-type: disclosure-closed;
+        list-style-position: inside;
+        padding: 0;
+      }
+      .img__container {
+        .cabana__imagenes {
+          display: inline-block;
+          width: 19%;
+          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

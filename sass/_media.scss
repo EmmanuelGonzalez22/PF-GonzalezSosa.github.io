@@ -259,6 +259,11 @@
   .botones {
     flex-direction: column-reverse;
     gap: 20px;
+    .botones__paquetes {
+      p {
+        margin-top: 2rem;
+      }
+    }
   }
 
   /*TERMINA TRA, CAT, HELI, AVE */
@@ -515,8 +520,10 @@
   #reservar {
     padding: 0 20px;
     .reservar__form {
-      .form__button {
-        align-self: center;
+      form {
+        .form__button {
+          align-self: center;
+        }
       }
     }
   }
