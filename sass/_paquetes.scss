@@ -1,0 +1,28 @@
+.jornadaIdeal {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font: $tittleh2;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2096fd;
+  }
+  p {
+    font: $fontParrafo;
+    text-align: justify;
+    width: 60%;
+    color: white;
+  }
+}
+#paquetes {
+  h3 {
+    font-family: "lemon milk";
+    color: #2096fd;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}

@@ -35,19 +35,12 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#menu_on").click(function () {
-          $("body").toggleClass("visible_menu");
-        });
-      });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
@@ -59,8 +52,10 @@
     <header id="header">
       <div class="header__barra">
         <h1>
-          Somos el centro de freeride, con el terreno esquiable mas grande de
-          America
+          <strong
+            >Somos el centro de freeride, con el terreno esquiable mas grande de
+            America</strong
+          >
         </h1>
       </div>
       <a href="#!" id="menu_on">
@@ -129,7 +124,7 @@
 
     <!-- EMPIEZA SECTION -->
 
-    <div class="banner__container">
+    <div class="container__banner">
       <div class="banner banner-paq">
         <h2>PAQUETES</h2>
       </div>
@@ -253,6 +248,13 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
+      });
+    </script>
     <script>
       $(window).scroll(function name() {
         if ($("#menu").offset().top > 250) {

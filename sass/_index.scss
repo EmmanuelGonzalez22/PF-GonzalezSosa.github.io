@@ -1,0 +1,356 @@
+.container__vidPromo {
+  height: 100vh;
+  .vidPromo {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+    video {
+      height: 100%;
+    }
+  }
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    ". principal principal principal principal principal principal principal principal principal  principal ."
+    "paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes paquetes"
+    "testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios testimonios"
+    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
+}
+#principal {
+  margin-top: 40px;
+  grid-area: principal;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  h2 {
+    font: $tittleh2;
+    color: #2096fd;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .principal__texto {
+    width: 60%;
+    p {
+      font: $fontParrafo;
+      color: white;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+  .principal__boton {
+    width: 40%;
+    text-align: center;
+    a {
+      @include btn;
+      padding: 1em 4em;
+      &::after {
+        @include btnAfter;
+      }
+      &:hover {
+        @include btnHover;
+      }
+      &:active {
+        @include btnActive;
+      }
+    }
+  }
+}
+
+/* SECCION PAQUETES INDEX.html Y PAQUETES.html */
+
+#indexPaquetes,
+#paquetes {
+  grid-area: paquetes;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  gap: 50px;
+  .indexPaquetes__imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .imagenes__container {
+      overflow: hidden;
+      width: 50%;
+      height: auto;
+      .imagenes__img1 {
+        @include center;
+        @include formatImgPaq;
+        background-image: url("../img/paquetes/travesia.jpg");
+      }
+      .imagenes__img2 {
+        @include center;
+        @include formatImgPaq;
+        background-image: url("../img/paquetes/cat-skiing.jpg");
+      }
+      .imagenes__img3 {
+        @include center;
+        @include formatImgPaq;
+        background-image: url("../img/paquetes/heli.jpg");
+      }
+      .imagenes__img4 {
+        @include center;
+        @include formatImgPaq;
+        background-image: url("../img/paquetes/aventura-completa.jpg");
+      }
+      a {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 900;
+        font-family: "lemon milk";
+        color: white;
+        opacity: 0.3;
+        display: block;
+        padding: 250px 0px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .paquetes__texto {
+    text-align: center;
+    .texto__paq {
+      width: 30%;
+      text-align: justify;
+      margin: 30px auto 0px auto;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-family: "lemon milk";
+      color: #2096fd;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    p {
+      font: $fontParrafo;
+      color: white;
+      margin-bottom: 1.8rem;
+    }
+    a {
+      @include btn;
+      padding: 0.5em 2em;
+      &::after {
+        @include btnAfter;
+      }
+      &:hover {
+        @include btnHover;
+      }
+      &:active {
+        @include btnActive;
+      }
+    }
+  }
+}
+@media (min-width: 993px) {
+  #indexPaquetes,
+  #paquetes {
+    .indexPaquetes__imagenes .imagenes__img1:hover {
+      transform: scale(1.2);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.344),
+          rgba(0, 0, 0, 0.256)
+        ),
+        url("../img/paquetes/travesia.jpg");
+      a {
+        transform: scale(1.3);
+        opacity: 1;
+        letter-spacing: 3px;
+      }
+    }
+    .indexPaquetes__imagenes .imagenes__img2:hover {
+      transform: scale(1.2);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.344),
+          rgba(0, 0, 0, 0.256)
+        ),
+        url("../img/paquetes/cat-skiing.jpg");
+      a {
+        transform: scale(1.3);
+        opacity: 1;
+        letter-spacing: 3px;
+      }
+    }
+    .indexPaquetes__imagenes .imagenes__img3:hover {
+      transform: scale(1.2);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.344),
+          rgba(0, 0, 0, 0.256)
+        ),
+        url("../img/paquetes/heli.jpg");
+      a {
+        transform: scale(1.3);
+        opacity: 1;
+        letter-spacing: 3px;
+      }
+    }
+    .indexPaquetes__imagenes .imagenes__img4:hover {
+      transform: scale(1.2);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.344),
+          rgba(0, 0, 0, 0.256)
+        ),
+        url("../img/paquetes/aventura-completa.jpg");
+      a {
+        transform: scale(1.3);
+        opacity: 1;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+/*TERMINA SECCION PAQUETES INDEX.html Y PAQUETES.html */
+
+/* TESTIMONIOS */
+
+#testimonios {
+  grid-area: testimonios;
+  margin-top: 30px;
+  background: $bgGradient;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  h2 {
+    font: $tittleh2;
+    letter-spacing: 3px;
+    color: #2096fd;
+    margin-bottom: 20px;
+  }
+  .testimonios__container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    p {
+      width: 300px;
+      margin-top: 25px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 100);
+  }
+}
+
+/* TERMINA TESTIMONIOS */
+
+/* UBICACION Y CONTACTO */
+
+#indexUbicacion {
+  grid-area: ubicacion;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  .indexUbicacion__formulario {
+    width: 40%;
+    height: auto;
+    h2 {
+      font: $tittleh2;
+      margin: 15px 0px;
+      text-align: center;
+      color: #2096fd;
+    }
+    form {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.8rem;
+      color: white;
+      text-align: left;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      input {
+        width: 100%;
+        display: block;
+        margin-top: 3px;
+      }
+      textarea {
+        width: 100%;
+        display: block;
+        margin-top: 3px;
+        border: 2px solid #2096fd;
+      }
+      .form__button {
+        width: 100px;
+        align-self: flex-end;
+        margin-top: 15px;
+        input {
+          @include btn;
+          &::after {
+            @include btnAfter;
+          }
+          &:hover {
+            @include btnHover;
+          }
+          &:active {
+            @include btnActive;
+          }
+        }
+      }
+    }
+  }
+  .indexUbicacion__newsletter {
+    margin-top: 50px;
+    text-align: center;
+    h3 {
+      font-family: "lemon milk";
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2096fd;
+    }
+    p {
+      font: $fontParrafo;
+      margin: 15px auto;
+      width: 30%;
+      color: white;
+    }
+    .newsletter__formulario {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      input {
+        width: 250px;
+      }
+      .button {
+        @include btn;
+        padding: 0.5em 2em;
+        margin-left: 30px;
+        &::after {
+          @include btnAfter;
+        }
+        &:hover {
+          @include btnHover;
+        }
+        &:active {
+          @include btnActive;
+        }
+      }
+    }
+  }
+}

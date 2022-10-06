@@ -1,0 +1,133 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "lemon milk";
+  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Light.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Medium.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-Regular.otf"),
+    url("../fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+}
+
+a {
+  text-decoration: none;
+}
+
+.rojo {
+  color: rgb(197, 27, 27);
+}
+
+.noBorder {
+  background-color: black;
+  border: 0;
+  color: white;
+  border-bottom: 2px solid #2096fd;
+  outline: none;
+}
+
+/* IMAGENES CABECERA PAGINAS */
+
+.container__banner {
+  height: 100vh;
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    h2 {
+      font-family: "lemon milk";
+      font-weight: bold;
+      font-size: 5rem;
+      letter-spacing: 2rem;
+      opacity: 0.4;
+    }
+  }
+  .banner-paq {
+    background-image: url("../img/paquetes/paquetesbanner.jpg");
+    background-position: top;
+  }
+  .banner-tra {
+    background-image: url("../img/paquetes/travesiabanner.jpg");
+  }
+  .banner-cat {
+    background-image: url("../img/paquetes/cat-skiingbanner.jpg");
+  }
+  .banner-heli {
+    background-image: url("../img/paquetes/heli.jpg");
+    background-position: top;
+  }
+  .banner-comp {
+    background-image: url("../img/paquetes/aventura-completabanner.jpg");
+    background-position: top;
+  }
+  .banner-alo {
+    background-image: url("../img/alojamiento/alojamientobanner.jpg");
+    background-position: top;
+  }
+  .banner-cont {
+    background-image: url("../img/contacto/contactobanner.jpg");
+  }
+}
+
+/*TERMINA IMAGENES CABECERA PAGINAS */
+
+.nextBack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 900px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  .banner__back a {
+    display: block;
+    width: 70px;
+    img {
+      width: 100%;
+      height: auto;
+      transform: rotate(-90deg);
+    }
+  }
+  .back__none a img {
+    display: none;
+  }
+  .banner__next a {
+    display: block;
+    width: 70px;
+    img {
+      width: 100%;
+      height: auto;
+      transform: rotate(90deg);
+    }
+  }
+  .next__none a img {
+    display: none;
+  }
+}

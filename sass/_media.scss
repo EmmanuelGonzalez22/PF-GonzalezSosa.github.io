@@ -1,0 +1,559 @@
+/* MEDIA QUERY 1280 */
+
+@media (min-width: 1280px) {
+  .container__vidPromo .vidPromo video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* MEDIA QUERY 992 */
+
+@media (max-width: 992px) {
+  /* NAVBAR */
+
+  // MENU HAMBURGUESA COPIADO DE INSTAGRAM
+
+  #menu_on {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    z-index: 400;
+    top: 40px;
+    left: 30px;
+    span {
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      display: block;
+      position: absolute;
+      background: #fff;
+      transition: all 0.25s ease;
+      transform-origin: 0px 100%;
+      &:nth-child(2) {
+        top: calc(50% - 2px);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
+  }
+  nav {
+    font-family: "lemon milk";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    width: 35%;
+    height: 100vh;
+    z-index: 100;
+    padding: 90px 20px 30px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      #2a62b2,
+      rgba(0, 0, 0, 0.8)
+    );
+    opacity: 0;
+    transition: all 0.75s ease;
+    font-size: 1em;
+    overflow-y: auto;
+  }
+  .visible_menu {
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(-2px, 1px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(-3px, 3px);
+      }
+    }
+    nav {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  // MENU HAMBURGUESA COPIADO DE INSTAGRAM
+
+  #header {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    .header__menu {
+      button {
+        background-color: transparent;
+        border: transparent;
+        color: rgba(255, 255, 255, 0.75);
+        outline: none;
+        transition: all 0.3s;
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.75);
+        transition: all ease 0.25s;
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        &:hover {
+          border-bottom-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+      ul .menu__containerLogo {
+        display: none;
+      }
+      ul.menu__principal {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        li ul {
+          background: linear-gradient(rgb(0, 0, 0), #2a63b2, rgb(0, 0, 0));
+          inset: 0px auto auto -15px !important;
+          li a {
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.75);
+            transition: all ease 0.25s;
+            font-size: 0.8rem;
+            &:hover {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+    }
+    .logo__mobile img {
+      width: 200px;
+    }
+  }
+
+  /*TERMINA NAVBAR */
+
+  /* INDEX */
+
+  .container__vidPromo {
+    height: 90vh;
+    .vidPromo {
+      left: -200px;
+    }
+  }
+  .container__banner {
+    height: 75vh;
+    .banner {
+      height: 80vh;
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+      }
+    }
+  }
+  #principal {
+    flex-direction: column;
+    .principal__texto ~ .principal__boton {
+      width: 100%;
+    }
+  }
+  #indexPaquetes {
+    .indexPaquetes__imagenes {
+      .imagenes__container {
+        a {
+          opacity: 1;
+          font-size: 1.7rem;
+          letter-spacing: 3px;
+          color: rgb(185 181 181 / 75%);
+        }
+      }
+    }
+  }
+  #testimonios {
+    .testimonios__container {
+      flex-direction: column;
+      .testimonios__item {
+        align-self: center;
+      }
+    }
+  }
+  #indexUbicacion {
+    flex-direction: column;
+    .indexUbicacion__formulario {
+      width: 80%;
+    }
+  }
+
+  /* TERMINA INDEX */
+
+  /* PAQUETES */
+
+  .jornadaIdeal {
+    p {
+      width: 80%;
+    }
+  }
+  #paquetes {
+    .paquetes__texto {
+      .texto__paq {
+        width: 50%;
+      }
+    }
+  }
+
+  /* TRA, CAT, HELI, AVE */
+
+  .nextBack {
+    display: none;
+  }
+  #travesia,
+  #catSkiing,
+  #heliSkiing {
+    .dia2 {
+      .dia2__imagen2 {
+        order: -1;
+      }
+    }
+  }
+  #aventura {
+    .dia2 {
+      .dia2__imagen2 {
+        order: -1;
+      }
+    }
+    .dia4 {
+      .dia4__imagen4 {
+        order: -1;
+      }
+    }
+    .dia6 {
+      .dia6__imagen6 {
+        order: -1;
+      }
+    }
+  }
+  .servicios {
+    .servicios__noTraer {
+      gap: 20px;
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    .servicios__traer {
+      gap: 20px;
+      height: auto;
+      margin-top: 30px;
+      .traer__lista h5 {
+        color: black;
+      }
+    }
+  }
+  .botones {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /*TERMINA TRA, CAT, HELI, AVE */
+
+  /* CONTACTO */
+
+  #indicaciones {
+    .indicaciones__texto {
+      p {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  /* TERMINA CONTACTO */
+
+  /* FOOTER */
+
+  #footer {
+    .footer__qr {
+      display: none;
+    }
+    .footer__redes {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+  }
+
+  /* TERMINA FOOTER */
+}
+
+/* MEDIA QUERY 786 */
+
+@media (max-width: 786px) {
+  #header {
+    .header__barra {
+      display: none;
+    }
+  }
+  #footer {
+    .footer__logo {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+
+/* MEDIA QUERY 768 */
+
+@media (max-width: 768px) {
+  .container__vidPromo {
+    height: 0vh;
+  }
+  .container__banner {
+    height: 35vh;
+    .banner {
+      height: 40vh;
+    }
+  }
+  #principal {
+    h2 {
+      font-weight: bolder;
+      margin-bottom: 0;
+    }
+    .principal__texto p {
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+  }
+  #indexUbicacion {
+    .indexUbicacion__mapa .mapa {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  #indexPaquetes,
+  #paquetes {
+    .indexPaquetes__imagenes {
+      .imagenes__container {
+        width: 100%;
+      }
+    }
+  }
+  #alojamiento {
+    .alojamiento__section {
+      .section__domo {
+        .img__container {
+          display: none;
+        }
+        .domo__lista ul {
+          margin-bottom: 50px;
+        }
+      }
+      .section__cabana {
+        .img__container {
+          display: none;
+        }
+        .cabana__lista ul {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  #indicaciones {
+    flex-direction: column;
+    h2 {
+      width: 100%;
+      order: -2;
+      color: #2096fd;
+      margin-bottom: 30px;
+    }
+    .indicaciones__texto {
+      width: 100%;
+      order: -1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .indicaciones__img {
+      width: 100%;
+    }
+  }
+  #mediosContacto {
+    .mediosContacto__container {
+      background: $bgGradient;
+      gap: 50px;
+      article {
+        gap: 20px;
+      }
+    }
+  }
+  #footer {
+    .footer__scrollup {
+      right: 10px;
+      bottom: 50px;
+      width: 50px;
+      height: auto;
+    }
+    .footer__redes {
+      a img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY 576 */
+
+@media (max-width: 576px) {
+  nav {
+    width: 50%;
+  }
+  #header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 20px 0 0;
+    .logo__mobile {
+      z-index: 400;
+      width: 120px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .container__vidPromo {
+    .vidPromo {
+      left: -400px;
+    }
+  }
+  .container__banner {
+    .banner {
+      h2 {
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+  #principal {
+    margin-top: 30px;
+  }
+  #indexUbicacion {
+    .indexUbicacion__newsletter {
+      .newsletter__formulario {
+        .button {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  #indexPaquetes {
+    .indexPaquetes__imagenes {
+      .imagenes__container {
+        .imagenes__img1 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img2 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img3 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img4 {
+          height: 250px;
+          background-position: center;
+        }
+      }
+    }
+  }
+  #paquetes {
+    .indexPaquetes__imagenes {
+      .imagenes__container {
+        .imagenes__img1 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img2 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img3 {
+          height: 250px;
+          background-position: center;
+        }
+        .imagenes__img4 {
+          height: 250px;
+          background-position: center;
+        }
+      }
+    }
+    .paquetes__texto {
+      .texto__paq {
+        width: 70%;
+      }
+    }
+  }
+  #indexUbicacion {
+    .indexUbicacion__newsletter {
+      p {
+        width: 80%;
+      }
+      .newsletter__formulario {
+        input {
+          width: 250px;
+        }
+        .button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  #reservar {
+    padding: 0 20px;
+    .reservar__form {
+      .form__button {
+        align-self: center;
+      }
+    }
+  }
+  #mediosContacto {
+    h2 {
+      padding: 0 15px;
+    }
+    .mediosContacto__container {
+      article {
+        .contacto__medios {
+          .medios__img {
+            width: 30px;
+            height: auto;
+          }
+        }
+      }
+      .mediosContacto__mapa {
+        iframe {
+          width: 270px;
+          height: 270px;
+        }
+      }
+    }
+  }
+  #footer {
+    .footer__logo {
+      width: 75px;
+      height: auto;
+    }
+    .footer__redes {
+      a img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  html {
+    font-size: 70%;
+  }
+}

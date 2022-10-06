@@ -1,0 +1,55 @@
+@mixin btn {
+  position: relative;
+  color: rgb(110, 237, 237);
+  font-family: "lemon milk";
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em rgb(32, 150, 253);
+  background-color: rgb(42, 98, 178);
+  border: 0.25em solid rgb(32, 150, 253);
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 1em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@mixin btnAfter {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 98, 178, 0.781);
+  filter: blur(2em);
+  opacity: 0.7;
+  pointer-events: none;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+@mixin btnHover {
+  color: rgb(42, 98, 178);
+  background-color: rgb(32, 150, 253);
+  box-shadow: 0 0 1em 0.25em rgb(32, 150, 253),
+    0 0 4em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.75em 0.25em rgb(32, 150, 253);
+}
+@mixin btnActive {
+  box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253),
+    0 0 2.5em 2em rgba(42, 98, 178, 0.781),
+    inset 0 0 0.5em 0.25em rgb(32, 150, 253);
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin formatImgPaq {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}

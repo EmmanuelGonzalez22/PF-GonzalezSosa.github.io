@@ -1,97 +1,96 @@
 #header {
-    z-index: 901;
-    & .header__barra {
-        width: 100%;
-        padding: 5px 0px;
-        position: fixed;
-        top: 0;
-        background-color: black;
-        z-index: 902;
+  z-index: 901;
+  .header__barra {
+    width: 100%;
+    padding: 5px 0px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 902;
+  }
+  .header__barra h1 {
+    margin: 0;
+    font-family: "lemon milk";
+    text-align: center;
+    font-size: 1rem;
+    opacity: 1;
+    color: #2096fd;
+  }
+  @media (min-width: 993px) {
+    .logo__mobile {
+      display: none;
     }
-    & .header__barra h1 {
-        margin: 0;
-        font-family: "lemon milk";
+    .header__menu {
+      margin-top: 28px;
+      padding: 25px 20px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.119);
+      transition: all 0.8s;
+      z-index: 9999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      ul li {
+        display: inline-block;
+        position: relative;
+        z-index: 6;
+        button {
+          background-color: transparent;
+          border: transparent;
+          color: white;
+          transition: all 0.3s;
+          outline: none;
+          &:hover {
+            color: #2a62b2;
+          }
+        }
+        a {
+          color: white;
+          letter-spacing: 1px;
+          font-weight: 500;
+          padding: 10px;
+          background-color: transparent;
+          display: inline-block;
+          transition: all 0.3s;
+          &:hover {
+            color: #2a62b2;
+          }
+        }
+      }
+    }
+    .header__menu.menuBlack {
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
+    }
+    .header__menu ul.menu__principal {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1rem;
+      list-style: none;
+      font-family: "lemon milk";
+      .menu__containerLogo a #logo {
+        width: 200px;
+        height: auto;
+      }
+      li ul {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.119);
+        inset: 0px auto auto -68px !important;
         text-align: center;
-        font-size: 1rem;
-        opacity: 1;
-        color: #2096fd;
-        font-weight: bold;
+        border-top: 0.2rem solid #0076c18f;
+        transition: all 0.8s;
+        li a {
+          font-size: 0.8rem;
+        }
+      }
+      li ul.menuBlack {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
+      }
     }
-    @media (min-width: 993px) {
-        & .logo__mobile {
-            display: none;
-        }
-        & .header__menu {
-            margin-top: 28px;
-            padding: 25px 20px;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-            background-color: rgba(0, 0, 0, 0.119);
-            transition: all 0.8s;
-            z-index: 9999;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;            
-            & ul li {
-                display: inline-block;
-                position: relative;
-                z-index: 6;
-                & button {
-                    background-color: transparent;
-                    border: transparent;
-                    color: white;
-                    transition: all 0.3s;
-                    outline: none;
-                }
-                & button:hover {
-                    color: #2a62b2;
-                }
-                & a {
-                    color: white;
-                    letter-spacing: 1px;
-                    font-weight: 500;
-                    padding: 10px;
-                    background-color: transparent;
-                    display: inline-block;
-                    transition: all 0.3s;
-                }
-                & a:hover {
-                    color: #2a62b2;
-                }
-            }
-        } 
-        & .header__menu.menuBlack {
-            background-color: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
-        }
-        & .header__menu ul.menu__principal {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 1rem;
-            list-style: none;
-            font-family: "lemon milk";
-            & .menu__containerLogo a #logo {
-                width: 200px;
-                height: auto;
-            }
-            & li ul {
-                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-                background-color: rgba(0, 0, 0, 0.119);
-                inset: 0px auto auto -68px !important;
-                text-align: center;
-                border-top: 0.2rem solid #0076c18f;
-                transition: all 0.8s;
-                & li a {
-                    font-size: 0.8rem;
-                }               
-            }
-            & li ul.menuBlack {
-                background-color: rgba(0, 0, 0, 0.8);
-                box-shadow: 0px 8px 15px rgba(32, 150, 253, 100);
-            }
-        }
-    }
+  }
 }

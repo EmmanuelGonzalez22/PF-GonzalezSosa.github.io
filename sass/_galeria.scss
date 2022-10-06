@@ -1,0 +1,16 @@
+/* GALERIA */
+
+.banner-gale {
+  background-image: url("../img/galeria/galeriabanner.jpg");
+  background-position: center;
+}
+
+#galeria {
+  margin-top: 50px;
+  h2 {
+    font: $tittleh2;
+    text-align: center;
+    color: $colorBlue;
+    margin-bottom: 50px;
+  }
+}

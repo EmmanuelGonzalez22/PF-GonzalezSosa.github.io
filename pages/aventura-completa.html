@@ -35,19 +35,12 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#menu_on").click(function () {
-          $("body").toggleClass("visible_menu");
-        });
-      });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
@@ -59,8 +52,10 @@
     <header id="header">
       <div class="header__barra">
         <h1>
-          Somos el centro de freeride, con el terreno esquiable mas grande de
-          America
+          <strong
+            >Somos el centro de freeride, con el terreno esquiable mas grande de
+            America</strong
+          >
         </h1>
       </div>
       <a href="#!" id="menu_on">
@@ -127,7 +122,7 @@
 
     <!-- TERMINA HEADER -->
 
-    <div class="banner__container">
+    <div class="container__banner">
       <div class="banner banner-comp">
         <h2>
           Aventura <br />
@@ -375,7 +370,7 @@
             <li>Casco, antiparras y guantes</li>
             <li>Pieles de foca</li>
             <li>Equipo de freeride y travesía</li>
-            <li><span class="bold">Recomendado:</span> snacks de comida</li>
+            <li><span class="fw-bold">Recomendado:</span> snacks de comida</li>
           </ul>
         </div>
         <div class="col-lg-6 traer__imagenes">
@@ -393,13 +388,13 @@
 
     <div class="botones">
       <div class="botones__paquetes">
-        <p class="bold">
+        <p class="fw-bold">
           Si te quedaste con dudas, analizá nuestros otros paquetes
         </p>
         <a href="../pages/paquetes.html#paquetes__tittle">OTRAS OPCIONES</a>
       </div>
       <div class="botones__reservar">
-        <p class="bold">Reservá tu lugar y empezá a preparar tu equipo</p>
+        <p class="fw-bold">Reservá tu lugar y empezá a preparar tu equipo</p>
         <a href="../pages/contact.html#reservar">INICIAR AVENTURA</a>
       </div>
     </div>
@@ -463,6 +458,13 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu_on").click(function () {
+          $("body").toggleClass("visible_menu");
+        });
+      });
+    </script>
     <script>
       $(window).scroll(function name() {
         if ($("#menu").offset().top > 250) {

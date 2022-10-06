@@ -1,0 +1,47 @@
+#footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-image: url("../img/footer-back.jpg");
+  background-size: contain;
+  .footer__logo {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    a img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .footer__copyright p {
+    text-align: center;
+    font-family: "lemon milk";
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+  }
+  .footer__redes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer__qr {
+    width: 150px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .footer__scrollup {
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    z-index: 500;
+    width: 70px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

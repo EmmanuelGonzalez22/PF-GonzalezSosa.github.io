@@ -31,10 +31,6 @@ a {
   color: rgb(197, 27, 27);
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .noBorder {
   background-color: black;
   border: 0;
@@ -43,7 +39,7 @@ a {
   outline: none;
 }
 
-.banner__container {
+.container__banner {
   height: 100vh;
 }
 .banner {
@@ -699,7 +695,7 @@ textarea {
 
 /* PAQUETES */
 
-.banner-paq {
+.container__banner .banner-paq {
   background-image: url("../img/paquetes/paquetesbanner.jpg");
   background-position: top;
 }
@@ -1303,6 +1299,25 @@ form select {
     font-size: 1em;
     overflow-y: auto;
   }
+  .visible_menu span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+  .visible_menu span:nth-child(2) {
+    opacity: 0;
+  }
+  .visible_menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .visible_menu nav {
+    left: 0;
+    opacity: 1;
+  }
+
+  #header {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+  }
   #header .header__menu ul.menu__principal {
     margin: 0;
     padding: 0;
@@ -1355,25 +1370,6 @@ form select {
   .header__menu .menu__principal li ul li a:hover {
     color: rgba(255, 255, 255, 1);
   }
-  .visible_menu span:nth-child(1) {
-    transform: rotate(45deg) translate(-2px, 1px);
-  }
-  .visible_menu span:nth-child(2) {
-    opacity: 0;
-  }
-  .visible_menu span:nth-child(3) {
-    transform: rotate(-45deg) translate(-3px, 3px);
-  }
-  .visible_menu nav {
-    left: 0;
-    opacity: 1;
-  }
-
-  #header {
-    display: flex;
-    justify-content: center;
-    margin-top: 38px;
-  }
 
   #header .logo__mobile img {
     width: 200px;
@@ -1386,7 +1382,7 @@ form select {
     height: 90vh;
   }
 
-  .banner__container {
+  .container__banner {
     height: 75vh;
   }
   .banner {
@@ -1423,11 +1419,6 @@ form select {
   }
   #indexUbicacion .indexUbicacion__formulario {
     width: 80%;
-  }
-
-  .banner h2 {
-    font-size: 2rem;
-    letter-spacing: 1.5rem;
   }
 
   .nextBack {
@@ -1496,7 +1487,7 @@ form select {
     height: 0vh;
   }
 
-  .banner__container {
+  .container__banner {
     height: 35vh;
   }
   .banner {
