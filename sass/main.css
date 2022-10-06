@@ -1756,6 +1756,9 @@ a {
   #principal {
     margin-top: 30px;
   }
+  #principal .principal__texto {
+    width: 100%;
+  }
   #indexUbicacion .indexUbicacion__newsletter .newsletter__formulario .button {
     margin-left: auto;
   }
