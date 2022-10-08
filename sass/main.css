@@ -186,6 +186,7 @@ a {
   #header .header__menu.menuBlack {
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 8px 15px rgb(32, 150, 253);
+    padding: 0 20px;
   }
   #header .header__menu ul.menu__principal {
     margin: 0;
@@ -1155,7 +1156,7 @@ a {
 }
 #alojamiento .alojamiento__section .section__domo h3 {
   font-family: "lemon milk";
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
 }
@@ -1175,7 +1176,7 @@ a {
 }
 #alojamiento .alojamiento__section .section__cabana h3 {
   font-family: "lemon milk";
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #2096fd;
 }
@@ -1194,6 +1195,40 @@ a {
   height: auto;
 }
 
+/* ANIMACION */
+.wave {
+  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.45));
+  display: inline-block;
+}
+
+.wave span {
+  display: inline-block;
+  -webkit-animation: wave-anim 1s infinite;
+          animation: wave-anim 1s infinite;
+  -webkit-animation-delay: calc(0.1s * var(--item));
+          animation-delay: calc(0.1s * var(--item));
+}
+
+@-webkit-keyframes wave-anim {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+    color: rgba(255, 255, 255, 0.822);
+  }
+}
+
+@keyframes wave-anim {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+    color: rgba(255, 255, 255, 0.822);
+  }
+}
+/* TERMINA ANIMACION */
 /* GALERIA */
 .banner-gale {
   background-image: url("../img/galeria/galeriabanner.jpg");
@@ -1354,7 +1389,7 @@ a {
 }
 #mediosContacto .mediosContacto__container article .contacto__medios {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios .medios__img {
