@@ -539,6 +539,20 @@
       }
     }
   }
+  #travesia .dia1,
+  #travesia .dia2,
+  #catSkiing .dia1,
+  #catSkiing .dia2,
+  #heliSkiing .dia1,
+  #heliSkiing .dia2,
+  #aventura .dia1,
+  #aventura .dia2,
+  #aventura .dia3,
+  #aventura .dia4,
+  #aventura .dia5,
+  #aventura .dia6 {
+    max-width: 330px;
+  }
   #indexUbicacion {
     .indexUbicacion__newsletter {
       p {

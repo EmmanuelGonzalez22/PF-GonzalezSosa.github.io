@@ -71,7 +71,6 @@
 #indexPaquetes,
 #paquetes {
   grid-area: paquetes;
-  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -157,6 +156,12 @@
       }
     }
   }
+}
+#indexPaquetes {
+  margin-top: 100px;
+}
+#paquetes {
+  margin-top: 50px;
 }
 @media (min-width: 993px) {
   #indexPaquetes,

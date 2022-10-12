@@ -2,6 +2,7 @@
 #travesia {
   margin: 50px 0 100px 0;
   h2 {
+    margin: 0 15px;
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
@@ -53,6 +54,7 @@
 #catSkiing {
   margin: 50px 0 100px 0;
   h2 {
+    margin: 0 15px;
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
@@ -104,6 +106,7 @@
 #heliSkiing {
   margin: 50px 0 100px 0;
   h2 {
+    margin: 0 15px;
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
@@ -155,6 +158,7 @@
 #aventura {
   margin: 50px 0 100px 0;
   h2 {
+    margin: 0 15px;
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
@@ -327,6 +331,9 @@
     }
   }
   .servicios__traer {
+    /* OVERFLOW HIDDEN SOLUCIONAR BUG DE FADE EN AOS */
+    overflow-x: hidden;
+    /* OVERFLOW HIDDEN SOLUCIONAR BUG DE FADE EN AOS */
     margin-top: 100px;
     height: 350px;
     .traer__lista {

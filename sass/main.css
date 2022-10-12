@@ -317,7 +317,6 @@ a {
 #indexPaquetes,
 #paquetes {
   grid-area: paquetes;
-  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -467,6 +466,14 @@ a {
 #indexPaquetes .paquetes__texto a:active,
 #paquetes .paquetes__texto a:active {
   box-shadow: 0 0 0.6em 0.25em rgb(32, 150, 253), 0 0 2.5em 2em rgba(42, 98, 178, 0.781), inset 0 0 0.5em 0.25em rgb(32, 150, 253);
+}
+
+#indexPaquetes {
+  margin-top: 100px;
+}
+
+#paquetes {
+  margin-top: 50px;
 }
 
 @media (min-width: 993px) {
@@ -717,7 +724,7 @@ a {
 }
 .jornadaIdeal p {
   font: normal 1rem "Poppins", sans-serif;
-  text-align: justify;
+  text-align: center;
   width: 60%;
   color: white;
 }
@@ -735,6 +742,7 @@ a {
   margin: 50px 0 100px 0;
 }
 #travesia h2 {
+  margin: 0 15px;
   font: bold 1.8rem "lemon milk";
   color: #2096fd;
   text-align: center;
@@ -777,6 +785,7 @@ a {
   margin: 50px 0 100px 0;
 }
 #catSkiing h2 {
+  margin: 0 15px;
   font: bold 1.8rem "lemon milk";
   color: #2096fd;
   text-align: center;
@@ -819,6 +828,7 @@ a {
   margin: 50px 0 100px 0;
 }
 #heliSkiing h2 {
+  margin: 0 15px;
   font: bold 1.8rem "lemon milk";
   color: #2096fd;
   text-align: center;
@@ -861,6 +871,7 @@ a {
   margin: 50px 0 100px 0;
 }
 #aventura h2 {
+  margin: 0 15px;
   font: bold 1.8rem "lemon milk";
   color: #2096fd;
   text-align: center;
@@ -1008,6 +1019,9 @@ a {
   text-decoration: underline;
 }
 .servicios .servicios__traer {
+  /* OVERFLOW HIDDEN SOLUCIONAR BUG DE FADE EN AOS */
+  overflow-x: hidden;
+  /* OVERFLOW HIDDEN SOLUCIONAR BUG DE FADE EN AOS */
   margin-top: 100px;
   height: 350px;
 }
@@ -1874,6 +1888,20 @@ a {
   }
   #paquetes .paquetes__texto .texto__paq {
     width: 70%;
+  }
+  #travesia .dia1,
+#travesia .dia2,
+#catSkiing .dia1,
+#catSkiing .dia2,
+#heliSkiing .dia1,
+#heliSkiing .dia2,
+#aventura .dia1,
+#aventura .dia2,
+#aventura .dia3,
+#aventura .dia4,
+#aventura .dia5,
+#aventura .dia6 {
+    max-width: 330px;
   }
   #indexUbicacion .indexUbicacion__newsletter p {
     width: 80%;
