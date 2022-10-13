@@ -150,7 +150,14 @@
     <!-- TERMINA HEADER -->
     <div class="container__vidPromo">
       <div class="vidPromo">
-        <video preload autoplay loop muted src="./videos/intro.mp4"></video>
+        <video
+          preload
+          autoplay
+          loop
+          muted
+          poster="./img/paquetes/paquetesbanner.jpg"
+          src="./videos/intro.mp4"
+        ></video>
       </div>
     </div>
 
@@ -206,7 +213,7 @@
         </div>
         <div class="paquetes__texto">
           <h3>TU AVENTURA EN MOUNTAIN BREED</h3>
-          <p>Contactanos para un mejor asesoramiento</p>
+          <h4>Contactanos para un mejor asesoramiento</h4>
           <a href="./pages/contact.html">RESERVA TU LUGAR</a>
         </div>
       </section>
@@ -220,6 +227,7 @@
         <div class="testimonios__container">
           <div class="testimonios__item">
             <img src="./img/testimonios/testimonio1.jpg" alt="testimonio1" />
+            <h5>Santiago Chinellato</h5>
             <p>
               "Gracias Mountain Breed por organizar éstas vacaciones, por pensar
               y cuidar cada detalle para que todo saliera perfecto!"
@@ -227,6 +235,7 @@
           </div>
           <div class="testimonios__item">
             <img src="./img/testimonios/testimonio2.jpg" alt="testimonio2" />
+            <h5>Lisandro Gonzalez</h5>
             <p>
               "Todavía estoy excitado por el fin de semana increíble que pase
               junto a mis amigos. Gracias por cumplir sueños!"
@@ -234,6 +243,7 @@
           </div>
           <div class="testimonios__item">
             <img src="./img/testimonios/testimonio3.jpg" alt="testimonio3" />
+            <h5>Camila Mella</h5>
             <p>
               "El viaje fue soñado! Mi familia ama esquiar y lo disfrutamos
               muchísimo. Toda la logística nos pareció perfecta. Llegamos y
@@ -265,14 +275,25 @@
         </div>
         <article class="indexUbicacion__formulario">
           <h2>CONTACTANOS</h2>
-          <form action="enviar.php" method="post">
+          <form action="enviar.php" method="POST">
             <div>
               <label for="name">Nombre <span class="rojo">*</span></label>
-              <input class="noBorder" type="text" id="name" required />
+              <input
+                class="noBorder"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
             </div>
             <div>
               <label for="lastname">Apellido </label>
-              <input class="noBorder" type="text" id="lastname" />
+              <input
+                class="noBorder"
+                type="text"
+                name="lastname"
+                id="lastname"
+              />
             </div>
             <div>
               <label for="mail">Email <span class="rojo">*</span></label>
@@ -280,6 +301,7 @@
                 class="noBorder"
                 type="email"
                 id="mail"
+                name="mail"
                 placeholder="mountainbreed@hotmail.com"
                 required
               />
@@ -306,7 +328,7 @@
             dejanos tu mail y nos pondremos en contacto.
           </p>
           <div class="newsletter__formulario">
-            <form action="enviar.php" method="post">
+            <form action="enviar.php" method="POST">
               <label for="email"></label>
               <input
                 class="noBorder"
@@ -374,6 +396,8 @@
 
     <!-- TERMINA FOOTER -->
 
+    <!-- SCRIPT AOS / BTS -->
+
     <script>
       AOS.init();
     </script>
@@ -382,6 +406,11 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+
+    <!-- TERMINA SCRIPT AOS / BTS -->
+
+    <!-- SCRIPT MENU -->
+
     <script type="text/javascript">
       $(document).ready(function () {
         $("#menu_on").click(function () {
@@ -407,5 +436,7 @@
         }
       });
     </script>
+
+    <!-- TERMINA SCRIPT MENU -->
   </body>
 </html>

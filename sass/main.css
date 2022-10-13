@@ -121,6 +121,34 @@ a {
   display: none;
 }
 
+/* ANIMACION BANNERS */
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 0.5;
+  }
+}
+/* ANIMACION BANNERS TERMINA */
 #header {
   z-index: 901;
 }
@@ -419,8 +447,8 @@ a {
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
-#indexPaquetes .paquetes__texto p,
-#paquetes .paquetes__texto p {
+#indexPaquetes .paquetes__texto h4,
+#paquetes .paquetes__texto h4 {
   font: normal 1rem "Poppins", sans-serif;
   color: white;
   margin-bottom: 1.8rem;
@@ -526,7 +554,7 @@ a {
 /* TESTIMONIOS */
 #testimonios {
   grid-area: testimonios;
-  margin-top: 30px;
+  margin-top: 35px;
   background: linear-gradient(black, #2a62b2, black);
   padding-top: 30px;
   display: flex;
@@ -538,7 +566,6 @@ a {
   font: bold 1.8rem "lemon milk";
   letter-spacing: 3px;
   color: #2096fd;
-  margin-bottom: 20px;
 }
 #testimonios .testimonios__container {
   width: 100%;
@@ -547,9 +574,14 @@ a {
   justify-content: space-around;
   align-items: flex-start;
 }
+#testimonios .testimonios__container h5 {
+  font: normal 1rem "Poppins", sans-serif;
+  color: white;
+  margin-top: 20px;
+}
 #testimonios .testimonios__container p {
   width: 300px;
-  margin-top: 25px;
+  margin-top: 5px;
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 0.8rem;
@@ -557,7 +589,7 @@ a {
 #testimonios img {
   width: 100px;
   height: 100px;
-  box-shadow: 0px 8px 15px rgb(0, 0, 0);
+  box-shadow: 14px 14px 15px 0px rgba(0, 0, 0, 0.64);
 }
 
 /* TERMINA TESTIMONIOS */
@@ -718,7 +750,7 @@ a {
 }
 .jornadaIdeal h2 {
   font: bold 1.8rem "lemon milk";
-  margin-bottom: 30px;
+  margin: 0 15px 30px;
   text-align: center;
   color: #2096fd;
 }
