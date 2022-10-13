@@ -167,14 +167,26 @@
           </div>
         </div>
         <div class="reservar__form">
-          <form action="enviar.php" method="POST">
+          <form action="../php/contacto.php" method="post">
             <div class="form__nombre">
               <label for="nombre">Nombre <span class="rojo">*</span></label>
-              <input class="noBorder" type="text" id="nombre" required />
+              <input
+                class="noBorder"
+                type="text"
+                id="nombre"
+                name="name"
+                required
+              />
             </div>
             <div class="form__apellido">
               <label for="apellido">Apellido <span class="rojo">*</span></label>
-              <input class="noBorder" type="text" id="apellido" required />
+              <input
+                class="noBorder"
+                type="text"
+                id="apellido"
+                name="lastname"
+                required
+              />
             </div>
             <div class="form__telefono">
               <label for="telefono">Telefono <span class="rojo">*</span></label>
@@ -194,13 +206,14 @@
                 class="noBorder"
                 type="email"
                 id="e-mail"
+                name="mail"
                 placeholder="nombre@dominio.com"
                 required
               />
             </div>
             <div class="form__pais">
               <label for="country">País <span class="rojo">*</span></label>
-              <select class="noBorder" name="" id="country" required>
+              <select class="noBorder" name="pais" id="country" required>
                 <option value="AF">Afganistán</option>
                 <option value="AL">Albania</option>
                 <option value="DE">Alemania</option>
@@ -439,7 +452,7 @@
             </div>
             <div class="form__paquete">
               <label for="paquete">Paquete <span class="rojo">*</span></label>
-              <select class="noBorder" name="" id="paquete" required>
+              <select class="noBorder" name="paquete" id="paquete" required>
                 <option value="1">Travesía</option>
                 <option value="2">Cat Skiing</option>
                 <option value="3">Heliskiing</option>
@@ -450,7 +463,13 @@
               <label for="fechainicio"
                 >Fecha de ingreso <span class="rojo">*</span></label
               >
-              <input class="noBorder" type="date" id="fechainicio" required />
+              <input
+                class="noBorder"
+                type="date"
+                id="fechainicio"
+                name="fecha"
+                required
+              />
             </div>
             <div class="form__nivel">
               <label for="nivel"
@@ -478,7 +497,12 @@
                 >Que actividad vienes a realizar?
                 <span class="rojo">*</span></label
               >
-              <select class="noBorder" name="" id="disciplina" required>
+              <select
+                class="noBorder"
+                name="disciplina"
+                id="disciplina"
+                required
+              >
                 <option value="1" selected>-</option>
                 <option value="2">Esqui</option>
                 <option value="3">Snowboard</option>
@@ -488,7 +512,7 @@
               <label for="comments">Comentarios </label>
               <textarea
                 class="noBorder"
-                name="comments"
+                name="comentarios"
                 id="comments"
                 cols="30"
                 rows="5"

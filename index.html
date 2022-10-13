@@ -275,7 +275,7 @@
         </div>
         <article class="indexUbicacion__formulario">
           <h2>CONTACTANOS</h2>
-          <form action="enviar.php" method="POST">
+          <form action="php/enviar.php" method="post">
             <div>
               <label for="name">Nombre <span class="rojo">*</span></label>
               <input
@@ -328,12 +328,13 @@
             dejanos tu mail y nos pondremos en contacto.
           </p>
           <div class="newsletter__formulario">
-            <form action="enviar.php" method="POST">
+            <form action="php/newsletter.php" method="post">
               <label for="email"></label>
               <input
                 class="noBorder"
                 type="email"
                 id="email"
+                name="mail"
                 placeholder="mountainbreed@gmail.com"
                 required
               />
