@@ -149,3 +149,21 @@ a {
 }
 
 /* ANIMACION BANNERS TERMINA */
+
+/* EXITO.HTML */
+
+.exito {
+  @include center;
+  height: 100vh;
+  padding: 0 150px;
+  background-image: url("../img/bgexito.jpg");
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font: $tittleh2;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    width: 70%;
+  }
+}

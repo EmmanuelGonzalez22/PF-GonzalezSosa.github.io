@@ -149,6 +149,25 @@ a {
   }
 }
 /* ANIMACION BANNERS TERMINA */
+/* EXITO.HTML */
+.exito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 150px;
+  background-image: url("../img/bgexito.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.exito h1 {
+  font: bold 1.8rem "lemon milk";
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  width: 70%;
+}
+
 #header {
   z-index: 901;
 }
