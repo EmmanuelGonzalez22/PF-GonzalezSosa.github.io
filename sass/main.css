@@ -150,22 +150,36 @@ a {
 }
 /* ANIMACION BANNERS TERMINA */
 /* EXITO.HTML */
-.exito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 150px;
+#bgExito {
   background-image: url("../img/bgexito.jpg");
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  padding: 50px;
 }
-.exito h1 {
-  font: bold 1.8rem "lemon milk";
+#bgExito .headerExito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bgExito .headerExito .headerExito__logoContainer {
+  width: 200px;
+}
+#bgExito .headerExito .headerExito__logoContainer img {
+  width: 100%;
+}
+#bgExito .exitoTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  margin-top: 18vh;
+}
+#bgExito .exitoTexto h1 {
+  font: bold 2.5rem "lemon milk";
   color: black;
   font-size: 3rem;
   text-align: center;
-  width: 70%;
 }
 
 #header {
@@ -184,8 +198,8 @@ a {
   font-family: "lemon milk";
   text-align: center;
   font-size: 1rem;
-  opacity: 1;
   color: #2096fd;
+  font-weight: bold;
 }
 @media (min-width: 993px) {
   #header .logo__mobile {
@@ -280,7 +294,6 @@ a {
   right: 0;
   bottom: 0;
   z-index: -1;
-  height: 100vh;
 }
 .container__vidPromo .vidPromo video {
   height: 100%;
@@ -302,7 +315,7 @@ a {
   gap: 30px;
 }
 #principal h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -582,7 +595,7 @@ a {
   gap: 30px;
 }
 #testimonios h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   letter-spacing: 3px;
   color: #2096fd;
 }
@@ -626,7 +639,7 @@ a {
   height: auto;
 }
 #indexUbicacion .indexUbicacion__formulario h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   margin: 15px 0px;
   text-align: center;
   color: #2096fd;
@@ -768,7 +781,7 @@ a {
   justify-content: center;
 }
 .jornadaIdeal h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   margin: 0 15px 30px;
   text-align: center;
   color: #2096fd;
@@ -794,7 +807,7 @@ a {
 }
 #travesia h2 {
   margin: 0 15px;
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
 }
@@ -837,7 +850,7 @@ a {
 }
 #catSkiing h2 {
   margin: 0 15px;
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
 }
@@ -880,7 +893,7 @@ a {
 }
 #heliSkiing h2 {
   margin: 0 15px;
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
 }
@@ -923,7 +936,7 @@ a {
 }
 #aventura h2 {
   margin: 0 15px;
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
 }
@@ -1218,7 +1231,7 @@ a {
   color: white;
 }
 #alojamiento .alojamiento__section h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   color: #2096fd;
   margin-bottom: 50px;
   text-align: center;
@@ -1309,10 +1322,23 @@ a {
   margin-top: 50px;
 }
 #galeria h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   text-align: center;
   color: #2096fd;
   margin-bottom: 50px;
+}
+#galeria .modal__container {
+  z-index: 10000;
+}
+#galeria .modal__container .modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+#galeria .modal__container .modal__close:hover {
+  transform: scale(1.3);
 }
 
 #reservar {
@@ -1323,7 +1349,7 @@ a {
   align-content: center;
 }
 #reservar h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   margin: 35px 0;
   color: #2096fd;
 }
@@ -1419,7 +1445,7 @@ a {
   padding: 0;
 }
 #indicaciones h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   letter-spacing: 2px;
   text-align: center;
   color: white;
@@ -1443,7 +1469,7 @@ a {
 }
 
 #mediosContacto h2 {
-  font: bold 1.8rem "lemon milk";
+  font: bold 2.5rem "lemon milk";
   margin-bottom: 30px;
   text-align: center;
   width: 100%;
@@ -1689,7 +1715,7 @@ a {
     height: 90vh;
   }
   .container__vidPromo .vidPromo {
-    left: -200px;
+    left: -600px;
   }
   .container__banner {
     height: 75vh;
@@ -1891,7 +1917,7 @@ a {
     height: auto;
   }
   .container__vidPromo .vidPromo {
-    left: -400px;
+    left: -550px;
   }
   .container__banner .banner h2 {
     letter-spacing: 0.5rem;

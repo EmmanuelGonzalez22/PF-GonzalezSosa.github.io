@@ -152,18 +152,30 @@ a {
 
 /* EXITO.HTML */
 
-.exito {
-  @include center;
-  height: 100vh;
-  padding: 0 150px;
+#bgExito {
   background-image: url("../img/bgexito.jpg");
   background-size: cover;
   background-position: center;
-  h1 {
-    font: $tittleh2;
-    color: black;
-    font-size: 3rem;
-    text-align: center;
-    width: 70%;
+  height: 100vh;
+  padding: 50px;
+  .headerExito {
+    @include center;
+    .headerExito__logoContainer {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .exitoTexto {
+    @include center;
+    padding: 0 100px;
+    margin-top: 18vh;
+    h1 {
+      font: $tittleh2;
+      color: black;
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 }

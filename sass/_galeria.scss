@@ -13,4 +13,17 @@
     color: $colorBlue;
     margin-bottom: 50px;
   }
+  .modal__container {
+    z-index: 10000;
+    .modal__close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      box-shadow: none;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
 }

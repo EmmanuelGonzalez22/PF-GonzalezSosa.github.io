@@ -24,44 +24,27 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../sass/main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/ce694f884b.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
-  <!-- TERMINA HEAD -->
+  <!------ TERMINA HEAD ------>
 
-  <body>
-    <div class="exito">
+  <body id="bgExito">
+    <header class="headerExito">
+      <div class="headerExito__logoContainer">
+        <img src="../img/logo/large_mountainbreed-recortado.png" alt="logo" />
+      </div>
+    </header>
+    <div class="exitoTexto">
       <h1>
-        MUCHAS GRACIAS POR COMUNICARTE CON NOSOTROS, NOS COMUNICAREMOS A LA
+        MUCHAS GRACIAS POR COMUNICARTE CON NOSOTROS, NOS CONTACTAREMOS A LA
         BREVEDAD
       </h1>
     </div>
+    <script>
+      setTimeout(function () {
+        window.location.replace("../index.html");
+      }, 3000);
+    </script>
   </body>
-
-  <script>
-    setTimeout(function () {
-      window.location.replace("../index.html");
-    }, 4000);
-  </script>
 </html>
