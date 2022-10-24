@@ -6,6 +6,9 @@
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .dia1 {
     h4 {
@@ -58,6 +61,9 @@
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .dia1 {
     h4 {
@@ -110,6 +116,9 @@
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .dia1 {
     h4 {
@@ -162,6 +171,9 @@
     font: $tittleh2;
     color: #2096fd;
     text-align: center;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .dia1 {
     h4 {

@@ -9,6 +9,9 @@
     margin: 0 15px 30px;
     text-align: center;
     color: #2096fd;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   p {
     font: $fontParrafo;

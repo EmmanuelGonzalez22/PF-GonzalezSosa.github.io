@@ -1,4 +1,4 @@
-/* MEDIA QUERY 1280 */
+/*---------------- MEDIA QUERY 1280 ----------------*/
 
 @media (min-width: 1280px) {
   .container__vidPromo .vidPromo video {
@@ -7,9 +7,9 @@
   }
 }
 
-/* MEDIA QUERY 992 */
+/*---------------- MEDIA QUERY 992 ----------------*/
 
-@media (max-width: 992px) {
+@include responsive(tablet) {
   /* NAVBAR */
 
   // MENU HAMBURGUESA COPIADO DE INSTAGRAM
@@ -74,9 +74,18 @@
       }
     }
 
+    #header .logo__mobile {
+      width: 65%;
+      right: 0;
+      img {
+        transform: translateX(15vw);
+      }
+    }
+
     nav {
       left: 0;
       opacity: 1;
+      box-shadow: 8px 0px 15px rgb(32 150 253);
     }
   }
 
@@ -85,7 +94,7 @@
   #header {
     display: flex;
     justify-content: center;
-    margin-top: 38px;
+    margin-bottom: 38px;
     .header__menu {
       button {
         background-color: transparent;
@@ -169,8 +178,23 @@
         }
       }
     }
-    .logo__mobile img {
-      width: 200px;
+    .logo__mobile {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 130px;
+      z-index: 5;
+      width: 100vw;
+      transition: all 0.8s ease;
+      img {
+        width: 200px;
+        transition: all 0.8s ease;
+      }
+      &.menuBg {
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 8px 15px rgb(32 150 253);
+      }
     }
   }
 
@@ -207,7 +231,8 @@
           opacity: 1;
           font-size: 1.7rem;
           letter-spacing: 3px;
-          color: rgb(185 181 181 / 75%);
+          color: #e6e6fad1;
+          text-shadow: 0 0 0.5em #000000;
         }
       }
     }
@@ -237,6 +262,13 @@
     }
   }
   #paquetes {
+    .indexPaquetes__imagenes .imagenes__container a {
+      opacity: 1;
+      font-size: 1.7rem;
+      letter-spacing: 3px;
+      color: rgba(230, 230, 250, 0.8196078431);
+      text-shadow: 0 0 0.5em #000000;
+    }
     .paquetes__texto {
       .texto__paq {
         width: 50%;
@@ -329,7 +361,7 @@
   /* TERMINA FOOTER */
 }
 
-/* MEDIA QUERY 786 */
+/*---------------- MEDIA QUERY 786 ----------------*/
 
 @media (max-width: 786px) {
   #header {
@@ -345,9 +377,9 @@
   }
 }
 
-/* MEDIA QUERY 768 */
+/*---------------- MEDIA QUERY 768 ----------------*/
 
-@media (max-width: 768px) {
+@include responsive(mobile) {
   .container__vidPromo {
     height: 0vh;
   }
@@ -361,10 +393,12 @@
     h2 {
       font-weight: bolder;
       margin-bottom: 0;
+      text-shadow: 0 0 0.6em #000000;
     }
     .principal__texto p {
       font-weight: bolder;
       text-transform: uppercase;
+      text-shadow: 0 0 0.5em #000000;
     }
   }
   #indexUbicacion {
@@ -444,21 +478,29 @@
   }
 }
 
-/* MEDIA QUERY 576 */
+/*---------------- MEDIA QUERY 576 ----------------*/
 
 @media (max-width: 576px) {
+  .visible_menu {
+    #header .logo__mobile {
+      width: 50%;
+      right: 0;
+      img {
+        transform: translateX(5vw);
+      }
+    }
+  }
+
   nav {
     width: 50%;
   }
   #header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 30px 20px 0 0;
+    margin-bottom: 30px;
     .logo__mobile {
-      z-index: 400;
-      width: 120px;
+      height: 100px;
+      z-index: 5;
       img {
-        width: 100%;
+        width: 120px;
         height: auto;
       }
     }

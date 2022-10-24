@@ -1,3 +1,4 @@
+/* RESPONSIVE */
 /* GLOBAL */
 * {
   margin: 0;
@@ -20,6 +21,7 @@ a {
 
 .rojo {
   color: rgb(197, 27, 27);
+  font-weight: normal;
 }
 
 .noBorder {
@@ -125,6 +127,8 @@ a {
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
           animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 @-webkit-keyframes text-focus-in {
@@ -321,6 +325,11 @@ a {
   margin-bottom: 20px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  #principal h2 {
+    font-size: 1.9rem;
+  }
+}
 #principal .principal__texto {
   width: 60%;
 }
@@ -336,7 +345,7 @@ a {
 }
 #principal .principal__boton a {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -488,7 +497,7 @@ a {
 #indexPaquetes .paquetes__texto a,
 #paquetes .paquetes__texto a {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -599,6 +608,11 @@ a {
   letter-spacing: 3px;
   color: #2096fd;
 }
+@media (max-width: 768px) {
+  #testimonios h2 {
+    font-size: 1.9rem;
+  }
+}
 #testimonios .testimonios__container {
   width: 100%;
   text-align: center;
@@ -644,6 +658,11 @@ a {
   text-align: center;
   color: #2096fd;
 }
+@media (max-width: 768px) {
+  #indexUbicacion .indexUbicacion__formulario h2 {
+    font-size: 1.9rem;
+  }
+}
 #indexUbicacion .indexUbicacion__formulario form {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -674,7 +693,7 @@ a {
 }
 #indexUbicacion .indexUbicacion__formulario form .form__button input {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -735,7 +754,7 @@ a {
 }
 #indexUbicacion .indexUbicacion__newsletter .newsletter__formulario .button {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -786,6 +805,11 @@ a {
   text-align: center;
   color: #2096fd;
 }
+@media (max-width: 768px) {
+  .jornadaIdeal h2 {
+    font-size: 1.9rem;
+  }
+}
 .jornadaIdeal p {
   font: normal 1rem "Poppins", sans-serif;
   text-align: center;
@@ -810,6 +834,11 @@ a {
   font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
+}
+@media (max-width: 768px) {
+  #travesia h2 {
+    font-size: 1.9rem;
+  }
 }
 #travesia .dia1 h4 {
   font-family: "lemon milk";
@@ -854,6 +883,11 @@ a {
   color: #2096fd;
   text-align: center;
 }
+@media (max-width: 768px) {
+  #catSkiing h2 {
+    font-size: 1.9rem;
+  }
+}
 #catSkiing .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
@@ -897,6 +931,11 @@ a {
   color: #2096fd;
   text-align: center;
 }
+@media (max-width: 768px) {
+  #heliSkiing h2 {
+    font-size: 1.9rem;
+  }
+}
 #heliSkiing .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
@@ -939,6 +978,11 @@ a {
   font: bold 2.5rem "lemon milk";
   color: #2096fd;
   text-align: center;
+}
+@media (max-width: 768px) {
+  #aventura h2 {
+    font-size: 1.9rem;
+  }
 }
 #aventura .dia1 h4 {
   font-family: "lemon milk";
@@ -1142,7 +1186,7 @@ a {
 }
 .botones .botones__reservar a {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -1186,7 +1230,7 @@ a {
 }
 .botones .botones__paquetes a {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -1237,11 +1281,23 @@ a {
   text-align: center;
   width: 100%;
 }
+@media (max-width: 768px) {
+  #alojamiento .alojamiento__section h2 {
+    font-size: 1.9rem;
+  }
+}
+#alojamiento .alojamiento__section .section__domo {
+  transition: all 0.5s;
+}
+#alojamiento .alojamiento__section .section__domo:hover {
+  box-shadow: 0px 0px 16px 9px rgb(32, 150, 253);
+}
 #alojamiento .alojamiento__section .section__domo h3 {
   font-family: "lemon milk";
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #2096fd;
+  margin-top: 48px;
 }
 #alojamiento .alojamiento__section .section__domo .domo__lista ul {
   list-style-type: disclosure-closed;
@@ -1257,11 +1313,23 @@ a {
   width: 100%;
   height: auto;
 }
+#alojamiento .alojamiento__section .section__cabana {
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+#alojamiento .alojamiento__section .section__cabana:hover {
+  box-shadow: 0px 0px 16px 9px rgb(32, 150, 253);
+}
 #alojamiento .alojamiento__section .section__cabana h3 {
   font-family: "lemon milk";
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #2096fd;
+}
+@media (max-width: 768px) {
+  #alojamiento .alojamiento__section .section__cabana h3 {
+    margin-top: 48px;
+  }
 }
 #alojamiento .alojamiento__section .section__cabana .cabana__lista ul {
   list-style-type: disclosure-closed;
@@ -1327,6 +1395,11 @@ a {
   color: #2096fd;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  #galeria h2 {
+    font-size: 1.9rem;
+  }
+}
 #galeria .modal__container {
   z-index: 10000;
 }
@@ -1353,6 +1426,11 @@ a {
   margin: 35px 0;
   color: #2096fd;
 }
+@media (max-width: 768px) {
+  #reservar h2 {
+    font-size: 1.9rem;
+  }
+}
 #reservar .reservar__form form {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -1363,8 +1441,11 @@ a {
   flex-direction: column;
   align-items: stretch;
 }
-#reservar .reservar__form form label {
+#reservar .reservar__form form label,
+#reservar .reservar__form form h5 {
   font-weight: bolder;
+  margin: 0;
+  font-size: 0.8rem;
 }
 #reservar .reservar__form form input {
   display: block;
@@ -1383,9 +1464,14 @@ a {
   flex-direction: column;
   justify-content: flex-start;
 }
-#reservar .reservar__form form .form__nivel input {
+#reservar .reservar__form form .form__nivel div input {
   width: auto;
   margin: 0 10px 0 30px;
+  cursor: pointer;
+}
+#reservar .reservar__form form .form__nivel div label {
+  font-weight: normal;
+  color: rgb(211, 205, 205);
 }
 #reservar .reservar__form form textarea {
   color: rgb(211, 205, 205);
@@ -1399,7 +1485,7 @@ a {
 }
 #reservar .reservar__form form .form__button input {
   position: relative;
-  color: rgb(110, 237, 237);
+  color: white;
   font-family: "lemon milk";
   font-size: 1rem;
   font-weight: bold;
@@ -1451,6 +1537,11 @@ a {
   color: white;
   width: 50%;
 }
+@media (max-width: 768px) {
+  #indicaciones h2 {
+    font-size: 1.9rem;
+  }
+}
 #indicaciones .indicaciones__texto {
   width: 50%;
 }
@@ -1474,6 +1565,11 @@ a {
   text-align: center;
   width: 100%;
   color: #2096fd;
+}
+@media (max-width: 768px) {
+  #mediosContacto h2 {
+    font-size: 1.9rem;
+  }
 }
 #mediosContacto .mediosContacto__container {
   display: flex;
@@ -1552,14 +1648,14 @@ a {
   height: auto;
 }
 
-/* MEDIA QUERY 1280 */
+/*---------------- MEDIA QUERY 1280 ----------------*/
 @media (min-width: 1280px) {
   .container__vidPromo .vidPromo video {
     width: 100%;
     height: auto;
   }
 }
-/* MEDIA QUERY 992 */
+/*---------------- MEDIA QUERY 992 ----------------*/
 @media (max-width: 992px) {
   /* NAVBAR */
   #menu_on {
@@ -1616,14 +1712,22 @@ a {
   .visible_menu #menu_on > span:nth-child(3) {
     transform: translateY(-9px) rotate(90deg);
   }
+  .visible_menu #header .logo__mobile {
+    width: 65%;
+    right: 0;
+  }
+  .visible_menu #header .logo__mobile img {
+    transform: translateX(15vw);
+  }
   .visible_menu nav {
     left: 0;
     opacity: 1;
+    box-shadow: 8px 0px 15px rgb(32, 150, 253);
   }
   #header {
     display: flex;
     justify-content: center;
-    margin-top: 38px;
+    margin-bottom: 38px;
   }
   #header .header__menu button {
     background-color: transparent;
@@ -1706,8 +1810,23 @@ a {
   #header .header__menu .menu__redes ul li a span:hover {
     color: rgb(255, 255, 255);
   }
+  #header .logo__mobile {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    z-index: 5;
+    width: 100vw;
+    transition: all 0.8s ease;
+  }
   #header .logo__mobile img {
     width: 200px;
+    transition: all 0.8s ease;
+  }
+  #header .logo__mobile.menuBg {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 8px 15px rgb(32, 150, 253);
   }
   /*TERMINA NAVBAR */
   /* INDEX */
@@ -1737,7 +1856,8 @@ a {
     opacity: 1;
     font-size: 1.7rem;
     letter-spacing: 3px;
-    color: rgba(185, 181, 181, 0.75);
+    color: rgba(230, 230, 250, 0.8196078431);
+    text-shadow: 0 0 0.5em #000000;
   }
   #testimonios .testimonios__container {
     flex-direction: column;
@@ -1755,6 +1875,13 @@ a {
   /* PAQUETES */
   .jornadaIdeal p {
     width: 80%;
+  }
+  #paquetes .indexPaquetes__imagenes .imagenes__container a {
+    opacity: 1;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    color: rgba(230, 230, 250, 0.8196078431);
+    text-shadow: 0 0 0.5em #000000;
   }
   #paquetes .paquetes__texto .texto__paq {
     width: 50%;
@@ -1813,7 +1940,7 @@ a {
   }
   /* TERMINA FOOTER */
 }
-/* MEDIA QUERY 786 */
+/*---------------- MEDIA QUERY 786 ----------------*/
 @media (max-width: 786px) {
   #header .header__barra {
     display: none;
@@ -1823,7 +1950,7 @@ a {
     height: auto;
   }
 }
-/* MEDIA QUERY 768 */
+/*---------------- MEDIA QUERY 768 ----------------*/
 @media (max-width: 768px) {
   .container__vidPromo {
     height: 0vh;
@@ -1837,10 +1964,12 @@ a {
   #principal h2 {
     font-weight: bolder;
     margin-bottom: 0;
+    text-shadow: 0 0 0.6em #000000;
   }
   #principal .principal__texto p {
     font-weight: bolder;
     text-transform: uppercase;
+    text-shadow: 0 0 0.5em #000000;
   }
   #indexUbicacion .indexUbicacion__mapa .mapa {
     width: 250px;
@@ -1898,22 +2027,27 @@ a {
     height: 25px;
   }
 }
-/* MEDIA QUERY 576 */
+/*---------------- MEDIA QUERY 576 ----------------*/
 @media (max-width: 576px) {
+  .visible_menu #header .logo__mobile {
+    width: 50%;
+    right: 0;
+  }
+  .visible_menu #header .logo__mobile img {
+    transform: translateX(5vw);
+  }
   nav {
     width: 50%;
   }
   #header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 30px 20px 0 0;
+    margin-bottom: 30px;
   }
   #header .logo__mobile {
-    z-index: 400;
-    width: 120px;
+    height: 100px;
+    z-index: 5;
   }
   #header .logo__mobile img {
-    width: 100%;
+    width: 120px;
     height: auto;
   }
   .container__vidPromo .vidPromo {

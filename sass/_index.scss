@@ -36,6 +36,9 @@
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-align: center;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .principal__texto {
     width: 60%;
@@ -237,6 +240,9 @@
     font: $tittleh2;
     letter-spacing: 3px;
     color: #2096fd;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .testimonios__container {
     width: 100%;
@@ -283,6 +289,9 @@
       margin: 15px 0px;
       text-align: center;
       color: #2096fd;
+      @include responsive(mobile) {
+        font-size: 1.9rem;
+      }
     }
     form {
       font-family: "Poppins", sans-serif;

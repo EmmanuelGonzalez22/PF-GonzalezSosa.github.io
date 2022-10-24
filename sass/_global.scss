@@ -29,6 +29,7 @@ a {
 
 .rojo {
   color: rgb(197, 27, 27);
+  font-weight: normal;
 }
 
 .noBorder {
@@ -136,6 +137,7 @@ a {
 
 .text-focus-in {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 0.7s;
 }
 @keyframes text-focus-in {
   0% {

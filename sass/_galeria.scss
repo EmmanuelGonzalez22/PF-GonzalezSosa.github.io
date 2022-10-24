@@ -12,6 +12,9 @@
     text-align: center;
     color: $colorBlue;
     margin-bottom: 50px;
+    @include responsive(mobile) {
+      font-size: 1.9rem;
+    }
   }
   .modal__container {
     z-index: 10000;
