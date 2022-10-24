@@ -310,7 +310,7 @@ a {
 }
 
 #principal {
-  margin-top: 40px;
+  margin-top: 78px;
   grid-area: principal;
   display: flex;
   flex-flow: row-reverse wrap;
@@ -2057,7 +2057,7 @@ a {
     letter-spacing: 0.5rem;
   }
   #principal {
-    margin-top: 30px;
+    margin-top: 68px;
   }
   #principal .principal__texto {
     width: 100%;

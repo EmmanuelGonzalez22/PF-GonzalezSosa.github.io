@@ -141,7 +141,7 @@
 
         <!-- TERMINA REDES MENU -->
       </nav>
-      <div class="logo__mobile">
+      <div class="logo__mobile" id="logoMobile">
         <a href="../index.html"
           ><img
             src="../img/logo/large_mountainbreed-recortado.png"
@@ -312,6 +312,15 @@
           $("#desplegable").addClass("menuBlack");
         } else {
           $("#desplegable").removeClass("menuBlack");
+        }
+      });
+    </script>
+    <script>
+      $(window).scroll(function name() {
+        if ($("#logoMobile").offset().top > 50) {
+          $("#logoMobile").addClass("menuBg");
+        } else {
+          $("#logoMobile").removeClass("menuBg");
         }
       });
     </script>
