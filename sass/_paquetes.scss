@@ -21,6 +21,17 @@
   }
 }
 #paquetes {
+  margin-top: 50px;
+  gap: 20px;
+  @include responsive(mobile) {
+    margin-top: 30px;
+  }
+  .paquetes__texto {
+    margin-top: 20px;
+    .texto__paq {
+      margin-top: 0;
+    }
+  }
   h3 {
     font-family: "lemon milk";
     color: #2096fd;

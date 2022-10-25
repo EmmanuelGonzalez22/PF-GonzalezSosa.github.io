@@ -127,9 +127,8 @@
     .texto__paq {
       width: 30%;
       text-align: justify;
-      margin: 30px auto 0px auto;
+      margin: 30px auto 50px auto;
       line-height: 2rem;
-      margin-bottom: 2rem;
     }
     h3 {
       font-family: "lemon milk";
@@ -161,9 +160,6 @@
 }
 #indexPaquetes {
   margin-top: 100px;
-}
-#paquetes {
-  margin-top: 50px;
 }
 @media (min-width: 993px) {
   #indexPaquetes,

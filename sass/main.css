@@ -475,9 +475,8 @@ a {
 #paquetes .paquetes__texto .texto__paq {
   width: 30%;
   text-align: justify;
-  margin: 30px auto 0px auto;
+  margin: 30px auto 50px auto;
   line-height: 2rem;
-  margin-bottom: 2rem;
 }
 #indexPaquetes .paquetes__texto h3,
 #paquetes .paquetes__texto h3 {
@@ -539,10 +538,6 @@ a {
 
 #indexPaquetes {
   margin-top: 100px;
-}
-
-#paquetes {
-  margin-top: 50px;
 }
 
 @media (min-width: 993px) {
@@ -817,6 +812,21 @@ a {
   color: white;
 }
 
+#paquetes {
+  margin-top: 50px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #paquetes {
+    margin-top: 30px;
+  }
+}
+#paquetes .paquetes__texto {
+  margin-top: 20px;
+}
+#paquetes .paquetes__texto .texto__paq {
+  margin-top: 0;
+}
 #paquetes h3 {
   font-family: "lemon milk";
   color: #2096fd;
@@ -1870,6 +1880,8 @@ a {
   }
   #indexUbicacion .indexUbicacion__formulario {
     width: 80%;
+    order: -1;
+    margin-bottom: 30px;
   }
   /* TERMINA INDEX */
   /* PAQUETES */
@@ -1964,12 +1976,13 @@ a {
   #principal h2 {
     font-weight: bolder;
     margin-bottom: 0;
-    text-shadow: 0 0 0.6em #000000;
+    text-shadow: 0 0 3px #000000;
   }
   #principal .principal__texto p {
     font-weight: bolder;
     text-transform: uppercase;
     text-shadow: 0 0 0.5em #000000;
+    line-height: 24px;
   }
   #indexUbicacion .indexUbicacion__mapa .mapa {
     width: 250px;

@@ -249,6 +249,8 @@
     flex-direction: column;
     .indexUbicacion__formulario {
       width: 80%;
+      order: -1;
+      margin-bottom: 30px;
     }
   }
 
@@ -393,12 +395,13 @@
     h2 {
       font-weight: bolder;
       margin-bottom: 0;
-      text-shadow: 0 0 0.6em #000000;
+      text-shadow: 0 0 3px #000000;
     }
     .principal__texto p {
       font-weight: bolder;
       text-transform: uppercase;
       text-shadow: 0 0 0.5em #000000;
+      line-height: 24px;
     }
   }
   #indexUbicacion {
