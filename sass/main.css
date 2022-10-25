@@ -327,7 +327,7 @@ a {
 }
 @media (max-width: 768px) {
   #principal h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #principal .principal__texto {
@@ -417,6 +417,7 @@ a {
   background-size: cover;
   transition: all 0.5s;
   background-image: url("../img/paquetes/travesia.jpg");
+  background-position: center;
 }
 #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2,
 #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2 {
@@ -429,6 +430,7 @@ a {
   background-size: cover;
   transition: all 0.5s;
   background-image: url("../img/paquetes/cat-skiing.jpg");
+  background-position: center;
 }
 #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3,
 #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3 {
@@ -453,6 +455,7 @@ a {
   background-size: cover;
   transition: all 0.5s;
   background-image: url("../img/paquetes/aventura-completa.jpg");
+  background-position: center;
 }
 #indexPaquetes .indexPaquetes__imagenes .imagenes__container a,
 #paquetes .indexPaquetes__imagenes .imagenes__container a {
@@ -605,7 +608,7 @@ a {
 }
 @media (max-width: 768px) {
   #testimonios h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #testimonios .testimonios__container {
@@ -643,6 +646,14 @@ a {
   align-items: center;
   margin-top: 50px;
 }
+#indexUbicacion .indexUbicacion__mapa {
+  width: 30%;
+  height: 350px;
+}
+#indexUbicacion .indexUbicacion__mapa iframe {
+  width: 100%;
+  height: 100%;
+}
 #indexUbicacion .indexUbicacion__formulario {
   width: 40%;
   height: auto;
@@ -655,7 +666,7 @@ a {
 }
 @media (max-width: 768px) {
   #indexUbicacion .indexUbicacion__formulario h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #indexUbicacion .indexUbicacion__formulario form {
@@ -802,7 +813,7 @@ a {
 }
 @media (max-width: 768px) {
   .jornadaIdeal h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 .jornadaIdeal p {
@@ -847,7 +858,7 @@ a {
 }
 @media (max-width: 768px) {
   #travesia h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #travesia .dia1 h4 {
@@ -895,7 +906,7 @@ a {
 }
 @media (max-width: 768px) {
   #catSkiing h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #catSkiing .dia1 h4 {
@@ -943,7 +954,7 @@ a {
 }
 @media (max-width: 768px) {
   #heliSkiing h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #heliSkiing .dia1 h4 {
@@ -991,7 +1002,7 @@ a {
 }
 @media (max-width: 768px) {
   #aventura h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #aventura .dia1 h4 {
@@ -1293,7 +1304,7 @@ a {
 }
 @media (max-width: 768px) {
   #alojamiento .alojamiento__section h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #alojamiento .alojamiento__section .section__domo {
@@ -1407,7 +1418,7 @@ a {
 }
 @media (max-width: 768px) {
   #galeria h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #galeria .modal__container {
@@ -1438,7 +1449,7 @@ a {
 }
 @media (max-width: 768px) {
   #reservar h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #reservar .reservar__form form {
@@ -1549,7 +1560,7 @@ a {
 }
 @media (max-width: 768px) {
   #indicaciones h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #indicaciones .indicaciones__texto {
@@ -1578,7 +1589,7 @@ a {
 }
 @media (max-width: 768px) {
   #mediosContacto h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 #mediosContacto .mediosContacto__container {
@@ -1586,10 +1597,20 @@ a {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+@media (max-width: 992px) {
+  #mediosContacto .mediosContacto__container {
+    gap: 50px;
+  }
+}
 #mediosContacto .mediosContacto__container article {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  #mediosContacto .mediosContacto__container article {
+    gap: 30px;
+  }
 }
 #mediosContacto .mediosContacto__container article .contacto__medios {
   display: flex;
@@ -1737,7 +1758,6 @@ a {
   #header {
     display: flex;
     justify-content: center;
-    margin-bottom: 38px;
   }
   #header .header__menu button {
     background-color: transparent;
@@ -1840,14 +1860,11 @@ a {
   }
   /*TERMINA NAVBAR */
   /* INDEX */
-  .container__vidPromo {
-    height: 90vh;
-  }
   .container__vidPromo .vidPromo {
-    left: -600px;
+    left: -230px;
   }
   .container__banner {
-    height: 75vh;
+    height: 80vh;
   }
   .container__banner .banner {
     height: 80vh;
@@ -1858,9 +1875,30 @@ a {
   }
   #principal {
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 0;
+    gap: 50px;
+  }
+  #principal h2 {
+    width: 90%;
+    font-weight: bolder;
+    margin-bottom: 0;
+    text-shadow: 0 0 3px #000000;
   }
   #principal .principal__texto ~ .principal__boton {
     width: 100%;
+  }
+  #principal .principal__texto p {
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em #000000;
+    line-height: 28px;
+  }
+  #indexPaquetes {
+    margin-top: 0;
   }
   #indexPaquetes .indexPaquetes__imagenes .imagenes__container a {
     opacity: 1;
@@ -1871,12 +1909,18 @@ a {
   }
   #testimonios .testimonios__container {
     flex-direction: column;
+    gap: 20px;
   }
   #testimonios .testimonios__container .testimonios__item {
     align-self: center;
   }
   #indexUbicacion {
     flex-direction: column;
+  }
+  #indexUbicacion .indexUbicacion__mapa {
+    width: 80%;
+    height: 250px;
+    text-align: center;
   }
   #indexUbicacion .indexUbicacion__formulario {
     width: 80%;
@@ -1964,33 +2008,29 @@ a {
 }
 /*---------------- MEDIA QUERY 768 ----------------*/
 @media (max-width: 768px) {
-  .container__vidPromo {
-    height: 0vh;
-  }
   .container__banner {
-    height: 35vh;
+    height: 40vh;
   }
   .container__banner .banner {
     height: 40vh;
   }
-  #principal h2 {
-    font-weight: bolder;
-    margin-bottom: 0;
-    text-shadow: 0 0 3px #000000;
-  }
-  #principal .principal__texto p {
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-shadow: 0 0 0.5em #000000;
-    line-height: 24px;
-  }
-  #indexUbicacion .indexUbicacion__mapa .mapa {
-    width: 250px;
-    height: 250px;
+  #indexUbicacion .indexUbicacion__mapa {
+    height: 200px;
   }
   #indexPaquetes .indexPaquetes__imagenes .imagenes__container,
 #paquetes .indexPaquetes__imagenes .imagenes__container {
     width: 100%;
+  }
+  #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img1,
+#indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2,
+#indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3,
+#indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img4,
+#paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img1,
+#paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2,
+#paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3,
+#paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img4 {
+    height: 25vh;
+    background-position: center;
   }
   #alojamiento .alojamiento__section .section__domo .img__container {
     display: none;
@@ -2052,9 +2092,6 @@ a {
   nav {
     width: 50%;
   }
-  #header {
-    margin-bottom: 30px;
-  }
   #header .logo__mobile {
     height: 100px;
     z-index: 5;
@@ -2070,45 +2107,13 @@ a {
     letter-spacing: 0.5rem;
   }
   #principal {
-    margin-top: 68px;
+    gap: 30px;
   }
   #principal .principal__texto {
-    width: 100%;
+    width: 80%;
   }
   #indexUbicacion .indexUbicacion__newsletter .newsletter__formulario .button {
     margin-left: auto;
-  }
-  #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img1 {
-    height: 250px;
-    background-position: center;
-  }
-  #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2 {
-    height: 250px;
-    background-position: center;
-  }
-  #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3 {
-    height: 250px;
-    background-position: center;
-  }
-  #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img4 {
-    height: 250px;
-    background-position: center;
-  }
-  #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img1 {
-    height: 250px;
-    background-position: center;
-  }
-  #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img2 {
-    height: 250px;
-    background-position: center;
-  }
-  #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img3 {
-    height: 250px;
-    background-position: center;
-  }
-  #paquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img4 {
-    height: 250px;
-    background-position: center;
   }
   #paquetes .paquetes__texto .texto__paq {
     width: 70%;

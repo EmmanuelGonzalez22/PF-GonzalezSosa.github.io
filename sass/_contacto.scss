@@ -9,7 +9,7 @@
     margin: 35px 0;
     color: #2096fd;
     @include responsive(mobile) {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
   }
   .reservar__form {
@@ -96,7 +96,7 @@
     color: white;
     width: 50%;
     @include responsive(mobile) {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
   }
   .indicaciones__texto {
@@ -124,17 +124,23 @@
     width: 100%;
     color: #2096fd;
     @include responsive(mobile) {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
   }
   .mediosContacto__container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    @include responsive(tablet) {
+      gap: 50px;
+    }
     article {
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
+      @include responsive(tablet) {
+        gap: 30px;
+      }
       .contacto__medios {
         display: flex;
         align-items: baseline;

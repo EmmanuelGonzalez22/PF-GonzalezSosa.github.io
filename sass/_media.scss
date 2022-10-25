@@ -94,7 +94,6 @@
   #header {
     display: flex;
     justify-content: center;
-    margin-bottom: 38px;
     .header__menu {
       button {
         background-color: transparent;
@@ -203,13 +202,12 @@
   /* INDEX */
 
   .container__vidPromo {
-    height: 90vh;
     .vidPromo {
-      left: -600px;
+      left: -230px;
     }
   }
   .container__banner {
-    height: 75vh;
+    height: 80vh;
     .banner {
       height: 80vh;
       h2 {
@@ -220,11 +218,30 @@
   }
   #principal {
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 0;
+    gap: 50px;
+    h2 {
+      width: 90%;
+      font-weight: bolder;
+      margin-bottom: 0;
+      text-shadow: 0 0 3px #000000;
+    }
     .principal__texto ~ .principal__boton {
       width: 100%;
     }
+    .principal__texto p {
+      font-weight: bolder;
+      text-transform: uppercase;
+      text-shadow: 0 0 0.5em #000000;
+      line-height: 28px;
+    }
   }
   #indexPaquetes {
+    margin-top: 0;
     .indexPaquetes__imagenes {
       .imagenes__container {
         a {
@@ -240,6 +257,7 @@
   #testimonios {
     .testimonios__container {
       flex-direction: column;
+      gap: 20px;
       .testimonios__item {
         align-self: center;
       }
@@ -247,6 +265,11 @@
   }
   #indexUbicacion {
     flex-direction: column;
+    .indexUbicacion__mapa {
+      width: 80%;
+      height: 250px;
+      text-align: center;
+    }
     .indexUbicacion__formulario {
       width: 80%;
       order: -1;
@@ -382,32 +405,15 @@
 /*---------------- MEDIA QUERY 768 ----------------*/
 
 @include responsive(mobile) {
-  .container__vidPromo {
-    height: 0vh;
-  }
   .container__banner {
-    height: 35vh;
+    height: 40vh;
     .banner {
       height: 40vh;
     }
   }
-  #principal {
-    h2 {
-      font-weight: bolder;
-      margin-bottom: 0;
-      text-shadow: 0 0 3px #000000;
-    }
-    .principal__texto p {
-      font-weight: bolder;
-      text-transform: uppercase;
-      text-shadow: 0 0 0.5em #000000;
-      line-height: 24px;
-    }
-  }
   #indexUbicacion {
-    .indexUbicacion__mapa .mapa {
-      width: 250px;
-      height: 250px;
+    .indexUbicacion__mapa {
+      height: 200px;
     }
   }
   #indexPaquetes,
@@ -415,6 +421,13 @@
     .indexPaquetes__imagenes {
       .imagenes__container {
         width: 100%;
+        .imagenes__img1,
+        .imagenes__img2,
+        .imagenes__img3,
+        .imagenes__img4 {
+          height: 25vh;
+          background-position: center;
+        }
       }
     }
   }
@@ -498,7 +511,6 @@
     width: 50%;
   }
   #header {
-    margin-bottom: 30px;
     .logo__mobile {
       height: 100px;
       z-index: 5;
@@ -521,9 +533,9 @@
     }
   }
   #principal {
-    margin-top: 68px;
+    gap: 30px;
     .principal__texto {
-      width: 100%;
+      width: 80%;
     }
   }
   #indexUbicacion {
@@ -535,49 +547,7 @@
       }
     }
   }
-  #indexPaquetes {
-    .indexPaquetes__imagenes {
-      .imagenes__container {
-        .imagenes__img1 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img2 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img3 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img4 {
-          height: 250px;
-          background-position: center;
-        }
-      }
-    }
-  }
   #paquetes {
-    .indexPaquetes__imagenes {
-      .imagenes__container {
-        .imagenes__img1 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img2 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img3 {
-          height: 250px;
-          background-position: center;
-        }
-        .imagenes__img4 {
-          height: 250px;
-          background-position: center;
-        }
-      }
-    }
     .paquetes__texto {
       .texto__paq {
         width: 70%;

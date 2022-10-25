@@ -13,7 +13,7 @@
     color: $colorBlue;
     margin-bottom: 50px;
     @include responsive(mobile) {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
   }
   .modal__container {
