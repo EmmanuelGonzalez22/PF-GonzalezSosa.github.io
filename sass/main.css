@@ -291,6 +291,7 @@ a {
   height: 100vh;
 }
 .container__vidPromo .vidPromo {
+  height: 100vh;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -1855,7 +1856,7 @@ a {
     transition: all 0.8s ease;
   }
   #header .logo__mobile.menuBg {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 8px 15px rgb(32, 150, 253);
   }
   /*TERMINA NAVBAR */
@@ -2019,6 +2020,7 @@ a {
   }
   #indexPaquetes .indexPaquetes__imagenes .imagenes__container,
 #paquetes .indexPaquetes__imagenes .imagenes__container {
+    box-shadow: 0px 0px 16px 9px rgb(32, 150, 253);
     width: 100%;
   }
   #indexPaquetes .indexPaquetes__imagenes .imagenes__container .imagenes__img1,
