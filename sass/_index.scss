@@ -1,6 +1,8 @@
 .container__vidPromo {
   height: 100vh;
   .vidPromo {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
     position: absolute;
@@ -24,10 +26,10 @@
     "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion";
 }
 #principal {
-  margin-top: 78px;
+  margin-top: 50px;
   grid-area: principal;
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 30px;

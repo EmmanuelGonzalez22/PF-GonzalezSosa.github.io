@@ -291,6 +291,8 @@ a {
   height: 100vh;
 }
 .container__vidPromo .vidPromo {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   overflow: hidden;
   position: absolute;
@@ -311,10 +313,10 @@ a {
 }
 
 #principal {
-  margin-top: 78px;
+  margin-top: 50px;
   grid-area: principal;
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -1680,13 +1682,6 @@ a {
   height: auto;
 }
 
-/*---------------- MEDIA QUERY 1280 ----------------*/
-@media (min-width: 1280px) {
-  .container__vidPromo .vidPromo video {
-    width: 100%;
-    height: auto;
-  }
-}
 /*---------------- MEDIA QUERY 992 ----------------*/
 @media (max-width: 992px) {
   /* NAVBAR */
@@ -1861,9 +1856,6 @@ a {
   }
   /*TERMINA NAVBAR */
   /* INDEX */
-  .container__vidPromo .vidPromo {
-    left: -230px;
-  }
   .container__banner {
     height: 80vh;
   }
@@ -1875,7 +1867,6 @@ a {
     letter-spacing: 1.5rem;
   }
   #principal {
-    flex-direction: column;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -1896,7 +1887,6 @@ a {
     font-weight: bolder;
     text-transform: uppercase;
     text-shadow: 0 0 0.5em #000000;
-    line-height: 28px;
   }
   #indexPaquetes {
     margin-top: 0;
@@ -1976,7 +1966,9 @@ a {
   }
   .botones {
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
   .botones .botones__paquetes p {
     margin-top: 2rem;
@@ -2102,9 +2094,6 @@ a {
     width: 120px;
     height: auto;
   }
-  .container__vidPromo .vidPromo {
-    left: -550px;
-  }
   .container__banner .banner h2 {
     letter-spacing: 0.5rem;
   }
@@ -2113,6 +2102,9 @@ a {
   }
   #principal .principal__texto {
     width: 80%;
+  }
+  #principal .principal__texto p {
+    line-height: 25px;
   }
   #indexUbicacion .indexUbicacion__newsletter .newsletter__formulario .button {
     margin-left: auto;
@@ -2170,5 +2162,17 @@ a {
   }
   html {
     font-size: 70%;
+  }
+}
+/* ---------- MEDIA QUERY MOBILE HEIGHT---------- */
+@media (max-height: 600px) {
+  #principal .principal__texto p:last-child {
+    display: none;
+  }
+}
+/* ---------- MEDIA QUERY MOBILE HEIGHT---------- */
+@media (max-height: 500px) {
+  #principal .principal__texto p {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
