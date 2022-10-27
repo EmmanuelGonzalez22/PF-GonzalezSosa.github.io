@@ -310,6 +310,11 @@ a {
     transform: scale(1.1);
   }
 }
+@media (min-width: 1500px) {
+  .container__vidPromo .vidPromo video {
+    transform: scale(1.3);
+  }
+}
 
 .contenedor {
   display: grid;
@@ -1553,13 +1558,17 @@ a {
 
 #indicaciones {
   background: linear-gradient(black, #2a62b2, black);
+  padding: 0;
+}
+#indicaciones .indicaciones__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 30px;
   padding: 0;
+  max-width: 1500px;
+  margin: 0 auto 30px;
 }
-#indicaciones h2 {
+#indicaciones .indicaciones__container h2 {
   font: bold 2.5rem "lemon milk";
   letter-spacing: 2px;
   text-align: center;
@@ -1567,23 +1576,23 @@ a {
   width: 50%;
 }
 @media (max-width: 768px) {
-  #indicaciones h2 {
+  #indicaciones .indicaciones__container h2 {
     font-size: 2rem;
   }
 }
-#indicaciones .indicaciones__texto {
+#indicaciones .indicaciones__container .indicaciones__texto {
   width: 50%;
 }
-#indicaciones .indicaciones__texto p {
+#indicaciones .indicaciones__container .indicaciones__texto p {
   font: normal 1rem "Poppins", sans-serif;
   color: white;
   padding: 0 100px;
   line-height: 1.7rem;
 }
-#indicaciones .indicaciones__img {
+#indicaciones .indicaciones__container .indicaciones__img {
   width: 50%;
 }
-#indicaciones .indicaciones__img img {
+#indicaciones .indicaciones__container .indicaciones__img img {
   width: 100%;
   height: auto;
 }
@@ -1626,15 +1635,15 @@ a {
   gap: 30px;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios .medios__img {
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios .medios__img i {
   color: white;
-  font-size: 4.4rem;
+  font-size: 3.5rem;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios .medios__img i.fa-regular {
-  font-size: 3.9rem;
+  font-size: 3rem;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios p {
   font: normal 1rem "Poppins", sans-serif;
@@ -1980,7 +1989,7 @@ a {
   }
   /*TERMINA TRA, CAT, HELI, AVE */
   /* CONTACTO */
-  #indicaciones .indicaciones__texto p {
+  #indicaciones .indicaciones__container .indicaciones__texto p {
     padding: 0 10px;
   }
   /* TERMINA CONTACTO */
@@ -2043,22 +2052,22 @@ a {
   #alojamiento .alojamiento__section .section__cabana .cabana__lista ul {
     margin-bottom: 50px;
   }
-  #indicaciones {
+  #indicaciones .indicaciones__container {
     flex-direction: column;
   }
-  #indicaciones h2 {
+  #indicaciones .indicaciones__container h2 {
     width: 100%;
     order: -2;
     color: #2096fd;
     margin-bottom: 30px;
   }
-  #indicaciones .indicaciones__texto {
+  #indicaciones .indicaciones__container .indicaciones__texto {
     width: 100%;
     order: -1;
     margin-bottom: 20px;
     text-align: center;
   }
-  #indicaciones .indicaciones__img {
+  #indicaciones .indicaciones__container .indicaciones__img {
     width: 100%;
   }
   #mediosContacto .mediosContacto__container {
@@ -2150,7 +2159,7 @@ a {
     padding: 0 15px;
   }
   #mediosContacto .mediosContacto__container article .contacto__medios .medios__img {
-    width: 45px;
+    width: 35px;
     height: auto;
   }
   #mediosContacto .mediosContacto__container .mediosContacto__mapa iframe {

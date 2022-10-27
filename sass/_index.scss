@@ -16,6 +16,9 @@
       @include responsive(pc) {
         transform: scale(1.1);
       }
+      @media (min-width: 1500px) {
+        transform: scale(1.3);
+      }
     }
   }
 }

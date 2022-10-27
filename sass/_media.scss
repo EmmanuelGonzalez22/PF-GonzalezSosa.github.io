@@ -344,9 +344,11 @@
   /* CONTACTO */
 
   #indicaciones {
-    .indicaciones__texto {
-      p {
-        padding: 0 10px;
+    .indicaciones__container {
+      .indicaciones__texto {
+        p {
+          padding: 0 10px;
+        }
       }
     }
   }
@@ -435,21 +437,23 @@
     }
   }
   #indicaciones {
-    flex-direction: column;
-    h2 {
-      width: 100%;
-      order: -2;
-      color: #2096fd;
-      margin-bottom: 30px;
-    }
-    .indicaciones__texto {
-      width: 100%;
-      order: -1;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .indicaciones__img {
-      width: 100%;
+    .indicaciones__container {
+      flex-direction: column;
+      h2 {
+        width: 100%;
+        order: -2;
+        color: #2096fd;
+        margin-bottom: 30px;
+      }
+      .indicaciones__texto {
+        width: 100%;
+        order: -1;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .indicaciones__img {
+        width: 100%;
+      }
     }
   }
   #mediosContacto {
@@ -582,7 +586,7 @@
       article {
         .contacto__medios {
           .medios__img {
-            width: 45px;
+            width: 35px;
             height: auto;
           }
         }
