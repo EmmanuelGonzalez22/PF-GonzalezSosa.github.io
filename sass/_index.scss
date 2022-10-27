@@ -13,6 +13,9 @@
     z-index: -1;
     video {
       height: 100%;
+      @include responsive(pc) {
+        transform: scale(1.1);
+      }
     }
   }
 }

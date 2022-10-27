@@ -305,6 +305,11 @@ a {
 .container__vidPromo .vidPromo video {
   height: 100%;
 }
+@media (min-width: 992px) {
+  .container__vidPromo .vidPromo video {
+    transform: scale(1.1);
+  }
+}
 
 .contenedor {
   display: grid;
@@ -1585,7 +1590,7 @@ a {
 
 #mediosContacto h2 {
   font: bold 2.5rem "lemon milk";
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
   width: 100%;
   color: #2096fd;
@@ -1617,20 +1622,24 @@ a {
 }
 #mediosContacto .mediosContacto__container article .contacto__medios {
   display: flex;
-  align-items: baseline;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios .medios__img {
-  width: 70px;
+  width: 80px;
   height: auto;
 }
-#mediosContacto .mediosContacto__container article .contacto__medios .medios__img img {
-  width: 100%;
-  height: auto;
+#mediosContacto .mediosContacto__container article .contacto__medios .medios__img i {
+  color: white;
+  font-size: 4.4rem;
+}
+#mediosContacto .mediosContacto__container article .contacto__medios .medios__img i.fa-regular {
+  font-size: 3.9rem;
 }
 #mediosContacto .mediosContacto__container article .contacto__medios p {
   font: normal 1rem "Poppins", sans-serif;
   color: white;
+  margin-bottom: 0;
 }
 
 #footer {
@@ -1827,10 +1836,6 @@ a {
   }
   #header .header__menu .menu__redes ul li a span {
     color: rgba(255, 255, 255, 0.75);
-    transform: rotate(0) translate(0, 0);
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
     font-size: 30px;
   }
   #header .header__menu .menu__redes ul li a span:hover {
@@ -2061,7 +2066,7 @@ a {
     gap: 50px;
   }
   #mediosContacto .mediosContacto__container article {
-    gap: 20px;
+    gap: 30px;
   }
   #footer .footer__scrollup {
     right: 10px;
@@ -2145,7 +2150,7 @@ a {
     padding: 0 15px;
   }
   #mediosContacto .mediosContacto__container article .contacto__medios .medios__img {
-    width: 30px;
+    width: 45px;
     height: auto;
   }
   #mediosContacto .mediosContacto__container .mediosContacto__mapa iframe {
