@@ -45,6 +45,9 @@
     transition: all 0.8s ease;
     font-size: 1em;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .visible_menu {
     #menu_on {
@@ -137,7 +140,7 @@
         }
       }
       .menu__redes {
-        margin-top: 70px;
+        margin: auto 0;
         ul {
           padding: 0;
           margin: 0;
@@ -154,7 +157,7 @@
               padding: 0;
               span {
                 color: rgba(255, 255, 255, 0.75);
-                font-size: 30px;
+                font-size: 2.7rem;
                 &:hover {
                   color: rgba(255, 255, 255, 1);
                 }

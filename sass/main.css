@@ -1739,6 +1739,9 @@ a {
     transition: all 0.8s ease;
     font-size: 1em;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .visible_menu #menu_on {
     transition-delay: 0.8s;
@@ -1824,7 +1827,7 @@ a {
     color: rgb(255, 255, 255);
   }
   #header .header__menu .menu__redes {
-    margin-top: 70px;
+    margin: auto 0;
   }
   #header .header__menu .menu__redes ul {
     padding: 0;
@@ -1845,7 +1848,7 @@ a {
   }
   #header .header__menu .menu__redes ul li a span {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 30px;
+    font-size: 2.7rem;
   }
   #header .header__menu .menu__redes ul li a span:hover {
     color: rgb(255, 255, 255);
