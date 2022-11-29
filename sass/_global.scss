@@ -13,14 +13,11 @@ body {
 
 @font-face {
   font-family: "lemon milk";
-  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-Light.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-LightItalic.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-Medium.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-Regular.otf"),
-    url("../fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf");
+}
+@font-face {
+  font-family: "lemon milk regular";
+  src: url("../fuentes/lemon_milk/LEMONMILK-Regular.otf");
 }
 
 a {
@@ -60,7 +57,6 @@ a {
     z-index: -1;
     h2 {
       font-family: "lemon milk";
-      font-weight: bold;
       font-size: 5rem;
       letter-spacing: 2rem;
       opacity: 0.4;

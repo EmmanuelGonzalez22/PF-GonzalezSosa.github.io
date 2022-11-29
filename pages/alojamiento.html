@@ -36,16 +36,6 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../sass/main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/ce694f884b.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <!------ TERMINA HEAD ------>
@@ -484,8 +474,21 @@
 
     <!------ TERMINA FOOTER ------>
 
+    <!-- SCRIPT JQUERY / FONTAWESOME -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ce694f884b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- SCRIPT AOS / BTS -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
@@ -499,40 +502,7 @@
 
     <!-- SCRIPT MENU -->
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#menu_on").click(function () {
-          $("body").toggleClass("visible_menu");
-        });
-      });
-    </script>
-    <script>
-      $(window).scroll(function name() {
-        if ($("#menu").offset().top > 250) {
-          $("#menu").addClass("menuBlack");
-        } else {
-          $("#menu").removeClass("menuBlack");
-        }
-      });
-    </script>
-    <script>
-      $(window).scroll(function name() {
-        if ($("#desplegable").offset().top > 250) {
-          $("#desplegable").addClass("menuBlack");
-        } else {
-          $("#desplegable").removeClass("menuBlack");
-        }
-      });
-    </script>
-    <script>
-      $(window).scroll(function name() {
-        if ($("#logoMobile").offset().top > 50) {
-          $("#logoMobile").addClass("menuBg");
-        } else {
-          $("#logoMobile").removeClass("menuBg");
-        }
-      });
-    </script>
+    <script src="../js/main.js"></script>
 
     <!-- TERMINA MENU -->
   </body>

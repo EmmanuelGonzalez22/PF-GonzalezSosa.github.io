@@ -13,7 +13,11 @@ body {
 
 @font-face {
   font-family: "lemon milk";
-  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf"), url("../fuentes/lemon_milk/LEMONMILK-BoldItalic.otf"), url("../fuentes/lemon_milk/LEMONMILK-Light.otf"), url("../fuentes/lemon_milk/LEMONMILK-LightItalic.otf"), url("../fuentes/lemon_milk/LEMONMILK-Medium.otf"), url("../fuentes/lemon_milk/LEMONMILK-MediumItalic.otf"), url("../fuentes/lemon_milk/LEMONMILK-Regular.otf"), url("../fuentes/lemon_milk/LEMONMILK-RegularItalic.otf");
+  src: url("../fuentes/lemon_milk/LEMONMILK-Bold.otf");
+}
+@font-face {
+  font-family: "lemon milk regular";
+  src: url("../fuentes/lemon_milk/LEMONMILK-Regular.otf");
 }
 a {
   text-decoration: none;
@@ -53,7 +57,6 @@ a {
 }
 .container__banner .banner h2 {
   font-family: "lemon milk";
-  font-weight: bold;
   font-size: 5rem;
   letter-spacing: 2rem;
   opacity: 0.4;
@@ -203,7 +206,6 @@ a {
   text-align: center;
   font-size: 1rem;
   color: #2096fd;
-  font-weight: bold;
 }
 @media (min-width: 993px) {
   #header .logo__mobile {
@@ -361,7 +363,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -475,7 +476,6 @@ a {
   width: 100%;
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 900;
   font-family: "lemon milk";
   color: white;
   opacity: 0.3;
@@ -499,7 +499,6 @@ a {
   font-family: "lemon milk";
   color: #2096fd;
   font-size: 1.2rem;
-  font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -515,7 +514,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -715,7 +713,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -753,7 +750,6 @@ a {
 }
 #indexUbicacion .indexUbicacion__newsletter h3 {
   font-family: "lemon milk";
-  font-weight: bold;
   font-size: 1.5rem;
   color: #2096fd;
 }
@@ -776,7 +772,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -855,7 +850,6 @@ a {
   font-family: "lemon milk";
   color: #2096fd;
   font-size: 1.5rem;
-  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -877,7 +871,6 @@ a {
 #travesia .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -893,7 +886,6 @@ a {
 #travesia .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -925,7 +917,6 @@ a {
 #catSkiing .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -941,7 +932,6 @@ a {
 #catSkiing .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -973,7 +963,6 @@ a {
 #heliSkiing .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -989,7 +978,6 @@ a {
 #heliSkiing .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1021,7 +1009,6 @@ a {
 #aventura .dia1 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1037,7 +1024,6 @@ a {
 #aventura .dia2 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1053,7 +1039,6 @@ a {
 #aventura .dia3 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1069,7 +1054,6 @@ a {
 #aventura .dia4 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1085,7 +1069,6 @@ a {
 #aventura .dia5 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1101,7 +1084,6 @@ a {
 #aventura .dia6 h4 {
   font-family: "lemon milk";
   font-size: 1.3rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
 }
@@ -1155,7 +1137,6 @@ a {
 .servicios .servicios__noTraer .noTraer__lista h5 {
   font-family: "lemon milk";
   font-size: 1.1rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
   text-decoration: underline;
@@ -1177,7 +1158,6 @@ a {
 .servicios .servicios__traer .traer__lista h5 {
   font-family: "lemon milk";
   font-size: 1.1rem;
-  font-weight: bold;
   color: #2096fd;
   text-align: center;
   text-decoration: underline;
@@ -1223,7 +1203,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -1267,7 +1246,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -1329,7 +1307,6 @@ a {
 #alojamiento .alojamiento__section .section__domo h3 {
   font-family: "lemon milk";
   font-size: 2.5rem;
-  font-weight: bold;
   color: #2096fd;
   margin-top: 48px;
 }
@@ -1357,7 +1334,6 @@ a {
 #alojamiento .alojamiento__section .section__cabana h3 {
   font-family: "lemon milk";
   font-size: 2.5rem;
-  font-weight: bold;
   color: #2096fd;
 }
 @media (max-width: 768px) {
@@ -1522,7 +1498,6 @@ a {
   color: white;
   font-family: "lemon milk";
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 0 0.5em rgb(32, 150, 253);
   background-color: rgb(42, 98, 178);
@@ -1671,7 +1646,6 @@ a {
   font-family: "lemon milk";
   font-size: 0.9rem;
   color: black;
-  font-weight: bold;
 }
 #footer .footer__redes {
   display: flex;
